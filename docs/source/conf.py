@@ -17,6 +17,8 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinxfortran.fortran_domain',
+    'sphinxfortran.fortran_autodoc',
 ]
 
 intersphinx_mapping = {
