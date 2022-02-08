@@ -16,9 +16,10 @@ Contents
 --------
 
 .. toctree::
+   :maxdepth: 2
 
-   Tutorials
-   How-To
-   Overview
-   Reference
+   tutorials
+   how-to
+   overview
+   reference
    
