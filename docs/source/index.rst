@@ -1,22 +1,22 @@
-Welcome to Lumache's documentation!
+Welcome to the FATES Users Guide
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**FATES** (Functionally Assembled Terrestrial Ecosystem Simulator) is a numerical terrestrial ecosystem model. Its development and support is primarily supported by the Department of Energy's Office of Science, through the Next Generation Ecosystem Experiment - Tropics (NGEE-T) project.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 
 .. note::
 
-   This is a tutorial.
+   This documentation is currently under development.
 
 Contents
 --------
 
 .. toctree::
 
-   usage
-   api
+   Tutorials
+   Overview
+   How-To
+   Reference
+   
