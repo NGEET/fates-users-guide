@@ -24,8 +24,9 @@ sphinx:
 #    - pdf
 
 # Optionally declare the Python requirements required to build your docs
-# python:
-#    install:
-#    - requirements: docs/requirements.txt
-conda:
-  environment: environment.yml
+python:
+   install:
+   - requirements: docs/requirements.txt
+# Had trouble with conda, possible due to sphinx-fortran?
+# conda:
+#   environment: environment.yml
