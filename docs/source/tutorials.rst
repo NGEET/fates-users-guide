@@ -6,11 +6,8 @@ Tutorials
 You decide for the learning what they need
 Learning oriented
 
-.. _installation:
-
-Installation
-------------
-
-.. code-block:: console
-
-   $ This is a code block
+.. toctree::
+   :maxdepth: 2
+   
+   installation
+   running-fates-walkthrough
