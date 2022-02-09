@@ -4,4 +4,8 @@
 # sphinx==4.2.0
 # sphinx_rtd_theme==1.0.0
 # readthedocs-sphinx-search==0.1.1
+# pip==22.0.3
+
+# sphinx-fortran
 sphinx-fortran==1.1.1
+six==1.16.0
