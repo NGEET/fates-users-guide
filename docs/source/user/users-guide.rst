@@ -1,5 +1,5 @@
-Welcome to the FATES Users Guide
-===================================
+FATES User's Guide
+==================
 
 **FATES** (Functionally Assembled Terrestrial Ecosystem Simulator) is a numerical terrestrial ecosystem model. Its development and support is primarily supported by the Department of Energy's Office of Science, through the Next Generation Ecosystem Experiment - Tropics (NGEE-T) project.
 
@@ -18,5 +18,8 @@ Contents
 .. toctree::
    :maxdepth: 2
 
-   user/users-guide
-   developer/developer-guide
+   tutorials
+   how-to
+   overview
+   reference
+   
