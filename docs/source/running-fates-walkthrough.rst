@@ -1,7 +1,6 @@
 Introduction to Running FATES
 -----------------------------
 
-
 FATES Tutorial February 2019
 
 `Accompanying Slides`_

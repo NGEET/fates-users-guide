@@ -12,12 +12,12 @@ This document is structured into two major sections: a User's guide and a Develo
 .. toctree::
    :maxdepth: 1
 
+   tutorials
    user/users-guide
    developer/developer-guide
    
-Each major section follows a common structure of four sections: 
+Each major section follows a common structure of three sections: 
 
-- Tutorials: Detailed walk-throughs explaining each step
 - How-to: Straight forward recipes for common tasks
 - Overview: Narrative discussions of the concepts
 - Reference: Description of specific code procedures and routines

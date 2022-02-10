@@ -12,7 +12,6 @@ The User's Guide is structured into four major sections:
 .. toctree::
    :maxdepth: 2
 
-   tutorials
    how-to
    overview
    reference
