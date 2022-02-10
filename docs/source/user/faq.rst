@@ -64,6 +64,15 @@ I want to run the code, how to I find out how to do that?
 We have a **tutorial** here: https://github.com/NGEET/fates/wiki/Running-FATES:-A-Walk-Through,-February-2019
 and a basic script for generating a 100 year global model run here: https://drive.google.com/file/d/0B_5e7rc3QoQqc3lXWlp5SkN3ajQ/view
 
+What version of FATES should I be running?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*Add a cross-reference here to the hlm-fates compatability table*
+
+
+I ran FATES successfully!  How do I view the multiplexed dimensions?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*Add a cross-reference here to the tutorial and to page discussing different tools (e.g. Acre, ctsm_python_gallery,etc)
+
 How can I find out more about how FATES works?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Either in the `technical documentation`_ or in this slide deck from the `2019 FATES tutorial`_. 
