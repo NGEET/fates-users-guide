@@ -1,23 +1,26 @@
 Introduction to Running FATES
 -----------------------------
 
-FATES Tutorial February 2019
+This tutorial was presented at the `2019 CTSM Tutorial session`_ and has an `accompanying slide deck`_.
 
-`Accompanying Slides`_
-
-.. _Accompanying Slides: https://docs.google.com/presentation/d/1vcCo2eOpK5LUfrLe68xAkF2y_cH_C0Almm1749ev0l8/edit#slide=id.g3060ed3a86_10_0
+.. _2019 CTSM Tutorial session: https://www.cgd.ucar.edu/events/2019/ctsm/
+.. _accompanying slide deck: https://www.cgd.ucar.edu/events/2019/ctsm/files/practical5-fates.pdf
 
 Materials
 ^^^^^^^^^
-1. This course is supported on the following HPCs 
-- For CTSM: **cheyenne** and **edison**
-- For E3SM: **edison** and **cori**
+1. This course is supported on the following HPCs
+
+   * For CTSM: **cheyenne**
+   * For E3SM: **cori**
+
 2. Modest computational allocation
-2. The “FATESTutorialPacket_Feb2019.tgz” packet
-3. An ssh connection with either:
-- X-windows connection
-- Ability to scp/sftp (transfer files back to your lappy)
-4. (optional) A text editor to modify text files
+3. The “FATESTutorialPacket_Feb2019.tgz” packet
+4. An ssh connection with either:
+
+   * X-windows connection
+   * Ability to scp/sftp (transfer files back to your lappy)
+
+5. (optional) A text editor to modify text files
 
 Requisite/Helpful Knowledge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
