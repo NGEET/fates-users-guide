@@ -9,6 +9,7 @@ Understanding oriented section
    :maxdepth: 1
    
    faq
+   notable
    
 
 Chosing a FATES version
