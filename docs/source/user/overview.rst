@@ -10,6 +10,7 @@ Understanding oriented section
    
    faq
    notable
+   Fixed-Biogeography-Mode
    
 
 Chosing a FATES version
