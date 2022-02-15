@@ -1,3 +1,0 @@
-Adding History Variables
-------------------------
-

@@ -10,3 +10,4 @@
 sphinx-fortran==1.1.1
 six
 numpy
+myst_parser
