@@ -8,4 +8,6 @@ Problem oriented
 .. toctree::
    :maxdepth: 1
       
-      add-hist-vars
+      Authenticating-the-NCAR-SVN-Repository
+      GIT-for-newbies-(START-HERE)
+      Running-FATES-with-the-selective-logging-module-activated
