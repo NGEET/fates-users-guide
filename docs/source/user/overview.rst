@@ -10,11 +10,9 @@ Understanding oriented section
    
    faq
    notable
-   Authenticating-the-NCAR-SVN-Repository
    Communal-slides-related-to-FATES
    Current-Unsupported-or-Broken-Features
    Fixed-Biogeography-Mode
-   GIT-for-newbies-(START-HERE)
    Namelist-Options-and-Run-Time-Modes
    Notes-on-the-Parameter-File
    PARTEH-Modes
