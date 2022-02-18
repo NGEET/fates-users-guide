@@ -71,7 +71,7 @@ What version of FATES should I be running?
 
 I ran FATES successfully!  How do I view the multiplexed dimensions?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-*Add a cross-reference here to the tutorial and to page discussing different tools (e.g. Acre, ctsm_python_gallery,etc)
+*Add a cross-reference here to the tutorial and to page discussing different tools (e.g. Acre, ctsm_python_gallery,etc)*
 
 How can I find out more about how FATES works?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

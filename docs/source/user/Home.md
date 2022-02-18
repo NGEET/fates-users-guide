@@ -1,7 +1,7 @@
+# The Functionally Assembled Terrestrial Ecosystem Simulator (FATES)
 
 [FATES techical documentation](https://fates-docs.readthedocs.io/en/latest/index.html)
 
-## The Functionally Assembled Terrestrial Ecosystem Simulator (FATES)
 
 This repository houses the development of the Functionally Assembled Terrestrial Ecosystem Simulator (FATES). 
  FATES is a numerical terrestrial ecosystem model.  The funding for this project is supported by Department of Energy’s Next Generation Ecosystem Experiment - Tropics (NGEE-T) project.  The conceptual design is based off of the original Ecosystem Demography model (ED, Moorcroft et al. 2001, Hurtt et al. 2002, Fisher et al. 2015).  This model is designed so that it works as a library that can be called from a selection of driver models including Earth System Models (ESM) such as ACME and CESM.  

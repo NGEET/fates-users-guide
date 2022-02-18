@@ -17,6 +17,7 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
+    'sphinx.ext.autosectionlabel',
     'sphinx.ext.intersphinx',
     'sphinxfortran.fortran_domain',
     'sphinxfortran.fortran_autodoc',
@@ -36,6 +37,12 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+## -- Options for myst-parser
+
+# Tell myst to auto-generate heading anchors: 
+# https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#syntax-header-anchors
+myst_heading_anchors = 2 
 
 ## -- Options for Sphinx-Fortran ---------------------------------------------
 # List of possible extensions in the case of a directory listing

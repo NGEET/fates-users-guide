@@ -154,7 +154,7 @@ Execute the simulation when the build is complete:
 
 6. How about adding new output variables?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-See `Adding History Variables`_ section
+See :ref:`How to add a new FATES history variable` section
 
 7. Visualizing structured FATES output
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -6,14 +6,14 @@ Users should also consult referencing guides from respective host land models (H
 
 ---------------------
 
-### Core Reference(s)
+## Core Reference(s)
 
 Fisher, R. A., Muszala, S., Verteinstein, M., Lawrence, P., Xu, C., McDowell, N. G., Knox, R. G., Koven, C., Holm, J., Rogers, B. M., Spessa, A., Lawrence, D., and Bonan, G.: Taking off the training wheels: the properties of a dynamic vegetation model without climate envelopes, CLM4.5(ED), Geosci. Model Dev., 8, 3593-3619, https://doi.org/10.5194/gmd-8-3593-2015, 2015.
 
 ---------------------
 
 
-### Foundation References
+## Foundation References
 
 
 ED Patch and Cohort approach: Moorcroft, P.R., G.C. Hurtt, and S.W. Pacala, 2001. A method for scaling vegetation dynamics: the ecosystem demography model ED. Ecological monographs 71.4, pp. 557-586.
@@ -25,13 +25,13 @@ Fire Model (SPITFIRE): Thonicke, K., Spessa, A., Prentice, I. C., Harrison, S. P
 ---------------------
 
 
-### Logging
+## Logging
 
 _All research and publications using FATES with logging enabled, must reach out to **Yi Xu** and **Maoyi Huang**_
 
 ---------------------
 
-### Fire
+## Fire
 
 _All research and publications using FATES with SPITFIRE should reach out to **Jacquelyn Shuman** and **Rosie Fisher**._
 
@@ -39,7 +39,7 @@ _All research and publications using FATES with SPITFIRE should reach out to **J
 ---------------------
 
 
-### FATES-Hydro 
+## FATES-Hydro 
 
 _All research and publications using FATES-Hydro must reach out to **Brad Christoffersen** and **Chonggang Xu**_
 
@@ -47,13 +47,13 @@ Christoffersen, B.O., Gloor, M., Fauset, S., Fyllas, N. M., Galbraith, D. R., Ba
 
 ---------------------
 
-### LAI
+## LAI
 
 _If you enable variable SLA with crown depth, activated when parameters fates_leaf_slamax != fates_leaf_slatop, you must reach out to **Marlies Kovenock** and **Abigail Swann**_
 
 ---------------------
 
-### Allometry
+## Allometry
 
 > Used when fates_allom_amode = 1, fates_allom_lmode = 1, and provides parameters (if used):
 
@@ -73,7 +73,7 @@ Martinez Cano, I. and Muller-Landau, H. C. and Wright, S. J. and Bohlman, S. A. 
 
 ---------------------
 
-### Initialization
+## Initialization
 
 > The NGEET development team has census initialization files from Barro Colorado Island Panama, users of this data **must** cite:
 
@@ -88,7 +88,7 @@ Cushman, K. C., Muller‐Landau, H. C., Condit, R. S., Hubbell, S. P. and Freckl
 ---------------------
 
 
-### Driver Data
+## Driver Data
 
 > The NGEET development team has meteorological driver data generated for Barro Colorado Island Panama, users of this data **must** cite:
 

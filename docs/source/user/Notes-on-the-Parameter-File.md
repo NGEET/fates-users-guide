@@ -7,7 +7,7 @@ These files can be found here:
 https://github.com/NGEET/fates/tree/master/parameter_files
 
 ---
-### Notes on the file
+## Notes on the file
 
 A short history of the changes to parameter files before they were added to version control is as follows:
 
@@ -20,7 +20,7 @@ There are two ways to get the netcdf version of these files.
 
 ---
 
-### Old versions of the fates parameter files
+## Old versions of the fates parameter files
 (Stopped tracking post API 3)
 
 

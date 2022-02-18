@@ -5,7 +5,7 @@ The Plant Allocation and Reactive Transport Extensible Hypotheses (PARTEH) modul
 
 Only 1 alternative is currently active in PARTEH at the moment.
 
-### The carbon-only (non nutrient enabled), allometric growth hypothesis.
+## The carbon-only (non nutrient enabled), allometric growth hypothesis.
 
 This mode is set by default in the namelist.  The namelist entry generated will look like this:
 

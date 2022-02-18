@@ -1,11 +1,6 @@
 # Useful Things
 
-***
-
 Please Feel Free to List and Link Useful Scripts
-
-
-***
 
 ## Testing Scripts
 
