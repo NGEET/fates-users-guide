@@ -7,7 +7,11 @@ Welcome to the FATES Users Guide
 
    This documentation is currently under development.
 
-This document is structured into two major sections: a User's guide and a Developer's guide:
+
+Documentation structure
+----------------------- 
+
+This document is structured into a tutorial and two major sections: a User's guide and a Developer's guide:
 
 .. toctree::
    :maxdepth: 1
@@ -16,10 +20,17 @@ This document is structured into two major sections: a User's guide and a Develo
    user/users-guide
    developer/developer-guide
    
-Each major section follows a common structure of three sections: 
+The tutorial will help the new user's and developers orient themselves to fates.  Each major section then follows a common structure of three sub-sections: 
 
 - How-to: Straight forward recipes for common tasks
 - Overview: Narrative discussions of the concepts
 - Reference: Description of specific code procedures and routines
 
-For information on how this document is structure please see https://documentation.divio.com/.
+This structure adapts the Divio documentation framework.  For information on how this document is structured, see https://documentation.divio.com/.
+
+Requesting changes to this documentation
+----------------------------------------
+
+The repository for this document can be accessed by clicking on the "Edit on GitHub" text in the upper right hand corner or can be found at: https://github.com/ngeet/fates-users-guide.  If there is information in this guide that you would like to have added or errors that need to be addressed, please submit an `issue`_.  
+
+.. _issue: https://github.com/ngeet/fates-users-guide/issues
