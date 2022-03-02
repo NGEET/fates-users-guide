@@ -19,6 +19,7 @@ This document is structured into a tutorial and two major sections: a User's gui
    tutorials
    user/users-guide
    developer/developer-guide
+   FATES Technical Document <https://fates-users-guide.readthedocs.io/projects/tech-doc/en/stable/>
    
 The tutorial will help the new user's and developers orient themselves to fates.  Each major section then follows a common structure of three sub-sections: 
 
