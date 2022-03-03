@@ -11,7 +11,7 @@ Welcome to the FATES Users Guide
 Documentation structure
 ----------------------- 
 
-This document is structured into a tutorial and two major sections: a User's guide and a Developer's guide:
+This document is structured in four parts:
 
 .. toctree::
    :maxdepth: 1
@@ -21,13 +21,15 @@ This document is structured into a tutorial and two major sections: a User's gui
    developer/developer-guide
    FATES Technical Document <https://fates-users-guide.readthedocs.io/projects/tech-doc/en/stable/>
    
-The tutorial will help the new user's and developers orient themselves to fates.  Each major section then follows a common structure of three sub-sections: 
+The tutorial will help the new user's and developers orient themselves to fates.  The user's guide is concerned with providing researchers with information on running the FATES model.  The developer's guide focuses on helping researchers and engineers contribute to the FATES model code.  Both the user and developer guide sections follow a common structure comprised of three sub-sections: 
 
 - How-to: Straight forward recipes for common tasks
 - Overview: Narrative discussions of the concepts
 - Reference: Description of specific code procedures and routines
 
-This structure adapts the Divio documentation framework.  For information on how this document is structured, see https://documentation.divio.com/.
+This structure adapts the `Divio documentation framework`_.
+
+..  _Divio documentation framework: https://documentation.divio.com/.
 
 Technical Documentation
 -----------------------
