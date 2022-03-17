@@ -78,9 +78,7 @@ Contents of packet:
 
 4. (optional) Practice a git clone
 
-The package provides all the necessary setup for this tutorial and it is assumed that you already have trained on how to download or clone CTSM/E3SM.  The remaining sections provide optional practice guiding you through the necessary steps for cloning, checking out and syncing fates to the terrestrial models.  Feel free to `return to walk-through home`_ if you would like to skip the following optional sections.
-
-.. _return to walk-through home: https://github.com/NGEET/fates/wiki/Running-FATES:-A-Walk-Through,-February-2019
+The package provides all the necessary setup for this tutorial and it is assumed that you already have trained on how to download or clone CTSM/E3SM.  The remaining sections provide optional practice guiding you through the necessary steps for cloning, checking out and syncing fates to the terrestrial models.  Feel free to :ref:`return to walk-through home <Introduction to Running FATES>` if you would like to skip the following optional sections.
 
 Move into the folder space provided for the optional practice:
 

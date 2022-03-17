@@ -63,12 +63,12 @@ Variables to be defined:
 ### New dimension checklist
 
 
-- [ ] Add new parameter `site_<newdim>` in [clmfates_interfacemod (hlm)](https://github.com/NGEET/fates/wiki/How-to-add-a-new-FATES-history-variable#clmfates_interfacemod-hlm)
+- [ ] Add new parameter `site_<newdim>` in [](clmfates_interfacemod-hlm)
 - [ ] Set bounds `<newdim>_begin` and `<newdim>_end` index in clmfates_interfacemod (see below)
 
 This checklist is ordered by fates module file and then by procedure.  It starts with FatesHistoryInterfaceMod assuming that the impetus for the new dimension comes from a new history output variable definition.  The checklist contains internal links to other modules to try and note the code's own connection to other modules.  The cross referencing is not thorough, however, and assumes the reader with proceed through the checklist from top to bottom in order.
 
-#### FatesHistoryInterfaceMod:
+#### FatesHistoryInterfaceMod
 - [ ] Define the new multiplexed abbreviation `<newdim>` in the [header comments](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesHistoryInterfaceMod.F90#L127)
 
 - `fates_history_interface_type` definition
@@ -82,10 +82,10 @@ This checklist is ordered by fates module file and then by procedure.  It starts
 
 - `Init` procudure
     - [ ] [Add `use FatesIODimensionsMod, only lev<newdim>`](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesHistoryInterfaceMod.F90#L766)
-        - [ ] Define `lev<newdim>` in [FatesIODimensionsMod](https://github.com/NGEET/fates/wiki/How-to-add-a-new-FATES-history-variable#FatesIODimensionsMod)
+        - [ ] Define `lev<newdim>` in [](fatesiodimensionsmod)
     - [ ] [Add call to `set_lev<newdim>_index`](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesHistoryInterfaceMod.F90#L888-L889)
     - [ ] [Add call to `dim_bounds(dim_count)%Init(lev<newdims>...)`](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesHistoryInterfaceMod.F90#L890-L891)
-        - [ ] Define fates bounds `<newdim>_begin` and `<newdim>_end` in `fates_bounds_type` in [FatesIODimensionsMod](https://github.com/NGEET/fates/wiki/How-to-add-a-new-FATES-history-variable#FatesIODimensionsMod)
+        - [ ] Define fates bounds `<newdim>_begin` and `<newdim>_end` in `fates_bounds_type` in [](FatesIODimensionsMod)
 
 - `SetThreadBoundsEach` procedure
     - [ ] [Set `index` using `lev<newdim>_index()` procedure](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesHistoryInterfaceMod.F90#L1003)
@@ -93,14 +93,14 @@ This checklist is ordered by fates module file and then by procedure.  It starts
 
 - `assemble_history_output_types` procedure
     - [ ] [Add `use FatesIOVariableKindMod, only site_<newdim>`](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesHistoryInterfaceMod.F90#L1023)
-        - [ ] Define `site_<newdim>` in [FatesIOVariableKindMod](https://github.com/NGEET/fates/wiki/How-to-add-a-new-FATES-history-variable#FatesIOVariableKindMod)
+        - [ ] Define `site_<newdim>` in [](FatesIOVariableKindMod)
     - [ ] [Call `this%set_dim_indices(site_<newdim>` procedure using `lev<newdim>_index()` procedure](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesHistoryInterfaceMod.F90#L1103-L1104)
 
 - `flush_hvars` procedure
-    - [ ] Add `site_<newdim>` to [FatesHistoryVariableType](https://github.com/NGEET/fates/wiki/How-to-add-a-new-FATES-history-variable#FatesHistoryVariableType) for call to `his%hvars(ivar)%flush` call
+    - [ ] Add `site_<newdim>` to [](FatesHistoryVariableType) for call to `his%hvars(ivar)%flush` call
 
 - `set_history_var` procedure
-    - [ ] Add `site_<newdim>` to [FatesHistoryVariableType](https://github.com/NGEET/fates/wiki/How-to-add-a-new-FATES-history-variable#FatesHistoryVariableType) for call to `this%hvars(ivar)%Init` call
+    - [ ] Add `site_<newdim>` to [](FatesHistoryVariableType) for call to `this%hvars(ivar)%Init` call
 
 - `init_dim_kinds_maps` procedure
     - [ ] [Add `use FatesIOVariableKindMod, only site_<newdim>`](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesHistoryInterfaceMod.F90#L1572)
@@ -110,21 +110,23 @@ This checklist is ordered by fates module file and then by procedure.  It starts
     - [ ] [Add `use FatesIOVariableKindMod, only site_<newdim>`](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesHistoryInterfaceMod.F90#L4162)
     - [ ] [Set `vtype=site_<newdim>` for the new history output variable](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesHistoryInterfaceMod.F90#L4503)
 
-#### FatesIODimensionsMod:
+(fatesiodimensionsmod)=
+#### FatesIODimensionsMod
 - [ ] [Define `lev<newdim>` parameter and associated HLM string `fates_lev<newdim>`](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesIODimensionsMod.F90#L30)
-    - [ ] Add `fates_lev<newdim>` parameter in [histFileMod (HLM)](https://github.com/NGEET/fates/wiki/How-to-add-a-new-FATES-history-variable#histFileMod-hlm)
+    - [ ] Add `fates_lev<newdim>` parameter in [](histFileMod-hlm)
     - [ ] [Add `lev<newdim>` definition in the comment section](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesIODimensionsMod.F90#L90-L91)
 
 - `fates_bounds_type` definition
     - [ ] [Add bounds `<newdim>_begin` and `<newdim>_end`](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesIODimensionsMod.F90#L149-L150)
 
-#### histFileMod (HLM):
+(histFileMod-hlm)=
+#### histFileMod (HLM)
 - `htape_create` procedure
     - [ ] [Call `ncd_defdim(lnfid, 'fates_lev<newdim>`](https://github.com/ESCOMP/CTSM/blob/0392347e51747abf16039b2d4771cc97785be987/src/main/histFileMod.F90#L2095)
 
 - `htape_timeconst` procedure
     - [ ] [Add `use FatesInterfaceTypesMod, only : fates_hdim_...map_lev<newdimi>` map variables as necessary](https://github.com/ESCOMP/CTSM/blob/0392347e51747abf16039b2d4771cc97785be987/src/main/histFileMod.F90#L2540-L2541)
-        - [ ] Define `fates_hdim_...map_lev<newdim>` variables in [FatesInterfaceTypesMod](https://github.com/NGEET/fates/wiki/How-to-add-a-new-FATES-history-variable#FatesInterfaceTypesMod)
+        - [ ] Define `fates_hdim_...map_lev<newdim>` variables in [](FatesInterfaceTypesMod)
     - [ ] [Call `ncd_defvar(<newdim>, dim1name='fates_lev<newdim>`](https://github.com/ESCOMP/CTSM/blob/0392347e51747abf16039b2d4771cc97785be987/src/main/histFileMod.F90#L2646-L2649)
     - [ ] [Call `ncd_io(varname='fates_...map_lev<newdim>, data=fates_hdim_...map_lev<newdim>` to set the appropriate mappings as necessary](https://github.com/ESCOMP/CTSM/blob/0392347e51747abf16039b2d4771cc97785be987/src/main/histFileMod.F90#L2644-L2647)
 
@@ -132,24 +134,29 @@ This checklist is ordered by fates module file and then by procedure.  It starts
     - [ ] [Create `case ('fates_lev<newdim>')`](https://github.com/ESCOMP/CTSM/blob/0392347e51747abf16039b2d4771cc97785be987/src/main/histFileMod.F90#L4958)
         - [ ] [Define `num2d` using the existing dimensions for this case](https://github.com/ESCOMP/CTSM/blob/0392347e51747abf16039b2d4771cc97785be987/src/main/histFileMod.F90#L4959)
 
-#### FatesIOVariableKindMod:
+(FatesIOVariableKindMod)=
+#### FatesIOVariableKindMod
 - [ ] [Add new parameter `site_<newdim>`](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesIOVariableKindMod.F90#L37)
 
-#### FatesHistoryVariableType:
+(FatesHistoryVariableType)=
+#### FatesHistoryVariableType
 - [ ] [Add `use FatesIOVariableKindMod, only site_<newdim>`](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesHistoryVariableType.F90#L17)
 - [ ] [Add `case(site_<newdim>)` to `Init` procedure](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesHistoryVariableType.F90#L204-L206)
 - [ ] [Add `case(site_<newdim>)` to `Flush` procedure](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesHistoryVariableType.F90#L335-L336)
 
-#### FatesInterfaceTypesMod:
+(FatesInterfaceTypesMod)=
+#### FatesInterfaceTypesMod
 - [ ] [Define `fates_hdim_...map_lev<newdim>`](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesInterfaceTypesMod.F90#L245-L246)
-    - [ ] Allocate `fates_hdim_...map_lev<newdim>` in [FatesInterfaceMod](https://github.com/NGEET/fates/wiki/How-to-add-a-new-FATES-history-variable#FatesInterfaceMod)
+    - [ ] Allocate `fates_hdim_...map_lev<newdim>` in [](FatesInterfaceMod)
 
-#### FatesInterfaceMod:
+(FatesInterfaceMod)=
+#### FatesInterfaceMod
 - `fates_history_maps` procedure
     - [ ] [Call `allocate ( fates_hdim_...map_lev<newdim> )`](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesInterfaceMod.F90#L918-L919)
     - [ ] [Set `fates_hdim_...map_lev<newdim>(i)`](https://github.com/NGEET/fates/blob/86e8f11cbe9f7b98b30ea70171b5e885a330a84b/main/FatesInterfaceMod.F90#L1058-L1065)
 
-#### clmfates_interfacemod (HLM):
+(clmfates_interfacemod-hlm)=
+#### clmfates_interfacemod (HLM)
 - `init_history_io` procedure
     - [ ] [Add `use FatesIOVariableKindMod, only site_<newdim>`](https://github.com/ESCOMP/CTSM/blob/0392347e51747abf16039b2d4771cc97785be987/src/utils/clmfates_interfaceMod.F90#L2366)
     - [ ] [Add new parameter `site_<newdim>` to `case` call](https://github.com/ESCOMP/CTSM/blob/0392347e51747abf16039b2d4771cc97785be987/src/utils/clmfates_interfaceMod.F90#L2500-L2505)

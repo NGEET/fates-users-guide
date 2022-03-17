@@ -48,9 +48,9 @@ epub_show_urls = 'footnote'
 
 ## -- Options for myst-parser
 
-# Tell myst to auto-generate heading anchors: 
+# Tell myst to auto-generate heading anchors to a specific heading depth: 
 # https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#syntax-header-anchors
-myst_heading_anchors = 2 
+myst_heading_anchors = 2
 
 ## -- Options for Sphinx-Fortran ---------------------------------------------
 # List of possible extensions in the case of a directory listing

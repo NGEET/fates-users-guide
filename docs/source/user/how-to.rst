@@ -9,5 +9,4 @@ Problem oriented
    :maxdepth: 1
       
    Authenticating-the-NCAR-SVN-Repository
-   git-for-newbies
    Running-FATES-with-the-selective-logging-module-activated

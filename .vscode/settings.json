@@ -1,5 +1,5 @@
 {
    "restructuredtext.confPath": "${workspaceFolder}/docs/source",
    "esbonio.server.enabled": true,
-   "esbonio.sphinx.confDir": "${workspaceFolder}/docs/source"
+   "esbonio.sphinx.confDir": "/home/gregorylemieux/Work/Repos/Documentation/fates-users-guide/docs/source"
 }

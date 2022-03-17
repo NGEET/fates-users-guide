@@ -19,11 +19,15 @@ More on SemVer can be found here: https://semver.org/spec/v2.0.0.html
 In brief, here is how we update the version numbers:
 
 sci major: If there is some fundamental change to the nature of FATES which we deem suitably noteworth (this may never happen as its a qualitative thing)
+
 sci minor: If content has been added that changes scientific hypotheses, or changes that change answers without being a bug fix
+
 sci bugfix: As the name implies, if a bug has been fixed, or there have been cosmetic-only changes, or accessory changes
 
-api major: If we change the communication with FATES and its host, in such a way that FATES is no-longer backwards compatible with the HLM. When this happens, we must make synchronized API changes to the host land model. For the compatability match history, see here: https://github.com/NGEET/fates/wiki/Table-of-FATES-API-and-HLM-STATUS
+api major: If we change the communication with FATES and its host, in such a way that FATES is no-longer backwards compatible with the HLM. When this happens, we must make synchronized API changes to the host land model. For the compatability match history, see {doc}`/user/Table-of-FATES-API-and-HLM-STATUS`.
+
 api minor: If changes are made to the FATES API that are still  backwards compatible. An example of this would be an update to structure of the FATES parameter file.  The user would not need to update which version of the HLM they use, but they would need to use a new parameter file structure.
+
 api bugfix: Any changes that are to the API, but do not fall into the previous categories would be incremented here. Particularly, bug-fixes that do not require updates on the HLM side of code, or cosmetic changes and updates to documentation or syntax.
 
 ## Patch Tags
