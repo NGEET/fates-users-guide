@@ -56,13 +56,11 @@ I want to develop a process or parameterization in FATES, what should I do?
 or. 
 email the FATES co-leads (Rosie Fisher or Charlie Koven) 
 and
-check out the **Developers Guides** on the wiki, e.g.
-https://github.com/NGEET/fates/wiki/FATES-Development-Workflow
+check out the :doc:`/developer/developer-guide`.
 
-I want to run the code, how to I find out how to do that? 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-We have a **tutorial** here: https://github.com/NGEET/fates/wiki/Running-FATES:-A-Walk-Through,-February-2019
-and a basic script for generating a 100 year global model run here: https://drive.google.com/file/d/0B_5e7rc3QoQqc3lXWlp5SkN3ajQ/view
+I want to run the code, how do I learn how to do that? 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+See the :doc:`../running-fates-walkthrough` tutorial.  It includes a basic script for generating a 100 year global model run here: https://drive.google.com/file/d/0B_5e7rc3QoQqc3lXWlp5SkN3ajQ/view
 
 What version of FATES should I be running?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

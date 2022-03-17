@@ -22,12 +22,10 @@ This document explains the process for basic use of GIT for modification of the 
 
 8. **Make yourself a branch** on which to change things you might care about. For example. `git checkout -b rosie/newbranchname` would make that happen. 'rosie' is a coding convention so that we know whose branch it is (obv. you should add your own name there). Look at your new branch, and all the others, with `git status`
 Use `git branch -v -a` to look at the list of all available branches.  
-Here is a note on branch naming https://github.com/NGEET/fates/wiki/Feature-Branch-Naming-Convention
-and here is a description of the NGEE branch development protocol 
-https://github.com/NGEET/fates/wiki/NGT-ED-Development-Workflow
+For branch naming conventions see the :doc:`/developer/Feature-Branch-Naming-Convention` page in the Developer's Guide.
 
 9. **Edit code** Change stuff in the branch.  Start with something small and easy as a proof of concept. Ideally test it. Use the NGEE style guide to avoid making embarrassing mistakes:
-https://github.com/NGEET/fates/wiki/Coding-Practices-and-Style-Guide 
+{doc}`/developer/style`
 Here is a presentation, on the 2016 CLM tutorial site, which includes basic workflow instructions on how to test your changes by creating cases using CIME (the scripting infrastructure used in CESM & ACME). 
 http://www.cesm.ucar.edu/events/tutorials/20160912-clm/2016CLMTutorial_day1-practical-lombardozzi.pdf
 
@@ -37,7 +35,7 @@ http://www.cesm.ucar.edu/events/tutorials/20160912-clm/2016CLMTutorial_day1-prac
 
 12. **Look at what you did**. Use `git diff --staged` to see code mods or `git status` to see the files you changed and staged. 
 
-13. **Commit changes to local branch**. Use `git commit` to make a new revision to your local branch. 'git commit -m "text of message" will automatically add the description of the commit. This should only be use for small (a few lines of changes) commits. See here for a more comprehensive description of proper message protocol. https://github.com/NGEET/fates/wiki/Commit-and-Pull-Request-Protocols
+13. **Commit changes to local branch**. Use `git commit` to make a new revision to your local branch. 'git commit -m "text of message" will automatically add the description of the commit. This should only be use for small (a few lines of changes) commits. See here for a more comprehensive description of proper message protocol. {doc}`Commit-and-Pull-Request-Protocols`
 n.b. staging and committing can be combined with 'git commit -a -m "message"' where -a is 'add'. 
 
 14.  **Look at what you did**. Use `git log` to show what you did. `git log -1` (or 2,3) shows the last 1,2,3, commits. 
@@ -54,9 +52,9 @@ n.b. staging and committing can be combined with 'git commit -a -m "message"' wh
 
 19. **Merge the local master code into your local branch**. `git merge master`
 
-20. **Test code** One you've done this for a while and are confident with it, then you'll want to test your code to make sure you didn't break it, following these instructions. https://github.com/NGEET/fates/wiki/Testing-Protocols
+20. **Test code** One you've done this for a while and are confident with it, then you'll want to test your code to make sure you didn't break it, following these instructions. {doc}`Testing-Protocols`
 
-21. **Submit pull request** Then you'll want to try and submit a pull request to get your changes back into the reference repository. https://github.com/NGEET/fates/wiki/Commit-and-Pull-Request-Protocols
+21. **Submit pull request** Then you'll want to try and submit a pull request to get your changes back into the reference repository. {doc}`Commit-and-Pull-Request-Protocols`
 
 ## Some other commands that are handy:
 
