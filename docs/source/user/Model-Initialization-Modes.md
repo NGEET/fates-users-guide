@@ -1,4 +1,4 @@
-# Model 
+# Model Initialization Modes
 
 == Overview ==
 

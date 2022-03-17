@@ -5,22 +5,22 @@ Note: These options are governed by the host-model that drives FATES.  Efforts a
 For more information on how to set and use these modes, click on the links in the table where available.
 
 
-| Option               | Type              | Default w/FATES compset | Description |
-| -------------------- |:-----------------:| :------:             |------------:|
-| use_fates            | true/false        | .true.       | Turns on/off fates! (for CTSM this is done by changing the XML variable CLM_BLDNML_OPTS to have "-bgc fates" rather than changing this in the namelist) Compsets with for example `_CLMXX%FATES_` turn this on [XX is for the specific version number) |
-| fates_paramfile      | String (filepath) | default file | path to an alternative netcdf fates parameter file |
-| fates_spitfire_mode  | int 0-4           | 0            | [SPITFIRE fire model](https://github.com/NGEET/fates/wiki/SPITFIRE-Namelist-Options) |
-| use_fates_logging    | true/false        | .false.      | [Turns on/off the logging module](https://github.com/NGEET/fates/wiki/Running-FATES-with-the-selective-logging-module-activated) |
-| use_fates_planthydro | true/false        | .false.      | Turns on/off the plant hydrodynamics module |
-| use_fates_ed_st3     | true/false        | .false.      | Turns on/off Static Stand Structure mode |
-| use_fates_ed_prescribed_phys | true/false | .false.     | Turns on/off Prescribed Physiology mode |
-| use_fates_inventory_init | true/false  | .false.        | [Turns on/off initialization from plant inventory data](https://github.com/NGEET/fates/wiki/Model-Initialization-Modes) |
-| fates_parteh_mode | integer | 1 | [Specifies which plant allocation model to use](https://github.com/NGEET/fates/wiki/PARTEH-Modes) |
-| fates_inventory_ctrl_filename | String (filepath) | blank | When inventory initialization true, points to control file |
-| use_fates_cohort_age_tracking | true/false | .false.     | Turns on/off Cohort age tracking mode |
-| use_fates_fixed_biogeog | true/false | .false. | Turns on/off [fixed biogeography mode](https://github.com/NGEET/fates/wiki/Fixed-Biogeography-Mode) |
-| use_fates_nocomp | true/false | .false. | Turns on/off no-competition mode |
-| use_fates_sp | true/false | .false. | Turns on/off [satellite phenology mode](https://github.com/NGEET/fates/wiki/SP-(satellite-phenology)-mode) |
+| Option                        | Type              | Default w/FATES compset | Description |
+| ------------------------------|:-----------------:| :----------------------:|------------:|
+| use_fates                     | true/false        | `.true.`                | Turns on/off fates! (for CTSM this is done by changing the XML variable CLM_BLDNML_OPTS to have "-bgc fates" rather than changing this in the namelist) Compsets with for example `_CLMXX%FATES_` turn this on [XX is for the specific version number) |
+| fates_paramfile               | String (filepath) | default file            | path to an alternative netcdf fates parameter file |
+| fates_spitfire_mode           | int 0-4           | `0`                     | {doc}`SPITFIRE Namelist Options <SPITFIRE-Namelist-Options>` |
+| use_fates_logging             | true/false        | `.false.`               | {doc}`Turns on/off the logging module <Running-FATES-with-the-selective-logging-module-activated>` |
+| use_fates_planthydro          | true/false        | `.false.`               | Turns on/off the plant hydrodynamics module |
+| use_fates_ed_st3              | true/false        | `.false.`               | Turns on/off Static Stand Structure mode |
+| use_fates_ed_prescribed_phys  | true/false        | `.false.`               | Turns on/off Prescribed Physiology mode |
+| use_fates_inventory_init      | true/false        | `.false.`               | {doc}`Turns on/off initialization from plant inventory data <Model-Initialization-Modes>` |
+| fates_parteh_mode             | integer           | `1`                     | {doc}`Specifies which plant allocation model to use <PARTEH-Modes>` |
+| fates_inventory_ctrl_filename | String (filepath) | blank                   | When inventory initialization true, points to control file |
+| use_fates_cohort_age_tracking | true/false        | `.false.`               | Turns on/off Cohort age tracking mode |
+| use_fates_fixed_biogeog       | true/false        | `.false.`               | Turns on/off {doc}`fixed biogeography mode <Fixed-Biogeography-Mode>` |
+| use_fates_nocomp              | true/false        | `.false.`               | Turns on/off no-competition mode |
+| use_fates_sp                  | true/false        | `.false.`               | Turns on/off {doc}`satellite phenology mode <SP-(satellite-phenology)-mode>` |
 
 For the nocomp and fixed biogeography, there are logical interactions between them, so what happens is related to the values of both switches.  This logic looks like:
 
