@@ -51,7 +51,7 @@ html_css_files = [
     'css/theme_override.css',
 ]
 
-html_logo = 'images/fates_logo.png'
+html_logo = 'images/FATES_logo.png'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
