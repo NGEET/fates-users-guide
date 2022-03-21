@@ -53,6 +53,10 @@ html_css_files = [
 
 html_logo = 'images/FATES_logo.png'
 
+html_theme_options = {
+    'logo_only': True,
+}
+
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
