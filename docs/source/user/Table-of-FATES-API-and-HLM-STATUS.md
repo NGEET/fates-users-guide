@@ -4,9 +4,10 @@ The following table list the FATES API and the corresponding HLM tag associated 
 
 | FATES API      | CTSM Version | E3SM Version | Notes |
 | ----------- | ----------- | ----------- | ----------- |
-| [API 23.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.56.0_api.23.0.0) | [ctsm5.1.dev091](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev091) | | FATES-MIMICS support |
-| [API 22.1.0](https://github.com/NGEET/fates/releases/tag/sci.1.55.4_api.22.1.0) | [ctsm5.1.dev084](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev084) | | FATES parameter file updated optical parameters |
-| [API 22.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.54.0_api.22.0.0) | [ctsm5.1.dev077](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev077) | [PR 4777](https://github.com/E3SM-Project/E3SM/pull/4777) | Cleaned up coupling of history interface |
+| [API 24.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.56.0_api.23.0.0) | [ctsm5.1.dev099](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev099) |  | HLM-FATES patch count control and parameter file update |
+| [API 23.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.56.0_api.23.0.0) | [ctsm5.1.dev091](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev091) | [PR 5043](https://github.com/E3SM-Project/E3SM/pull/5043) | FATES-MIMICS support |
+| [API 22.1.0](https://github.com/NGEET/fates/releases/tag/sci.1.55.4_api.22.1.0) | [ctsm5.1.dev084](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev084) | [PR 5043](https://github.com/E3SM-Project/E3SM/pull/5043) | FATES parameter file updated optical parameters |
+| [API 22.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.54.0_api.22.0.0) | [ctsm5.1.dev077](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev077) | [9664de8](https://github.com/E3SM-Project/E3SM/commit/9664de8102ad9121bbb013e15a196f578ac6f37a), [PR 4777](https://github.com/E3SM-Project/E3SM/pull/4777) | Cleaned up coupling of history interface |
 | [API 21.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.53.0_api.21.0.0) | [ctsm5.1.dev071](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev071) |  | FATES Variable VAI Bin Widths |
 | [API 20.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.52.0_api.20.0.0) | [ctsm5.1.dev066](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev066) |  | FATES Running Means |
 | [API 19.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.51.0_api.19.0.0) | [ctsm5.1.dev064](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev064) |  | FATES History variable refactor |
