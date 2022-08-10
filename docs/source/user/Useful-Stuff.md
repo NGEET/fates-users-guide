@@ -11,7 +11,7 @@ Please Feel Free to List and Link Useful Scripts
 ## Simulation on User-defined Grid (example: BCI or San Lorenzo Panama)
 1) see Gautam Bisht's method (Matlab) of generating surface and domain datasets [here](https://github.com/bishtgautam/matlab-script-for-clm-sparse-grid)
 2) An example of a surface/domain couplet as well as met data for BCI and San Lorenzo sites in Panama can be downloaded [here](https://ngt-data.lbl.gov/dois/NGT0086/)
-3) Example [script](https://drive.google.com/file/d/0B_5e7rc3QoQqejRiaVRvbnFrak0/view?usp=sharing) to run this user defined grid (for the eddi machine)
+3) Example [script](https://drive.google.com/file/d/1yqSvnHvg26jAZk7pfLseJcU4DCU4dR5T/view?usp=sharing) to run this user defined grid (for the eddi machine)
 
 ## Python Scripts for Evaluation
 
