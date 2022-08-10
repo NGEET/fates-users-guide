@@ -8,9 +8,9 @@ Please Feel Free to List and Link Useful Scripts
 
 [Script for generating 100+ year runs on Cheyenne (f45 and 1x1 brazil) (also super old)](https://drive.google.com/file/d/0B_5e7rc3QoQqc3lXWlp5SkN3ajQ/view?usp=sharing)
 
-## Simulation on User-defined Grid (example: four tropical sites)
+## Simulation on User-defined Grid (example: BCI or San Lorenzo Panama)
 1) see Gautam Bisht's method (Matlab) of generating surface and domain datasets [here](https://github.com/bishtgautam/matlab-script-for-clm-sparse-grid)
-2) Here are example [surface data](https://drive.google.com/file/d/0B_5e7rc3QoQqY1ZNVU5wWjd3NTA/view?usp=sharing) and [domain data](https://drive.google.com/file/d/0B_5e7rc3QoQqVDd2TEdYOWVDSXc/view?usp=sharing) generated with GB's script
+2) An example of a surface/domain couplet as well as met data for BCI and San Lorenzo sites in Panama can be downloaded [here](https://ngt-data.lbl.gov/dois/NGT0086/)
 3) Example [script](https://drive.google.com/file/d/0B_5e7rc3QoQqejRiaVRvbnFrak0/view?usp=sharing) to run this user defined grid (for the eddi machine)
 
 ## Python Scripts for Evaluation
@@ -22,7 +22,7 @@ This python script in the ACRE toolset requires the "basemap" library.  basemap 
 [Ryan's Gridded Python Evaluation Tools](https://github.com/rgknox/FatesMapTools)
 
 
-## Examples of FATES parameter files:
+## Examples of FATES parameter files (RGK-082020-This seems super out of date):
 1) Template for using 13 PFTs. You can change the number of PFTs that you would like to use by changing "fates_initd" and "fates_seed_rain". If these values are left as zero, then no PFT will be simulated for that index.
 2) DISCLAIMER - the actual parameter fields and values have NOT been tested and validated.
 3) Note - strict PPA is "turned on" in this file
@@ -43,6 +43,8 @@ Some useful scripts are stored and added to the fates tools/ directory.
 
 
 [fates/tools/BatchPatchParams.py](https://github.com/NGEET/fates/blob/master/tools/BatchPatchParams.py) works together with an xml file to apply a set of modifications to one parameter file thereby generating a new parameter file, treating the xml file as a patch.  The base (old) and new parameter files are specified in the patch (xml) file.  Examples of the xml patch files can be found in the directory [fates/parameter_files](https://github.com/NGEET/fates/tree/master/parameter_files).
+
+
 
 ***
 
