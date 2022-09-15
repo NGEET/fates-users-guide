@@ -36,6 +36,10 @@ Technical Documentation
 
 The :doc:`fates-doc:fates_tech_note` detailing the scientific underpinning of the model is hosted as a Read The Docs :doc:`rtd:subprojects` within this User's Guide.  As a subproject both the guide and the techincal documentation are searchable through the index in the User's Guide.
 
+Getting Help
+------------
+
+If you have questions about using fates that are not answered by this documentation, please reach out to us at the `fates github discussions board`_.  We will strive to update this documentation to cover answers provided in that forum as timely as possible.  
 
 Requesting changes to this documentation
 ----------------------------------------
@@ -45,5 +49,6 @@ The repository for this document can be accessed by clicking on the "Edit on Git
 Please note that as a Read The Docs :doc:`rtd:subprojects`, the :doc:`fates-doc:fates_tech_note` has a seperate repository from the User's Guide repository.  
 If there is information in the *technical documentation* that you would like to have added or errors that need to be addressed, please submit an issue to the `fates-docs github repository`_.  
 
+.. _fates github discussions board: https://github.com/ngeet/fates/discussions
 .. _fates-users-guide github repository: https://github.com/ngeet/fates-users-guide/issues
 .. _fates-docs github repository: https://github.com/ngeet/fates-docs/issues
