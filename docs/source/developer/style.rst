@@ -1,4 +1,4 @@
-Style Guide
+FATES Style Guide
 -----------
 
 Code development has style considerations.  Should you capitalize variables.. or not?  How many characters should the maximum width of a text line be?  Should you use long blocks of ``====``   or ``-----`` to indicate visual breaks in code.   Do we like underscores or dashes?  
