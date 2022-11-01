@@ -2,9 +2,10 @@
 
 The following table list the FATES API and the corresponding HLM tag associated with that API update.  
 
-| FATES API      | CTSM Version | E3SM Version | Notes |
-| ----------- | ----------- | ----------- | ----------- |
-| [API 24.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.56.0_api.23.0.0) | [ctsm5.1.dev099](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev099) |  | HLM-FATES patch count control and parameter file update |
+| FATES API   | CTSM Version | E3SM Version | Notes |
+| ----------- | ------------ | ------------ | ----- |
+| [API 24.1.0](https://github.com/NGEET/fates/releases/tag/sci.1.58.1_api.24.1.0) | [ctsm5.1.dev104](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev104)<sup>1<sup> |  | Update to FATES history names and machine |
+| [API 24.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.57.4_api.24.0.0) | [ctsm5.1.dev099](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev099) | [c63cce2](https://github.com/E3SM-Project/E3SM/commit/c63cce2acbc7a81d91e4433e202b4261aface4ba) | HLM-FATES patch count control and parameter file update |
 | [API 23.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.56.0_api.23.0.0) | [ctsm5.1.dev091](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev091) | [63dba61](https://github.com/E3SM-Project/E3SM/commit/63dba61faf5911690a433e0c51673626667cfc99) | FATES-MIMICS support |
 | [API 22.1.0](https://github.com/NGEET/fates/releases/tag/sci.1.55.4_api.22.1.0) | [ctsm5.1.dev084](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev084) | [63dba61](https://github.com/E3SM-Project/E3SM/commit/63dba61faf5911690a433e0c51673626667cfc99) | FATES parameter file updated optical parameters |
 | [API 22.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.54.0_api.22.0.0) | [ctsm5.1.dev077](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev077) | [9664de8](https://github.com/E3SM-Project/E3SM/commit/9664de8102ad9121bbb013e15a196f578ac6f37a) | Cleaned up coupling of history interface |
@@ -18,3 +19,7 @@ The following table list the FATES API and the corresponding HLM tag associated 
 | [API 15.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.45.0_api.15.0.0)   | [ctsm5.1.dev036](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev036) | [32c44f3](https://github.com/E3SM-Project/E3SM/commit/32c44f303e629cc6f8658b054c6dec76de3d4b69) | FATES snow occlusion of LAI |
 | [API 14.2.0](https://github.com/NGEET/fates/releases/tag/sci.1.43.2_api.14.2.0)   | [ctsm5.1.dev023](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev023) | [33d438d](https://github.com/E3SM-Project/E3SM/commit/33d438d68917f3536e475248401de58ae5aebeb0) | FATES patch age x fuel size dimension added |
 | [API 14.1.0](https://github.com/NGEET/fates/releases/tag/sci.1.43.0_api.14.1.0)   | [ctsm1.0.dev105](https://github.com/ESCOMP/CTSM/releases/tag/ctsm1.0.dev105_fates_api14.1.0.n01) |  | Fragmentation scalar update |
+
+## Footnotes
+
+1. [ctsm5.1.dev112](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev112) is the last known stable MCT tag (this tag is compatible with any FATES API 24.1.0 tag) since the deprication of MCT.  See [CTSM issue 1887](https://github.com/ESCOMP/CTSM/issues/1887) for reference.
