@@ -84,7 +84,7 @@ The following flowchart depicts the general process of the seed dispersal code:
 Algorithm or Pseudo code for main components
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The following pseudo code describes how the nearest neighbor data structure is formulated:  
+The following pseudo code describes how the nearest neighbor data structure is formulated.  The algorithm looks ahead through the list of gridcell indices for a gridcell that is close to it.  When it finds one, it calculates the probability density and stores it in a neighborhood linked list associated with that gridcell.  It then copies that information into the gridcell that was found to reduce duplication of calculations:  
 
 .. pcode::
   
@@ -119,7 +119,6 @@ The following pseudo code describes how the nearest neighbor data structure is f
   \ENDPROCEDURE
   \end{algorithmic}
   \end{algorithm}
-
 
 Rollout Plan
 ------------
