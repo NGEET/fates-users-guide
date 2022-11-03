@@ -12,3 +12,4 @@ sphinx-fortran==1.1.1
 six
 numpy
 myst_parser>=0.15.1
+sphinxcontrib-pseudocode>=0.7.0
