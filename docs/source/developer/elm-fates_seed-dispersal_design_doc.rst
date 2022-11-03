@@ -66,7 +66,7 @@ The design of the grid cell to grid cell seed dispersal structure is generally c
 2. Dispersal kernel implementation
 3. Gridcell-to-gridcell communication across nodes (i.e. dispersal)
 
-The nearest neighbor determination occurs during initialization based on 8. in the above `assumptions`_.  The `psuedocode`_ for the algorithm is presented below.  A maximum neighborhood distance is specified to avoid distributing extermely small, unrealistic values.  The disperal kernel is called during the neighbor determination to calculate a probability density based on the pft-specific parameters which is stored in a `neighbor` object associated with a given gridcell.  This pre-determined probability density is utilized during the dispersal process within a given timestep update, but itself stays constant over time.  The overall seed dispersal and associated update process is portrayed in the `flowchart`_ below. 
+The nearest neighbor determination occurs during initialization based on 8. in the above `assumptions`_.  The `pseudocode`_ for the algorithm is presented below.  A maximum neighborhood distance is specified to avoid distributing extermely small, unrealistic values.  The disperal kernel is called during the neighbor determination to calculate a probability density based on the pft-specific parameters which is stored in a `neighbor` object associated with a given gridcell.  This pre-determined probability density is utilized during the dispersal process within a given timestep update, but itself stays constant over time.  The overall seed dispersal and associated update process is portrayed in the `flowchart`_ below. 
 
 .. _`assumptions`: `Assumptions and Dependencies`_
 .. _`flowchart`: `System diagram or flowchart`_
