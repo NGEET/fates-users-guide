@@ -9,10 +9,14 @@ The goal of this software update is to enable FATES to make use of the fire data
 Design Considerations
 ---------------------
 
-- The CLM-FATES fire api makes use of factory type methods to enable the CLM CN-fire code to utilize the same data input methods across different CN versions without having to use a lot of `case select` code.  This is the basis for the API.  ELM's fire model isn't set up this way currently.
+- The CLM-FATES fire API makes use of `factory type`_ methods to enable the CLM CN-fire code to utilize the same data input methods across different CN versions without having to use a lot of `case select` code.  This is the basis for the API.  ELM's fire model isn't set up this way currently.
+
+.. _`factory type`: https://en.wikipedia.org/wiki/Factory_(object-oriented_programming)
 
 Assumptions and Dependencies
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
 
 
 General Constraints
