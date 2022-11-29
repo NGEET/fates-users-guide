@@ -7,7 +7,9 @@
 # pip==22.0.3
 
 # sphinx-fortran
+sphinx>=3.2.1
 sphinx-fortran==1.1.1
 six
 numpy
-myst_parser
+myst_parser>=0.15.1
+sphinxcontrib-pseudocode>=0.7.0

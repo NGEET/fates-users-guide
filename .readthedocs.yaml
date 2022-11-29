@@ -34,3 +34,8 @@ python:
 # Had trouble with conda, possible due to sphinx-fortran?
 # conda:
 #   environment: environment.yml
+
+# Allow read the docs to build a pdf and epub version
+formats:
+   - pdf
+   - epub
