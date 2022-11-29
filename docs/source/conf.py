@@ -21,6 +21,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinxfortran.fortran_domain',
     'sphinxfortran.fortran_autodoc',
+    'sphinxcontrib.pseudocode',
 ]
 
 intersphinx_mapping = {
@@ -79,3 +80,6 @@ fortran_ext = ['f90', 'F90', 'f95', 'F95']
 # Indentation string or length (default 4). If it is an integer, 
 # indicates the number of spaces.
 fortran_indent = 4
+
+# Automatically number figures, tables, and codeblocks if they have a caption
+numfig = True
