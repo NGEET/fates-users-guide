@@ -22,6 +22,7 @@ General Constraints
 
 - The goal is to enable elm-fates to utilize the same inputs as available through the clm-fates API to facilitate near-term FATES benchmarking goals.  As such, the data input methodlogies should deviate from the clm-fates API as little as possible.
 - The elm cn-fire code uses `use_cn` logic checks to trigged or avoid fire data interpolation which includes lightning frequecy and HDM.  To enable FATES to utilize this procedure, the check will need to be refactored.  
+- The FATES fire data run modes are currently controlled through namelist options and as such will need an update to the ELM build namelist PERL code.
 
 Solutions
 ---------
@@ -38,39 +39,27 @@ Given the prioritization of near-term FATES goals, E3SM development schedule, an
 Design and Architecture
 -----------------------
 
-
 System diagram or flowchart
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The following flowchart diagrams the location of the new ELM code to connect to the existing FATES API.
+The following flowchart diagrams the process of the new ELM code to connect to the existing FATES API.
 
+.. figure:: ../images/elm-fates_fire-flow.png
+    :scale: 100%
+    :alt: Figure 1: ELM-FATES Fire Data API
 
-
-Algorithm or Pseudo code for main components
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-.. pcode::
-  
-  \begin{algorithm}
-  \caption{pseudocode}
-  \begin{algorithmic}
-  \PROCEDURE{Placeholder}{$input$}
-  \ENDPROCEDURE
-  \end{algorithmic}
-  \end{algorithm}
 
 Rollout Plan
 ------------
 
-1. 
-
+1. Update ELM code with adapted CLM-FATES fire factory methods and necessary 
+2. Conduct test cases to validate that all FATES fire data modes work as expected
+3. Create pull request to E3SM repository and run FATES Land Developer tests
 
 Future Update Plan
 ------------------
 
 1. There is a new ML surrogate wildfire model being developed by Qing (LBNL), Riley (LBNL), Randerson (UCI), and Xu (UCI) that is targeted for incorpation into E3SM V4.  FATES is targeted for integration during this version as well.  There are discussions to be planned to help understand and coordinate future elm-side updates to accomodate both fire models.  
-
 
 Appendix
 --------
