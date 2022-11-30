@@ -19,14 +19,6 @@ build:
 sphinx:
    configuration: docs/source/conf.py
    
-# Enable pdf download
-formats:
-   - pdf
-
-# If using Sphinx, optionally build your docs in additional formats such as PDF
-# formats:
-#    - pdf
-
 # Optionally declare the Python requirements required to build your docs
 python:
    install:
@@ -35,7 +27,7 @@ python:
 # conda:
 #   environment: environment.yml
 
-# Allow read the docs to build a pdf and epub version
-formats:
-   - pdf
-   - epub
+# If using Sphinx, optionally build your docs in additional formats such as PDF
+# formats:
+#    - pdf
+#    - epub
