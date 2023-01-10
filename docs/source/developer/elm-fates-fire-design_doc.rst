@@ -61,9 +61,6 @@ Future Update Plan
 
 1. There is a new ML surrogate wildfire model being developed by Qing (LBNL), Riley (LBNL), Randerson (UCI), and Xu (UCI) that is targeted for incorpation into E3SM V4.  FATES is targeted for integration during this version as well.  There are discussions to be planned to help understand and coordinate future elm-side updates to accomodate both fire models.  
 
-Appendix
---------
-
 Implementation Notes and Lessons Learned
 ----------------------------------------
 
@@ -74,3 +71,6 @@ Implementation Notes and Lessons Learned
    elmfatesinterfacemod -> AllocationMod -> controlMod -> ndepStreamMod -> FireDataBaseType -> FATESFireBase -> elmfatesinterfacemod
 
 The circular dependency was rectified by refactoring the nitrogen deposition initialization procedure so that it would receive the namelist filename, `NLFilename`, as a character input instead of using the variable directly from controlMod.F90.
+
+Appendix
+--------
