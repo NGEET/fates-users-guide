@@ -66,7 +66,7 @@ Implementation Notes and Lessons Learned
 
 - Due to pre-existing elm-fates nutrients implementation (which has not been ported to clm-fates) a circular dependency was created when the fire model data stream procedures were being called by elmfates_interfaceMod.F90.  This was partially due to the fact that the `hlm_fates_interface_type` is being used by AllocationMod.F90 to provide access to fates nutrients outputs to elm.  The dependency chain consisted of:
 
-..code-block::
+.. code-block::
 
    elmfatesinterfacemod -> AllocationMod -> controlMod -> ndepStreamMod -> FireDataBaseType -> FATESFireBase -> elmfatesinterfacemod
 
