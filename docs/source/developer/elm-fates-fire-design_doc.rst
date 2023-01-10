@@ -20,8 +20,8 @@ Assumptions and Dependencies
 General Constraints
 ^^^^^^^^^^^^^^^^^^^
 
-- The goal is to enable elm-fates to utilize the same inputs as available through the clm-fates API to facilitate near-term FATES benchmarking goals.  As such, the data input methodlogies should deviate from the clm-fates API as little as possible.
-- The elm cn-fire code uses `use_cn` logic checks to trigged or avoid fire data interpolation which includes lightning frequecy and HDM.  To enable FATES to utilize this procedure, the check will need to be refactored.  
+- The goal is to enable elm-fates to utilize the same inputs as available through the clm-fates API to facilitate near-term FATES benchmarking goals.  As such, the data input methodologies should deviate from the clm-fates API as little as possible.
+- The elm cn-fire code uses `use_cn` logic checks to trigged or avoid fire data interpolation which includes lightning frequecy and HDM.  To enable FATES to utilize this procedure, these check may need to be refactored.  
 - The FATES fire data run modes are currently controlled through namelist options and as such will need an update to the ELM build namelist PERL code.
 
 Solutions
@@ -63,3 +63,14 @@ Future Update Plan
 
 Appendix
 --------
+
+Implementation Notes and Lessons Learned
+----------------------------------------
+
+- Due to pre-existing elm-fates nutrients implementation (which has not been ported to clm-fates) a circular dependency was created when the fire model data stream procedures were being called by elmfates_interfaceMod.F90.  This was partially due to the fact that the `hlm_fates_interface_type` is being used by AllocationMod.F90 to provide access to fates nutrients outputs to elm.  The dependency chain consisted of:
+
+..code-block::
+
+   elmfatesinterfacemod -> AllocationMod -> controlMod -> ndepStreamMod -> FireDataBaseType -> FATESFireBase -> elmfatesinterfacemod
+
+The circular dependency was rectified by refactoring the nitrogen deposition initialization procedure so that it would receive the namelist filename, `NLFilename`, as a character input instead of using the variable directly from controlMod.F90.
