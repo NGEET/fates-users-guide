@@ -2,12 +2,6 @@
 
 Please Feel Free to List and Link Useful Scripts
 
-## Testing Scripts
-
-[Ryan's Fates Developer Test Script on Cheyenne (super old by now)](https://drive.google.com/file/d/1SPNF9HqyA1GJNpC-Ya8HBjMUsBoHSVKm/view?usp=sharing)
-
-[Script for generating 100+ year runs on Cheyenne (f45 and 1x1 brazil) (also super old)](https://drive.google.com/file/d/0B_5e7rc3QoQqc3lXWlp5SkN3ajQ/view?usp=sharing)
-
 ## Simulation on User-defined Grid (example: BCI or San Lorenzo Panama)
 1) see Gautam Bisht's method (Matlab) of generating surface and domain datasets [here](https://github.com/bishtgautam/matlab-script-for-clm-sparse-grid)
 2) An example of a surface/domain couplet as well as met data for BCI and San Lorenzo sites in Panama can be downloaded [here](https://ngt-data.lbl.gov/dois/NGT0086/)
