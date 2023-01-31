@@ -14,6 +14,9 @@ Last updated:  11/3/2020 (RGK)
 
 **Unsupported** features may or may not produce scientifically valid and bug-free results.  These features may be currently in active development, or may be untested, or maybe just poorly understood.  It is not recommended that new users, or users unfamiliar with the code itself use these features.
 
+
+**Experimental** features that may be of importance to FATES team goals, but are still in the midst of development, or do no have a long proven track record.
+
 ----------------------------
 ##  Broken Features:
 
@@ -28,14 +31,21 @@ Long-term FATES-HYDRO runs with dynamics turned on (non-ST3) contains an importa
 
 "HYBRID" simulations a la CLM/ELM.  This may very well work, but we just haven't tested it.
 
+Plants with no sapwood or structural biomass, users may want try specifying grasses with very small quantities of each.  
+
+Coupled simulations with atmospheric components.  As of 1/31/23, some people have run these simulations, but very little evaluation has been performed. Further, burn fluxes are not passed to the atmosphere from FATES fire emissions.
+
+-----------------------------
+
+## Experimental Features:
+
 FATES Hydro, generally, is currently undergoing testing, tweaking and refining.
 
 FATES Hydro combined with fire and logging modes has not had significant evaluation either.
 
-Grasses are currently undergoing testing and evaluation and behavior is not well understood 
+FATES with nutrient dynamics (i.e. parteh_mode = 2) is relatively new and has undergone very limited testing, consider experimental.
 
-Plants with no sapwood or structural biomass, users may want try specifying grasses with very small quantities of each.  
 
 -------------------------------------
 
-Updated 07/30/2019
+Updated 01/31/2023 (RGK)
