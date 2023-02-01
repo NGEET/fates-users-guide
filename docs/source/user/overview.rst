@@ -10,6 +10,7 @@ Understanding oriented section
    
    faq
    notable
+   Canopy-Layering-Convention
    Communal-slides-related-to-FATES
    Current-Unsupported-or-Broken-Features
    Fixed-Biogeography-Mode
