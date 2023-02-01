@@ -20,8 +20,6 @@ Last updated:  11/3/2020 (RGK)
 ----------------------------
 ##  Broken Features:
 
-Snow occlusion of understory plants is not activated.  Regardless of how much snow has fallen, all leaf areas and stem areas are 100% exposed.
-
 Long-term FATES-HYDRO runs with dynamics turned on (non-ST3) contains an important simplification. When FATES-HYDRO is active, all water in dying plants is banked into a storage pool that has no return flux to the ecosystem. 
 
 -----------------------------
