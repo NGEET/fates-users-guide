@@ -4,7 +4,8 @@ The following table list the FATES API and the corresponding HLM tag associated 
 
 | FATES API   | CTSM Tag | E3SM Hash | Notes |
 | ----------- | -------- | --------- | ----- |
-| [API 25.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.61.0_api.25.0.0) | [ctsm5.1.dev115](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev115) |  | FATES Nutrients V2 |
+| [API 25.1.0](https://github.com/NGEET/fates/releases/tag/sci.1.63.0_api.25.1.0) | | [b645be3](https://github.com/E3SM-Project/E3SM/commit/b645be3aa22b3ebcded4dbd9a93e72eb4cb6c1fb) | Carbon based harvesting |
+| [API 25.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.61.0_api.25.0.0) | [ctsm5.1.dev115](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev115) | [b645be3](https://github.com/E3SM-Project/E3SM/commit/b645be3aa22b3ebcded4dbd9a93e72eb4cb6c1fb) | FATES Nutrients V2 |
 | [API 24.1.0](https://github.com/NGEET/fates/releases/tag/sci.1.58.1_api.24.1.0) | [ctsm5.1.dev104](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev104)<sup>1<sup> | [c63cce2](https://github.com/E3SM-Project/E3SM/commit/c63cce2acbc7a81d91e4433e202b4261aface4ba) | Update to FATES history names and machine |
 | [API 24.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.57.4_api.24.0.0) | [ctsm5.1.dev099](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev099) | [c63cce2](https://github.com/E3SM-Project/E3SM/commit/c63cce2acbc7a81d91e4433e202b4261aface4ba) | HLM-FATES patch count control and parameter file update |
 | [API 23.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.56.0_api.23.0.0) | [ctsm5.1.dev091](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev091) | [63dba61](https://github.com/E3SM-Project/E3SM/commit/63dba61faf5911690a433e0c51673626667cfc99) | FATES-MIMICS support |
