@@ -52,6 +52,10 @@ Future Update Plan
 ------------------
 .. Sketch out future updates if known
 
+Implementation Notes and Lessons Learned
+----------------------------------------
+.. Optional section summarizing lessons learned after the design has been successfully implemented
+
 Appendix
 --------
 .. References, links to additional documentation
