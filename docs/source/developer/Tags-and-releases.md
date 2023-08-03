@@ -4,7 +4,7 @@ This page presents the workflow for tagging recently integrated pull request.  O
 
 ## Versioning format
 
-Tagging is somewhat subject and a conceptual exercise.  The tag format is as follows:
+Tagging is a somewhat subjective and a conceptual exercise.  The tag format is as follows:
 
 `sci.x.y.z_api.a.b.c`
 
@@ -22,7 +22,10 @@ The three version numbers after `api` are related to code changes on the host la
 
 The difference between major and minor version updates is based more closely related to the scope of the host land model code that is changed concurrently with the associated FATES feature update.  An update that adds only a few lines of code to pass new information to the FATES model or refactors the existing host land model code without changing functionality would be considered a minor update.  Minor updates are not necessarily backwards incompatible changes, whereas major api updates are always backwards incompatible changes.  API bug fixes are given their own version number.
 
-Note that updates to comments, documentation or code not directly associated with FATES, but held in the repo (e.g. [tools](https://github.com/NGEET/fates/tree/master/tools)) are not associated with specific tags as they do not fall under any of the above versioning categories.
+Note that updates to comments, documentation or code not directly associated with FATES, but held in the repo are not associated with specific tags as they do not fall under any of the above versioning categories.  The current exception to this is with [tools](https://github.com/NGEET/fates/tree/master/tools) for which we append a `tools` suffix like so: `sci.x.y.z_api.a.b.c_tools.i.j.k`.  We only append this to a new tag if a tool update is included.  Note that the if the tool update does not accompany a scienctific or api update, the previous tag for those updates is used.  The first three version numbers after `tools` denote the following updates:
+- `i`: new tool or major stable release
+- `j`: update to existing tool
+- `k`: bug fix to existing tool
 
 ### Tagging procedure
 
