@@ -35,3 +35,7 @@ api bugfix: Any changes that are to the API, but do not fall into the previous c
 Patch tags are issued when we identify bug fixes, that must be applied retro-actively to already released tags. This will typically happen when the bug is identified in conjunction with a host-model that has not had its code updated to the most recent FATES API.  For instance, if the latest FATES API is 16, but changes to enabled compatibility with E3SM have not finished review and integration, such that it is only compatible with API 15. If a bug was identified that needs to be applied to API 15 so that tests can pass and the API can be updated, we would release a patch.  Here, the patch will inherit the name of its base, and will also use suffix "_patch<increment>".  Each patch is unique, and can be applied to multiple base tags.  For instance, "_patchA" will only be used once, and will reflect one bug fix potentially applied to multiple tags.
 
 Here is an example: https://github.com/NGEET/fates/releases/tag/sci.1.44.1_api.14.2.0_patchA
+
+## Tags for tool updates
+
+For pull requests that include an update to code in the tools directory, we append a `tools` suffix to the tag using the semantic versioning scheme.  Since tools are not currently required to run fates with the host land models, the tool tag is not included with every tag; it is only added when tools have been updated.  
