@@ -20,36 +20,63 @@ ED Patch and Cohort approach: Moorcroft, P.R., G.C. Hurtt, and S.W. Pacala, 2001
 
 Perfect Plasticity Approximation: Purves, D.W. et al.,  2008. Predicting and understanding forest dynamics using a simple tractable model. Proceedings of the National Academy of Sciences 105.44, pp. 17018-17022.
 
-Fire Model (SPITFIRE): Thonicke, K., Spessa, A., Prentice, I. C., Harrison, S. P., Dong, L., and Carmona-Moreno, C.: The influence of vegetation, fire spread and fire behaviour on biomass burning and trace gas emissions: results from a process-based model, Biogeosciences, 7, 1991-2011, https://doi.org/10.5194/bg-7-1991-2010, 2010.
+Calibration and Competition dynamics: Koven, C. D., Knox, R. G., Fisher, R. A., Chambers, J. Q., Christoffersen, B. O., Davies, S. J., Detto, M., Dietze, M. C., Faybishenko, B., Holm, J., Huang, M., Kovenock, M., Kueppers, L. M., Lemieux, G., Massoud, E., McDowell, N. G., Muller-Landau, H. C., Needham, J. F., Norby, R. J., Powell, T., Rogers, A., Serbin, S. P., Shuman, J. K., Swann, A. L. S., Varadharajan, C., Walker, A. P., Wright, S. J., and Xu, C.: Benchmarking and parameter sensitivity of physiological and vegetation dynamics using the Functionally Assembled Terrestrial Ecosystem Simulator (FATES) at Barro Colorado Island, Panama, Biogeosciences, 17, 3017–3044, https://doi.org/10.5194/bg-17-3017-2020, 2020.
+
 
 ---------------------
 
-
-## Logging
-
-_All research and publications using FATES with logging enabled, must reach out to **Yi Xu** and **Maoyi Huang**_
-
----------------------
 
 ## Fire
 
-_All research and publications using FATES with SPITFIRE should reach out to **Jacquelyn Shuman** and **Rosie Fisher**._
+_We recommend reaching out to **Rosie Fisher** and **Adrianna Foster** if planning to investigate fire modeling._
+
+Fire Model (SPITFIRE): Thonicke, K., Spessa, A., Prentice, I. C., Harrison, S. P., Dong, L., and Carmona-Moreno, C.: The influence of vegetation, fire spread and fire behaviour on biomass burning and trace gas emissions: results from a process-based model, Biogeosciences, 7, 1991-2011, https://doi.org/10.5194/bg-7-1991-2010, 2010.
 
 
 ---------------------
 
+## Recruitment
+
+_Please reach out to **Adam Hanbury-Brown** if performing research or publishing with TRS recruitment dynamics_.
+
+Hanbury-Brown, A.R., Powell, T.L., Muller-Landau, H.C., Wright, S.J. and Kueppers, L.M. (2022), Simulating environmentally-sensitive tree recruitment in vegetation demographic models. New Phytologist, 235: 78-93. https://doi.org/10.1111/nph.18059
+
+---------------------
 
 ## FATES-Hydro 
 
-_All research and publications using FATES-Hydro must reach out to **Brad Christoffersen** and **Chonggang Xu**_
+_We recommend reaching out to  **Brad Christoffersen**, **Chonggang Xu**, **Yilin Fang** or **Junyan Ding** if interested in research with FATES-Hydro.  Please cite the following (when relevant)_ :
+
+Foundational:
+
+Xu, C., Christoffersen, B., Robbins, Z., Knox, R., Fisher, R. A., Chitra-Tarak, R., Slot, M., Solander, K., Kueppers, L., Koven, C., and McDowell, N.: Quantification of hydraulic trait control on plant hydrodynamics and risk of hydraulic failure within a demographic structured vegetation model in a tropical forest (FATES-HYDRO V1.0), EGUsphere, https://doi.org/10.5194/egusphere-2023-278, 2023.
 
 Christoffersen, B.O., Gloor, M., Fauset, S., Fyllas, N. M., Galbraith, D. R., Baker, T. R., Kruijt, B., Rowland, L., Fisher, R. A., Binks, O. J., Sevanto, S., Xu, C., Jansen, S., Choat, B., Mencuccini, M., McDowell, N. G., Meir, P. Linking hydraulic traits to tropical forest function in a size-structured and trait-driven model (TFS~v.1-Hydro). Geoscientific Model Development, 9(11), 2016, pp: 4227-4255, https://www.geosci-model-dev.net/9/4227/2016/, DOI = 10.5194/gmd-9-4227-2016.
+
+Matrix Solvers:
+
+Fang Y., L. Leung, R. Knox, C.D. Koven, and B. Bond-Lamberty. 2022. "Impact of the numerical solution approach of a plant hydrodynamic model (v0.1) on vegetation dynamics." Geoscientific Model Development 15, no. 16:6385-6398. PNNL-SA-172156. doi:10.5194/gmd-15-6385-2022
+
+Advanced Rooting Depth Controls:
+
+Pre-print (update):  Ding, J., Buotte, P., Bales, R., Christoffersen, B., Fisher, R. A., Goulden, M., Knox, R., Kueppers, L., Shuman, J., Xu, C., and Koven, C. D.: Coordination of rooting, xylem, and stoma strategies explains the response of conifer forest stands to multi-year drought in the Southern Sierra Nevada of California, Biogeosciences Discuss. [preprint], https://doi.org/10.5194/bg-2023-16, in review, 2023.
+
+---------------------
+
+## Nutrient Model
+
+_Please cite the following if using nitrogen or phosphorus limitations with FATES. We recommend reaching out to **Ryan Knox**, **Charles Koven**, **Anthony Walker**, **Rosie Fisher** and **Jennifer Holm** if interested in nutrient limitations with FATES_.
+
+Pre-print (update): Ryan G Knox, Charles D. Koven, William J. Riley, et al. Nutrient Dynamics in a Coupled Terrestrial Biosphere and Land Model (ELM-FATES). ESS Open Archive . March 06, 2023.
+DOI: 10.22541/essoar.167810418.80767445/v1
 
 ---------------------
 
 ## LAI
 
-_If you enable variable SLA with crown depth, activated when parameters fates_leaf_slamax != fates_leaf_slatop, you must reach out to **Marlies Kovenock** and **Abigail Swann**_
+_If you enable variable SLA with crown depth, activated when parameters fates_leaf_slamax != fates_leaf_slatop, please cite the following reference. We recommend reaching out to **Marlies Kovenock**, **Abigail Swann**, **Charles Koven**, **Rosie Fisher** and **Ryan Knox** if interested in learning more_.
+
+Kovenock, M., Koven, C. D., Knox, R. G., Fisher, R. A., & Swann, A. L. S. (2021). Leaf trait plasticity alters competitive ability and functioning of simulated tropical trees in response to elevated carbon dioxide. Global Biogeochemical Cycles, 35, e2020GB006807. https://doi.org/10.1029/2020GB006807
 
 ---------------------
 
