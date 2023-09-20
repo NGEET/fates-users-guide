@@ -32,6 +32,12 @@ _We recommend reaching out to **Rosie Fisher** and **Adrianna Foster** if planni
 
 Fire Model (SPITFIRE): Thonicke, K., Spessa, A., Prentice, I. C., Harrison, S. P., Dong, L., and Carmona-Moreno, C.: The influence of vegetation, fire spread and fire behaviour on biomass burning and trace gas emissions: results from a process-based model, Biogeosciences, 7, 1991-2011, https://doi.org/10.5194/bg-7-1991-2010, 2010.
 
+---------------------
+## Crown Damage
+
+_Please reference the following if using the crown damage module. We recommend reaching out to **Jessica Needham** if interested in reseearch with crown damage._
+
+Needham, J. F., Arellano, G., Davies, S. J., Fisher, R. A., Hammer, V., Knox, R. G., Mitre, D., Muller-Landau, H. C., Zuleta, D., & Koven, C. D. (2022). Tree crown damage and its effects on forest carbon cycling in a tropical forest. Global Change Biology, 28, 5560–5574. https://doi.org/10.1111/gcb.16318
 
 ---------------------
 
