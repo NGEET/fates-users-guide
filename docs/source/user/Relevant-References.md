@@ -111,11 +111,3 @@ Poorter L, L Bongers and F Bongers.  Architecture of 54 moist-forest tree specie
 Martinez Cano, I. and Muller-Landau, H. C. and Wright, S. J. and Bohlman, S. A. and Pacala, S. W. Tropical tree height and crown allometries for the Barro Colorado Nature Monument, Panama: a comparison of alternative hierarchical models incorporating interspecific variation in relation to life history traits, Biogeosciences, 16(4), pp. 847--862, 2019.
 
 
----------------------
-
-
-## Driver Data
-
-> The NGEET development team has meteorological driver data generated for Barro Colorado Island Panama, users of this data **must** cite:
-
-Faybishenko B; Paton S; Powell T; Knox R; Pastorello G; Varadharajan C; Christianson D; Agarwal D (2018): QA/QC-ed BCI meteorological drivers. 1.0. NGEE Tropics Data Collection. (dataset). http://dx.doi.org/10.15486/ngt/1423307
