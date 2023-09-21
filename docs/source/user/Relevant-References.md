@@ -6,22 +6,19 @@ Users should also consult referencing guides from respective host land models (H
 
 ---------------------
 
-## Core Reference(s)
+## Core References
 
 Fisher, R. A., Muszala, S., Verteinstein, M., Lawrence, P., Xu, C., McDowell, N. G., Knox, R. G., Koven, C., Holm, J., Rogers, B. M., Spessa, A., Lawrence, D., and Bonan, G.: Taking off the training wheels: the properties of a dynamic vegetation model without climate envelopes, CLM4.5(ED), Geosci. Model Dev., 8, 3593-3619, https://doi.org/10.5194/gmd-8-3593-2015, 2015.
 
+Koven, C. D., Knox, R. G., Fisher, R. A., Chambers, J. Q., Christoffersen, B. O., Davies, S. J., Detto, M., Dietze, M. C., Faybishenko, B., Holm, J., Huang, M., Kovenock, M., Kueppers, L. M., Lemieux, G., Massoud, E., McDowell, N. G., Muller-Landau, H. C., Needham, J. F., Norby, R. J., Powell, T., Rogers, A., Serbin, S. P., Shuman, J. K., Swann, A. L. S., Varadharajan, C., Walker, A. P., Wright, S. J., and Xu, C.: Benchmarking and parameter sensitivity of physiological and vegetation dynamics using the Functionally Assembled Terrestrial Ecosystem Simulator (FATES) at Barro Colorado Island, Panama, Biogeosciences, 17, 3017–3044, https://doi.org/10.5194/bg-17-3017-2020, 2020.
+
 ---------------------
 
-
 ## Foundation References
-
 
 ED Patch and Cohort approach: Moorcroft, P.R., G.C. Hurtt, and S.W. Pacala, 2001. A method for scaling vegetation dynamics: the ecosystem demography model ED. Ecological monographs 71.4, pp. 557-586.
 
 Perfect Plasticity Approximation: Purves, D.W. et al.,  2008. Predicting and understanding forest dynamics using a simple tractable model. Proceedings of the National Academy of Sciences 105.44, pp. 17018-17022.
-
-Calibration and Competition dynamics: Koven, C. D., Knox, R. G., Fisher, R. A., Chambers, J. Q., Christoffersen, B. O., Davies, S. J., Detto, M., Dietze, M. C., Faybishenko, B., Holm, J., Huang, M., Kovenock, M., Kueppers, L. M., Lemieux, G., Massoud, E., McDowell, N. G., Muller-Landau, H. C., Needham, J. F., Norby, R. J., Powell, T., Rogers, A., Serbin, S. P., Shuman, J. K., Swann, A. L. S., Varadharajan, C., Walker, A. P., Wright, S. J., and Xu, C.: Benchmarking and parameter sensitivity of physiological and vegetation dynamics using the Functionally Assembled Terrestrial Ecosystem Simulator (FATES) at Barro Colorado Island, Panama, Biogeosciences, 17, 3017–3044, https://doi.org/10.5194/bg-17-3017-2020, 2020.
-
 
 ---------------------
 
@@ -33,6 +30,15 @@ _We recommend reaching out to **Rosie Fisher** and **Adrianna Foster** if planni
 Fire Model (SPITFIRE): Thonicke, K., Spessa, A., Prentice, I. C., Harrison, S. P., Dong, L., and Carmona-Moreno, C.: The influence of vegetation, fire spread and fire behaviour on biomass burning and trace gas emissions: results from a process-based model, Biogeosciences, 7, 1991-2011, https://doi.org/10.5194/bg-7-1991-2010, 2010.
 
 ---------------------
+
+## Logging
+
+_Please reference the following if using the logging module._
+
+Huang, M., Xu, Y., Longo, M., Keller, M., Knox, R. G., Koven, C. D., and Fisher, R. A.: Assessing impacts of selective logging on water, energy, and carbon budgets and ecosystem dynamics in Amazon forests using the Functionally Assembled Terrestrial Ecosystem Simulator, Biogeosciences, 17, 4999–5023, https://doi.org/10.5194/bg-17-4999-2020, 2020.
+
+---------------------
+
 ## Crown Damage
 
 _Please reference the following if using the crown damage module. We recommend reaching out to **Jessica Needham** if interested in reseearch with crown damage._
@@ -104,19 +110,6 @@ Poorter L, L Bongers and F Bongers.  Architecture of 54 moist-forest tree specie
 
 Martinez Cano, I. and Muller-Landau, H. C. and Wright, S. J. and Bohlman, S. A. and Pacala, S. W. Tropical tree height and crown allometries for the Barro Colorado Nature Monument, Panama: a comparison of alternative hierarchical models incorporating interspecific variation in relation to life history traits, Biogeosciences, 16(4), pp. 847--862, 2019.
 
----------------------
-
-## Initialization
-
-> The NGEET development team has census initialization files from Barro Colorado Island Panama, users of this data **must** cite:
-
-Hubbell, S.P., Condit, R., and Foster, R.B. 2005. Barro Colorado Forest Census Plot Data. URL http://ctfs.si.edu/webatlas/datasets/bci. 
-
-Condit, R. 1998. Tropical Forest Census Plots. Springer-Verlag and R. G. Landes Company, Berlin, Germany, and Georgetown, Texas. 
-
-Hubbell, S.P., R.B. Foster, S.T. O'Brien, K.E. Harms, R. Condit, B. Wechsler, S.J. Wright, and S. Loo de Lao. 1999. Light gap disturbances, recruitment limitation, and tree diversity in a neotropical forest. Science 283: 554-557. 
-
-Cushman, K. C., Muller‐Landau, H. C., Condit, R. S., Hubbell, S. P. and Freckleton, R. (2014), Improving estimates of biomass change in buttressed trees using tree taper models. Methods Ecol Evol, 5: 573-582. doi:10.1111/2041-210X.12187
 
 ---------------------
 
