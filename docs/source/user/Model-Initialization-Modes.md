@@ -64,65 +64,24 @@ TYPE LATITUDE LONGITUDE PSS_PATH CSS_PATH
 
 ''Patch'' file format (*.pss)
 
-{| border="1"
-!Variable
-!Units
-!Description
-|-
-|time
-|years
-|Year
-|-
-|patch
-|String
-|Patch identifier (arbitrary, any unique string that can be used to match cohorts)
-|-
-|trk
-|0 – non-forest
-1 – secondary
-2 - primary
-|Vegetation type/history
-|-
-|age
-|years
-|Patch age since disturbance
-|-
-|area
-|proportion
-|Fractional area represented by patch.  For format 1 is area in m2
-|-
-|}
+| Variable  | Units | Description |
+|-----------|-------|------------ |
+| time      |years  | Year        |
+|patch      |String |Patch identifier (arbitrary, any unique string that can be used to match cohorts) |
+|trk        |0 – non-forest, 1 – secondary, 2 - primary |Vegetation type/history |
+|age        |years  |Patch age since disturbance |
+|area |proportion |Fractional area represented by patch.  For format 1 is area in m2 |
+
 
 ''Cohort'' file format (*.css)
-{| border="1"
-! Variable
-! Unit
-! Description
-|-
-| time
-| year
-| year
-|-
-| patch
-| string
-| Unique identifier (the string matching with the patch its on)
-|-
-|cohort
-|string
-|Unique identifier (arbitrary, not used)
-|-
-|dbh
-|cm
-|Stem diameter breast height
-|-
-|pft
-|integer
-|Plant Functional Type
-|-
-|n
-|Stem/m2
-|Stem density
-|-
-|}
+
+| Variable | Unit | Description |
+|----------|------|-------------|
+| time  | year | year |
+| patch | string | Unique identifier (the string matching with the patch its on) |
+| dbh |cm |Stem diameter breast height |
+| pft |integer |Plant Functional Type |
+| n |Stem/m2 |Stem density |
+
 
 
