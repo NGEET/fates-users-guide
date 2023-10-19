@@ -61,7 +61,6 @@ TYPE LATITUDE LONGITUDE PSS_PATH CSS_PATH
 
 === Inventory Format Type 1 ===
 
-Type 1 inventory files are designed to be compliant with ED2 css/pss files, see:  https://github.com/EDmodel/ED2/wiki/Initial-conditions
 
 ''Patch'' file format (*.pss)
 
@@ -92,37 +91,6 @@ Type 1 inventory files are designed to be compliant with ED2 css/pss files, see:
 |proportion
 |Fractional area represented by patch.  For format 1 is area in m2
 |-
-|water
-|m3/m3 ??
-|Not actually read
-|-
-|fsc
-|Kg/m2
-|Fast soil carbon
-|-
-|stsc
-|Kg/m2
-|Structural soil carbon
-|-
-|stsl
-|Kg/m2
-|Structural soil lignin
-|-
-|ssc
-|Kg/m2
-|Slow soil carbon
-|-
-|psc
-|Kg/m2
-|Passive soil carbon (not actually read)
-|-
-|msn
-|Kg/m2
-|Mineralized soil N
-|-
-|fsn
-|Kg/m2
-|Fast soil N
 |}
 
 ''Cohort'' file format (*.css)
@@ -147,10 +115,6 @@ Type 1 inventory files are designed to be compliant with ED2 css/pss files, see:
 |cm
 |Stem diameter breast height
 |-
-|hite
-|m
-|Tree height
-|-
 |pft
 |integer
 |Plant Functional Type
@@ -159,17 +123,6 @@ Type 1 inventory files are designed to be compliant with ED2 css/pss files, see:
 |Stem/m2
 |Stem density
 |-
-|bdead
-|KgC/plant
-|Structural carbon
-|-
-|balive
-|KgC/plant
-|“Live” carbon (leaf, fine root, sapwood) 
-|-
-|Avgrg
-|
-|No longer used (was average radial growth)
 |}
 
 
