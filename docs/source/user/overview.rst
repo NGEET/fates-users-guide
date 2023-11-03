@@ -14,6 +14,7 @@ Understanding oriented section
    Communal-slides-related-to-FATES
    Current-Unsupported-or-Broken-Features
    Fixed-Biogeography-Mode
+   Model-Initialization-Modes
    Namelist-Options-and-Run-Time-Modes
    Notes-on-the-Parameter-File
    PARTEH-Modes
