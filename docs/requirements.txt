@@ -8,6 +8,7 @@
 
 # sphinx-fortran
 sphinx>=3.2.1
+sphinx-rtd-theme
 sphinx-fortran==1.1.1
 six
 numpy
