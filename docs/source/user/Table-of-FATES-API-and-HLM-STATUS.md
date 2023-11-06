@@ -4,9 +4,10 @@ The following table list the FATES API and the corresponding HLM tag associated 
 
 | FATES API   | CTSM Tag | E3SM Hash | Notes |
 | ----------- | -------- | --------- | ----- |
+| API 32.0.0 | | | FatesReadParameters API call refactor |
+| API 31.1.0 | | | Parameter file update, tree allometry |
 | API 31.0.0 | | | FATES landuse V1 |
 | API 30.0.0 | | | Long duration exact restart fix |
-| API 29.1.0 | | | Parameter file update, tree allometry |
 | API 29.0.0 | | | Heterotropic respiration exact restart fix |
 | [API 28.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.68.0_api.28.0.0) | [ctsm5.1.dev146](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev146) | | Cross-grid seed dispersal |
 | [API 27.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.67.1_api.27.0.0) | [ctsm5.1.dev134](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev134) | [4b00636](https://github.com/E3SM-Project/E3SM/commit/4b0063682c2f61eebb5eb8c7d99d13926532caff) | FATES CLM BGC compatibility |
