@@ -1,15 +1,15 @@
 # FATES-HLM API Compatability Table
 
-The following table list the FATES API and the corresponding HLM tag associated with that API update.  
+The following table list the FATES API and the corresponding HLM tag associated with that API update.  Note that CTSM provides a specific tag for each of its merge commits to the master branch whereas E3SM does not.  As such, the hash for the relevant merge commit is provided for E3SM.  Entries that specifically link to a pull request (e.g. PR#XXXX) are provided to note updates which have not been integrated yet, but are pending.  The table may also include future planned API updates without links to provide users an advanced look at what updates are forthcoming.
 
-| FATES API   | CTSM Tag | E3SM Hash | Notes |
-| ----------- | -------- | --------- | ----- |
+| FATES API   | CTSM Tag | E3SM Hash | Description |
+| ----------- | -------- | --------- | ----------- |
 | API 32.0.0 | | | FatesReadParameters API call refactor |
 | API 31.1.0 | | | Parameter file update, tree allometry |
-| API 31.0.0 | | | FATES landuse V1 |
-| API 30.0.0 | | | Long duration exact restart fix |
-| API 29.0.0 | | | Heterotropic respiration exact restart fix |
-| [API 28.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.68.0_api.28.0.0) | [ctsm5.1.dev146](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev146) | | Cross-grid seed dispersal |
+| [API 31.0.0](https://github.com/NGEET/fates/pull/1040) | [PR#2076](https://github.com/ESCOMP/CTSM/pull/2076) | [PR#5760](https://github.com/E3SM-Project/E3SM/pull/5760) | FATES landuse V1 |
+| [API 30.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.68.2_api.30.0.0) | [ctsm5.1.dev151](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev151) | [PR#6018](https://github.com/E3SM-Project/E3SM/pull/6018) | Long duration exact restart fix |
+| [API 29.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.68.1_api.29.0.0) | [ctsm5.1.dev150](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev150) | [PR#5555](https://github.com/E3SM-Project/E3SM/pull/5555) | Heterotropic respiration exact restart fix |
+| [API 28.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.68.0_api.28.0.0) | [ctsm5.1.dev146](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev146) | [PR#5555](https://github.com/E3SM-Project/E3SM/pull/5555) | Cross-grid seed dispersal |
 | [API 27.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.67.1_api.27.0.0) | [ctsm5.1.dev134](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev134) | [4b00636](https://github.com/E3SM-Project/E3SM/commit/4b0063682c2f61eebb5eb8c7d99d13926532caff) | FATES CLM BGC compatibility |
 | [API 26.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.67.1_api.26.0.0) | [ctsm5.1.dev133](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev133) | [4b00636](https://github.com/E3SM-Project/E3SM/commit/4b0063682c2f61eebb5eb8c7d99d13926532caff) | Patch and cohort refactor |
 | [API 25.5.0](https://github.com/NGEET/fates/releases/tag/sci.1.66.0_api.25.5.0) | [ctsm5.1.dev130](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev130) | [c0300fa](https://github.com/E3SM-Project/E3SM/commit/c0300fa61e40d7130ee3a16dbdd2a36efed34705) | Drought deciduous phenology update |
