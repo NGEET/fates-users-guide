@@ -1,9 +1,9 @@
 # FATES-HLM API Compatability Table
 
-The following table list the FATES API and the corresponding HLM tag associated with that API update.  
+The following table list the FATES API and the corresponding HLM tag associated with that API update.  Note that CTSM provides a specific tag for each of its merge commits to the master branch whereas E3SM does not.  As such, the commit hash for the merge commit is provided for E3SM.  Entries that specifically link to a pull request (e.g. PR#XXXX) are provided to note updates which have not been integrated yet, but are pending.  The table may also include future planned API updates without links to provide user's an advanced look at what updates are forthcoming.
 
-| FATES API   | CTSM Tag | E3SM Hash | Notes |
-| ----------- | -------- | --------- | ----- |
+| FATES API   | CTSM Tag | E3SM Hash | Description |
+| ----------- | -------- | --------- | ----------- |
 | API 32.0.0 | | | FatesReadParameters API call refactor |
 | API 31.1.0 | | | Parameter file update, tree allometry |
 | [API 31.0.0](https://github.com/NGEET/fates/pull/1040) | [PR#2076](https://github.com/ESCOMP/CTSM/pull/2076) | [PR#5760](https://github.com/E3SM-Project/E3SM/pull/5760) | FATES landuse V1 |
