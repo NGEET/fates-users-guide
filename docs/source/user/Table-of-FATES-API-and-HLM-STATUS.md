@@ -4,9 +4,9 @@ The following table list the FATES API and the corresponding HLM tag associated 
 
 | FATES API   | CTSM Tag | E3SM Hash | Description |
 | ----------- | -------- | --------- | ----------- |
-| API 32.0.0 | | | FatesReadParameters API call refactor |
-| API 31.1.0 | | | Parameter file update, tree allometry |
-| [API 31.0.0](https://github.com/NGEET/fates/pull/1040) | [PR#2076](https://github.com/ESCOMP/CTSM/pull/2076) | [PR#5760](https://github.com/E3SM-Project/E3SM/pull/5760) | FATES landuse V1 |
+| API 32.1.0 | | | Parameter file update, tree allometry |
+| [API 32.0.0](https://github.com/NGEET/fates/pull/1040) | [PR#2076](https://github.com/ESCOMP/CTSM/pull/2076) | [PR#5760](https://github.com/E3SM-Project/E3SM/pull/5760) | FATES landuse V1 |
+| [API 31.0.0](https://github.com/NGEET/fates/pull/1096) | [PR#2198](https://github.com/ESCOMP/CTSM/pull/2198) | [PR#6027](https://github.com/E3SM-Project/E3SM/pull/6027) | FatesReadParameters API call refactor |
 | [API 30.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.68.2_api.30.0.0) | [ctsm5.1.dev151](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev151) | [PR#6018](https://github.com/E3SM-Project/E3SM/pull/6018) | Long duration exact restart fix |
 | [API 29.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.68.1_api.29.0.0) | [ctsm5.1.dev150](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev150) | [PR#5555](https://github.com/E3SM-Project/E3SM/pull/5555) | Heterotropic respiration exact restart fix |
 | [API 28.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.68.0_api.28.0.0) | [ctsm5.1.dev146](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev146) | [PR#5555](https://github.com/E3SM-Project/E3SM/pull/5555) | Cross-grid seed dispersal |
