@@ -4,8 +4,7 @@ The following table list the FATES API and the corresponding HLM tag associated 
 
 | FATES API   | CTSM Tag | E3SM Hash | Description |
 | ----------- | -------- | --------- | ----------- |
-| API 32.1.0 | | | Parameter file update, tree allometry |
-| [API 33.0.0](https://github.com/NGEET/fates/pull/1141) | [PR #2265](https://github.com/ESCOMP/CTSM/pull/2265) | | Two-stream |
+| [API 33.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.71.0_api.33.0.0) | [ctsm5.1.dev164](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev164) | *TBD* | FATES landuse V1 |
 | [API 32.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.70.0_api.32.0.0) | [ctsm5.1.dev160](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev160) | [PR#5760](https://github.com/E3SM-Project/E3SM/pull/5760) | FATES landuse V1 |
 | [API 31.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.68.2_api.31.0.0) | [ctsm5.1.dev153](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev153) | [PR#6027](https://github.com/E3SM-Project/E3SM/pull/6027) | FatesReadParameters API call refactor |
 | [API 30.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.68.2_api.30.0.0) | [ctsm5.1.dev151](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev151) | [PR#6018](https://github.com/E3SM-Project/E3SM/pull/6018) | Long duration exact restart fix |
