@@ -10,6 +10,7 @@ For more information on how to set and use these modes, click on the links in th
 | use_fates                     | true/false        | `.true.`                | Turns on/off fates! (for CTSM this is done by changing the XML variable CLM_BLDNML_OPTS to have "-bgc fates" rather than changing this in the namelist) Compsets with for example `_CLMXX%FATES_` turn this on [XX is for the specific version number) |
 | fates_paramfile               | String (filepath) | default file            | path to an alternative netcdf fates parameter file |
 | fates_spitfire_mode           | int 0-4           | `0`                     | {doc}`SPITFIRE Namelist Options <SPITFIRE-Namelist-Options>` |
+| fates_history_dimlevel | int 0-2 | 2 |  0 = no fates history variables are calculated or allocated, 1 = only time x space (3d) fates history variables allowed, 2 = multiplexed dimensioned fates history is also allowed |
 | use_fates_logging             | true/false        | `.false.`               | {doc}`Turns on/off the logging module <Running-FATES-with-the-selective-logging-module-activated>` |
 | use_fates_planthydro          | true/false        | `.false.`               | Turns on/off the plant hydrodynamics module |
 | use_fates_ed_st3              | true/false        | `.false.`               | Turns on/off Static Stand Structure mode |
