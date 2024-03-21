@@ -4,8 +4,8 @@ The following table list the FATES API and the corresponding HLM tag associated 
 
 | FATES API   | CTSM Tag | E3SM Hash | Description |
 | ----------- | -------- | --------- | ----------- |
-| [API 33.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.71.0_api.33.0.0) | [ctsm5.1.dev164](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev164) | *TBD* | Two-stream radiation |
-| [API 32.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.70.0_api.32.0.0) | [ctsm5.1.dev160](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev160) | [PR#5760](https://github.com/E3SM-Project/E3SM/pull/5760) | FATES landuse V1 |
+| [API 33.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.71.0_api.33.0.0) | [ctsm5.1.dev164](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev164) | [PR#6279](https://github.com/E3SM-Project/E3SM/pull/6279) | Two-stream radiation |
+| [API 32.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.70.0_api.32.0.0) | [ctsm5.1.dev160](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev160) | [069c226](https://github.com/E3SM-Project/E3SM/commit/069c226a61c34a8f9857d88e36416630a7de14c7) | FATES landuse V1 |
 | [API 31.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.68.2_api.31.0.0) | [ctsm5.1.dev153](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev153) | [67abd00](https://github.com/E3SM-Project/E3SM/commit/67abd002e90036f0c0d7baeb10b8a55a2965e7a7) | FatesReadParameters API call refactor |
 | [API 30.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.68.2_api.30.0.0) | [ctsm5.1.dev151](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev151) | [318d612](https://github.com/E3SM-Project/E3SM/commit/318d6124be32f38fd7b10d2bf93b17680e814265) | Long duration exact restart fix |
 | [API 29.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.68.1_api.29.0.0) | [ctsm5.1.dev150](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev150) | [93ab10c](https://github.com/E3SM-Project/E3SM/commit/93ab10c892d83c578713e3b9e4f299f7e1d83f35) | Heterotropic respiration exact restart fix |
