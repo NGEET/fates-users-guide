@@ -31,14 +31,7 @@ Blocks of commented code, or concept breaks can be delineated with (out to 100 c
    !------------------------------------------------------
 
 
-If a loop or "if" structure spans more than 50 lines, add a comment that trails in-line with the closing "end if" or "end do", that re-iterates the opening statement. This helps immensely with code readability.  Alternatively, you can use explicit loop naming to ensure loop closure correctness.  Example::
-
-   if(example_logical) then
-   
-   ! Assume there is a copious amount of code that happens between
-   ! the opening and closing statement
-   
-   end if  ! if(example_logical) then
+If a loop or "if" structure spans more than 50 lines, use explicit loop naming to ensure loop closure correctness and readability.  Even better, add the name as a comment to the else structure in the middle if possible:  
    
 Example::
 
@@ -46,7 +39,11 @@ Example::
    
    ! Assume there is a copious amount of code that happens between
    ! the opening and closing statement
-   
+
+   else  ! outer_logical_loop
+
+   ! Assume there is also code here
+
    end if outer_logical_loop
 
 
