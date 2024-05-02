@@ -28,7 +28,7 @@ intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
     'rtd': ('https://docs.readthedocs.io/en/stable/', None),
-    'fates-doc': ('https://fates-users-guide.readthedocs.io/projects/tech-doc/en/stable/', None),
+    'fates-doc': ('https://fates-users-guide.readthedocs.io/projects/tech-doc/en/', None),
 }
 intersphinx_disabled_domains = ['std']
 
