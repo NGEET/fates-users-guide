@@ -19,7 +19,7 @@ This document is structured in four parts:
    tutorials
    user/users-guide
    developer/developer-guide
-   FATES Technical Document <https://fates-users-guide.readthedocs.io/projects/tech-doc/en/stable/>
+   FATES Technical Document <https://fates-users-guide.readthedocs.io/projects/tech-doc/en/>
    
 The tutorial will help the new user's and developers orient themselves to fates.  The user's guide is concerned with providing researchers with information on running the FATES model.  The developer's guide focuses on helping researchers and engineers contribute to the FATES model code.  Both the user and developer guide sections follow a common structure comprised of three sub-sections: 
 
