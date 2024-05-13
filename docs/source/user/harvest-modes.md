@@ -21,3 +21,5 @@ This mode is uses the FATES parameter file exclusively through the use of the `f
 ### `luhdata_area`
 
 ### `luhdata_mass`
+
+This mode automatically engages the FATES landuse x pft static mapping namelist option, `use_fates_lupft` as well as fixed biogeography and no competition options, `use_fates_fixed_biogeog` and `use_fates_nocomp`, respectively.
