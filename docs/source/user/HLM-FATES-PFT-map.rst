@@ -7,6 +7,8 @@ FATES-HLM plant functional types mapping table
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +-------------------------------------+-----------+---------------+----------------+---------------+----------------+----------------+---------------+----------------+----------------+-----------+---------+-------+
+| HLM plant functional type           | FATES plant functional type                                                                                                                                                  |
++=====================================+===========+===============+================+===============+================+================+===============+================+================+===========+=========+=======+
 |                                     | Broadleaf | Needleleaf    | Needleleaf     | Broadleaf     | Broadleaf      | Broadleaf      | Broadleaf     | Broadleaf      | Broadleaf      |           |         |       |
 |                                     |           |               |                |               |                |                |               |                |                |           |         |       |
 |                                     | evergreen | evergreen     | cold deciduous | evergreen     | hydrodeciduous | cold deciduous | evergreen     | hydrodeciduous | cold deciduous |           |         |       |
@@ -14,6 +16,19 @@ FATES-HLM plant functional types mapping table
 |                                     | tropical  | extratropical | extratropical  | extratropical | tropical       | extratropical  | extratropical | extratropical  | extratropical  | Arctic C3 | Cool C4 | C4    |
 |                                     |           |               |                |               |                |                |               |                |                |           |         |       |
 |                                     | tree      | tree          | tree           | tree          | tree           | tree           | shrub         | shrub          | shrub          | grass     | grass   | grass |
-+=====================================+===========+===============+================+===============+================+================+===============+================+================+===========+=========+=======+
++-------------------------------------+-----------+---------------+----------------+---------------+----------------+----------------+---------------+----------------+----------------+-----------+---------+-------+
 | Needleleaf evergreen temperate tree |     0     |     0         |     0          |     0         |     0          |     0          |     0         |     0          |     0          |     0     |     0   |   0   |
+| Needleleaf evergreen boreal tree    |     0     |     0         |     0          |     0         |     0          |     0          |     0         |     0          |     0          |     0     |     0   |   0   |
+| Needleleaf deciduous boreal tree    |     0     |     0         |     0          |     0         |     0          |     0          |     0         |     0          |     0          |     0     |     0   |   0   |
+| Broadleaf evergreen tropical tree   |     0     |     0         |     0          |     0         |     0          |     0          |     0         |     0          |     0          |     0     |     0   |   0   |
+| Broadleaf evergreen temperate tree  |     0     |     0         |     0          |     0         |     0          |     0          |     0         |     0          |     0          |     0     |     0   |   0   |
+| Broadleaf deciduous tropical tree   |     0     |     0         |     0          |     0         |     0          |     0          |     0         |     0          |     0          |     0     |     0   |   0   |
+| Broadleaf deciduous temperate tree  |     0     |     0         |     0          |     0         |     0          |     0          |     0         |     0          |     0          |     0     |     0   |   0   |
+| Broadleaf deciduous boreal tree     |     0     |     0         |     0          |     0         |     0          |     0          |     0         |     0          |     0          |     0     |     0   |   0   |
+| Broadleaf evergreen shrub           |     0     |     0         |     0          |     0         |     0          |     0          |     0         |     0          |     0          |     0     |     0   |   0   |
+| Broadleaf deciduous temperate shrub |     0     |     0         |     0          |     0         |     0          |     0          |     0         |     0          |     0          |     0     |     0   |   0   |
+| Broadleaf deciduous boreal shrub    |     0     |     0         |     0          |     0         |     0          |     0          |     0         |     0          |     0          |     0     |     0   |   0   |
+| C3 arctic grass                     |     0     |     0         |     0          |     0         |     0          |     0          |     0         |     0          |     0          |     0     |     0   |   0   |
+| C3 non-arctic grass                 |     0     |     0         |     0          |     0         |     0          |     0          |     0         |     0          |     0          |     0     |     0   |   0   |
+| C4 grass                            |     0     |     0         |     0          |     0         |     0          |     0          |     0         |     0          |     0          |     0     |     0   |   0   |
 +-------------------------------------+-----------+---------------+----------------+---------------+----------------+----------------+---------------+----------------+----------------+-----------+---------+-------+
