@@ -9,3 +9,4 @@ When FATES is run in fixed biogeography mode, the model will reference the `fate
 |   | evergreen |||||||||||||
 |   | tropical  |||||||||||||
 |   | tree      |||||||||||||
+|---|-----------|||||||||||||
