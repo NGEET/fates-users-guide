@@ -49,6 +49,6 @@ FATES-HLM plant functional types mapping table
 References
 ^^^^^^^^^^
 
-CTSM plant functional type table: https://escomp.github.io/ctsm-docs/versions/master/html/tech_note/Ecosystem/CLM50_Tech_Note_Ecosystem.html#id15
+`CTSM plant functional type table <https://escomp.github.io/ctsm-docs/versions/master/html/tech_note/Ecosystem/CLM50_Tech_Note_Ecosystem.html#id15>`_
 
-FATES default parameter file: https://github.com/NGEET/fates/blob/main/parameter_files/fates_params_default.cdl
+`FATES default parameter file <https://github.com/NGEET/fates/blob/main/parameter_files/fates_params_default.cdl>`_
