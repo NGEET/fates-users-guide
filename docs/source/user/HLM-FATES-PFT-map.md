@@ -5,8 +5,13 @@ When FATES is run in fixed biogeography mode, the model will reference the `fate
 | | broadleaf evergreen tropical tree |  needleleaf evergreen extratrop tree | needleleaf cold decid extratrop tree | broadleaf evergreen extratrop tree | broadleaf hydro decid tropical tree | broadleaf cold decid extratrop tree | broadleaf evergreen extratrop shrub | broadleaf hydro decid extratrop shrub | broadleaf colddecid extratrop shrub | arctic c3 grass | cool c3 grasso | c4 grass |
 | ----------- | -------- | --------- | ----------- | - | - | - | - | - | - | - | - | - |
 
-|   | broadleaf ||||||||||||| 
-|   | evergreen |||||||||||||
-|   | tropical  |||||||||||||
-|   | tree      |||||||||||||
-|---|-----------|||||||||||||
+
+|                                     | broadleaf |
+|                                     | broadleaf |
+|                                     | broadleaf |
+|                                     | evergreen |
+|                                     | tropical  |
+|                                     | tree      |
+|-------------------------------------|-----------|
+| Needleleaf evergreen temperate tree | 0         |
+|-------------------------------------|-----------|
