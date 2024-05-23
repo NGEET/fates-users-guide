@@ -8,8 +8,11 @@ FATES-HLM plant functional types mapping table
 
 +-------------------------------------+-----------+
 |                                     | Broadleaf |
+|                                     |           |
 |                                     | evergreen |
+|                                     |           |
 |                                     | tropical  |
+|                                     |           |
 |                                     | tree      |
 +=====================================+===========+
 | Needleleaf evergreen temperate tree |     0     |
