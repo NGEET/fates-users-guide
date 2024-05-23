@@ -6,14 +6,14 @@ When FATES is run in fixed biogeography mode, the model will reference the `fate
 FATES-HLM plant functional types mapping table
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-+-------------------------------------+-----------+
-|                                     | Broadleaf |
-|                                     |           |
-|                                     | evergreen |
-|                                     |           |
-|                                     | tropical  |
-|                                     |           |
-|                                     | tree      |
-+=====================================+===========+
-| Needleleaf evergreen temperate tree |     0     |
-+-------------------------------------+-----------+
++-------------------------------------+-----------+---------------+----------------+---------------+----------------+----------------+---------------+----------------+----------------+-----------+---------+-------+
+|                                     | Broadleaf | Needleleaf    | Needleleaf     | Broadleaf     | Broadleaf      | Broadleaf      | Broadleaf     | Broadleaf      | Broadleaf      |           |         |       |
+|                                     |           |               |                |               |                |                |               |                |                |           |         |       |
+|                                     | evergreen | evergreen     | cold deciduous | evergreen     | hydrodeciduous | cold deciduous | evergreen     | hydrodeciduous | cold deciduous |           |         |       |
+|                                     |           |               |                |               |                |                |               |                |                |           |         |       |
+|                                     | tropical  | extratropical | extratropical  | extratropical | tropical       | extratropical  | extratropical | extratropical  | extratropical  | Arctic C3 | Cool C4 | C4    |
+|                                     |           |               |                |               |                |                |               |                |                |           |         |       |
+|                                     | tree      | tree          | tree           | tree          | tree           | tree           | shrub         | shrub          | shrub          | grass     | grass   | grass |
++=====================================+===========+===============+================+===============+================+================+===============+================+================+===========+=========+=======+
+| Needleleaf evergreen temperate tree |     0     |     0         |     0          |     0         |     0          |     0          |     0         |     0          |     0          |     0     |     0   |   0   |
++-------------------------------------+-----------+---------------+----------------+---------------+----------------+----------------+---------------+----------------+----------------+-----------+---------+-------+
