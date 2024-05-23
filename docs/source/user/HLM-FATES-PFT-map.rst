@@ -7,7 +7,7 @@ FATES-HLM plant functional types mapping table
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +-------------------------------------+-----------+---------------+----------------+---------------+----------------+----------------+---------------+----------------+----------------+-----------+---------+-------+
-| HLM plant functional type           | FATES plant functional type                                                                                                                                                  |
+|                                     | FATES plant functional type                                                                                                                                                  |
 +=====================================+===========+===============+================+===============+================+================+===============+================+================+===========+=========+=======+
 |                                     | Broadleaf | Needleleaf    | Needleleaf     | Broadleaf     | Broadleaf      | Broadleaf      | Broadleaf     | Broadleaf      | Broadleaf      |           |         |       |
 |                                     |           |               |                |               |                |                |               |                |                |           |         |       |
@@ -15,7 +15,7 @@ FATES-HLM plant functional types mapping table
 |                                     |           |               |                |               |                |                |               |                |                |           |         |       |
 |                                     | tropical  | extratropical | extratropical  | extratropical | tropical       | extratropical  | extratropical | extratropical  | extratropical  | Arctic C3 | Cool C4 | C4    |
 |                                     |           |               |                |               |                |                |               |                |                |           |         |       |
-|                                     | tree      | tree          | tree           | tree          | tree           | tree           | shrub         | shrub          | shrub          | grass     | grass   | grass |
+| **HLM plant functional type**       | tree      | tree          | tree           | tree          | tree           | tree           | shrub         | shrub          | shrub          | grass     | grass   | grass |
 +-------------------------------------+-----------+---------------+----------------+---------------+----------------+----------------+---------------+----------------+----------------+-----------+---------+-------+
 | Needleleaf evergreen temperate tree |     0     |     0         |     0          |     0         |     0          |     0          |     0         |     0          |     0          |     0     |     0   |   0   |
 +-------------------------------------+-----------+---------------+----------------+---------------+----------------+----------------+---------------+----------------+----------------+-----------+---------+-------+
