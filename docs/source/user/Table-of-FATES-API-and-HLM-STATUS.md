@@ -5,7 +5,7 @@ The following table list the FATES API and the corresponding HLM tag associated 
 | FATES API   | CTSM Tag | E3SM Hash | Description |
 | ----------- | -------- | --------- | ----------- |
 | [API 36.0.0](https://github.com/NGEET/fates/pull/1116) | [CTSM#2507](https://github.com/ESCOMP/CTSM/pull/2507) | [E3SM#6353](https://github.com/E3SM-Project/E3SM/pull/6353) | Land use v2 |
-| [API 35.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.73.0_api.35.0.0) | [ctsm5.1.dev173](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.2.002) | TBD | Parameter file default allometry update |
+| [API 35.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.73.0_api.35.0.0) | [ctsm5.1.dev173](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.2.002) | [f14a3cf](https://github.com/E3SM-Project/E3SM/commit/f14a3cf738fc56f287665a49231b461878770958)| Parameter file default allometry update |
 | [API 34.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.72.2_api.34.0.0) | [ctsm5.1.dev173](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev173) | TBD | History density control |
 | [API 33.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.71.0_api.33.0.0) | [ctsm5.1.dev164](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev164) | [PR#6279](https://github.com/E3SM-Project/E3SM/pull/6279) | Two-stream radiation |
 | [API 32.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.70.0_api.32.0.0) | [ctsm5.1.dev160](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev160) | [069c226](https://github.com/E3SM-Project/E3SM/commit/069c226a61c34a8f9857d88e36416630a7de14c7) | FATES landuse V1 |
