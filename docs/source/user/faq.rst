@@ -64,7 +64,7 @@ See the :doc:`../running-fates-walkthrough` tutorial.  It includes a basic scrip
 
 What version of FATES should I be running?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-*Add a cross-reference here to the hlm-fates compatability table*
+*Add a cross-reference here to the hlm-fates compatibility table*
 
 
 I ran FATES successfully!  How do I view the multiplexed dimensions?
