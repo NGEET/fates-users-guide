@@ -19,7 +19,7 @@ This document is structured in four parts:
    tutorials
    user/users-guide
    developer/developer-guide
-   FATES Technical Document <https://fates-users-guide.readthedocs.io/projects/tech-doc/en/>
+   FATES Technical Document
    
 The tutorial will help the new user's and developers orient themselves to fates.  The user's guide is concerned with providing researchers with information on running the FATES model.  The developer's guide focuses on helping researchers and engineers contribute to the FATES model code.  Both the user and developer guide sections follow a common structure comprised of three sub-sections: 
 
@@ -51,6 +51,7 @@ The repository for this document can be accessed by clicking on the "Edit on Git
 Please note that as a Read The Docs :doc:`rtd:subprojects`, the :doc:`fates-doc:fates_tech_note` has a seperate repository from the User's Guide repository.  
 If there is information in the *technical documentation* that you would like to have added or errors that need to be addressed, please submit an issue to the `fates-docs github repository`_.  
 
+.. _fates_tech_note: https://fates-users-guide.readthedocs.io/projects/tech-doc
 .. _fates github discussions board: https://github.com/ngeet/fates/discussions
 .. _fates-users-guide github repository: https://github.com/ngeet/fates-users-guide/issues
 .. _fates-docs github repository: https://github.com/ngeet/fates-docs/issues

@@ -28,9 +28,18 @@ intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
     'rtd': ('https://docs.readthedocs.io/en/stable/', None),
-    'fates-doc': ('https://fates-users-guide.readthedocs.io/projects/tech-doc/en/', None),
+    'fates-doc': ('https://fates-users-guide.readthedocs.io/projects/tech-doc/', None),
+    'fates-tutorial': ('https://fates-users-guide.readthedocs.io/projects/tutorial/', None),
 }
 intersphinx_disabled_domains = ['std']
+
+# RTD recommends adding the following config value.
+# Sphinx defaults to automatically resolve *unresolved* labels using all your Intersphinx mappings.
+# This behavior has unintended side-effects, namely that documentations local references can
+# suddenly resolve to an external location.
+# See also:
+# https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#confval-intersphinx_disabled_reftypes
+intersphinx_disabled_reftypes = ["*"]
 
 templates_path = ['_templates']
 
