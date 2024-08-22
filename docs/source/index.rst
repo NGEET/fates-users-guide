@@ -34,7 +34,7 @@ This structure adapts the `Divio documentation framework`_.
 Technical Documentation
 -----------------------
 
-The :doc:`fates-doc:fates_tech_note` detailing the scientific underpinning of the model is hosted as a Read The Docs :doc:`rtd:subprojects` within this User's Guide.  As a subproject both the guide and the techincal documentation are searchable through the index in this User's Guide.
+The :doc:`fates-doc:index` detailing the scientific underpinning of the model is hosted as a Read The Docs :doc:`rtd:subprojects` within this User's Guide.  As a subproject both the guide and the techincal documentation are searchable through the index in this User's Guide.
 
 Getting Help
 ------------
