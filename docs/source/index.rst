@@ -48,7 +48,7 @@ Requesting changes to this documentation
 
 The repository for this document can be accessed by clicking on the "Edit on GitHub" text in the upper right hand corner or can be found at: https://github.com/ngeet/fates-users-guide.  If there is information in this guide that you would like to have added or errors that need to be addressed, please submit an issue to the `fates-users-guide github repository`_.  
 
-Please note that as a Read The Docs :doc:`rtd:subprojects`, the :doc:`fates-doc:index` and :doc:`fates-tutorial:index` has a seperate repository from the User's Guide repository.
+Please note that as a Read The Docs :doc:`rtd:subprojects`, the :doc:`fates-doc:fates_tech_note` and :doc:`FATES tutorial documentation <fates-tutorial:index>` has a seperate repository from the User's Guide repository.
 If there is information in the *technical documentation* that you would like to have added or errors that need to be addressed, please submit an issue to the `fates-docs github repository`_.  
 
 .. _fates_tech_note: https://fates-users-guide.readthedocs.io/projects/tech-doc
