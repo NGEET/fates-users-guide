@@ -6,5 +6,5 @@ The tutorial section is separated into two different options that are based upon
 .. toctree::
    :maxdepth: 1
 
-   Containerized Tutorial <https://fates-users-guide.readthedocs.io/projects/fates-tutorial/>
+   Containerized Tutorial <https://fates-users-guide.readthedocs.io/projects/tutorial/>
    HPC/hpc
