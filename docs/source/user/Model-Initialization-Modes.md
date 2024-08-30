@@ -80,8 +80,9 @@ TYPE LATITUDE LONGITUDE PSS_PATH CSS_PATH
 | time  | year | year |
 | patch | string | Unique identifier (the string matching with the patch its on) |
 | dbh |cm |Stem diameter breast height |
+| height | m | Plant height |
 | pft |integer |Plant Functional Type |
 | n |Stem/m2 |Stem density |
 
-
+*Important: The cohort file with use either the dbh __or__ the height of the plant to specify the size. But, it can't use both! Make sure one of the two is set to zero. Plant biomass will be assessed based off of allometry relative to plant size.
 
