@@ -4,6 +4,7 @@ The following table list the FATES API and the corresponding HLM tag associated 
 
 | FATES API   | CTSM Tag | E3SM Hash | Description |
 | ----------- | -------- | --------- | ----------- |
+| [API 36.1.0](https://github.com/NGEET/fates/releases/tag/sci.1.78.3_api.36.1.0) | [ctsm5.3.003](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.003) | [ef0abe7](https://github.com/E3SM-Project/E3SM/commit/ef0abe727bb4f3286a40d2350aaded5030197615) | Default parameter file update (arctic shrubs, grass allometry) |
 | [API 36.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.77.0_api.36.0.0) | [ctsm5.2.013](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.2.013) | [377b2d3](https://github.com/E3SM-Project/E3SM/commit/377b2d31d77977efc0f5edf79ba243377f668517) | Land use v2 |
 | [API 35.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.73.0_api.35.0.0) | [ctsm5.2.002](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.2.002) | [f14a3cf](https://github.com/E3SM-Project/E3SM/commit/f14a3cf738fc56f287665a49231b461878770958) | Parameter file default allometry update |
 | [API 34.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.72.2_api.34.0.0) | [ctsm5.1.dev173](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev173) | [f14a3cf](https://github.com/E3SM-Project/E3SM/commit/f14a3cf738fc56f287665a49231b461878770958) | History density control |
