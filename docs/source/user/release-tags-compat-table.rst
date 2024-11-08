@@ -7,7 +7,7 @@ API 36
 ------
 
 +--------------------------+----------------+------------+-------------+----------------------------------------------------------------+
-| FATES Tag                | CTSM Tag       | E3SM Hash  | Update Type | Description                                                    |
+| FATES Tag                | CTSM Tag       | E3SM Hash  | Update Type | Short description                                              |
 +==========================+================+============+=============+================================================================+
 | `sci.1.79.2_api.36.1.0`_ |                |            | Bug fix     | Correction to inventory write statement                        |
 +--------------------------+                +            +-------------+----------------------------------------------------------------+
@@ -23,12 +23,14 @@ API 36
 +--------------------------+                +            +-------------+----------------------------------------------------------------+
 | `sci.1.78.0_api.36.0.0`_ |                |            | Science     | New sapwood, agb, and leaf allometries for grasses             |
 +--------------------------+                +            +-------------+----------------------------------------------------------------+
-| `sci.1.77.2_api.36.0.0`_ |                |            | Bug fix     | Bug fix for initializing land use transition matrix            |
+| `sci.1.77.2_api.36.0.0`_ |                |            | Bug fix     | Land use transition matrix initialization                      |
 +--------------------------+                +            +-------------+----------------------------------------------------------------+
-| `sci.1.77.1_api.36.0.0`_ |                |            | Bug fix     | Bug fix for non-land use run modes                             |
+| `sci.1.77.1_api.36.0.0`_ |                |            | Bug fix     | Non-land use run modes fix                                     |
 +--------------------------+                +            +-------------+----------------------------------------------------------------+
-| `sci.1.77.0_api.36.0.0`_ | `ctsm5.2.013`_ | `377b2d3`_ | Science     | Land use version 2                                             |
+| `sci.1.77.0_api.36.0.0`_ | `ctsm5.2.013`_ | `377b2d3`_ | Science     | Land use version 2[#]_                                         |
 +--------------------------+----------------+------------+-------------+----------------------------------------------------------------+
+
+.. [#] Users wanting to run non-land use run modes should avoid this tag due to a bug that has been fixed in the next fates tag.
 
 .. _sci.1.79.2_api.36.1.0: https://github.com/NGEET/fates/releases/tag/sci.1.79.2_api.36.1.0
 .. _sci.1.79.1_api.36.1.0: https://github.com/NGEET/fates/releases/tag/sci.1.79.1_api.36.1.0
