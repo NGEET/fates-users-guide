@@ -27,10 +27,10 @@ API 36
 +--------------------------+                +            +-------------+----------------------------------------------------------------+
 | `sci.1.77.1_api.36.0.0`_ |                |            | Bug fix     | Non-land use run modes fix                                     |
 +--------------------------+                +            +-------------+----------------------------------------------------------------+
-| `sci.1.77.0_api.36.0.0`_ | `ctsm5.2.013`_ | `377b2d3`_ | Science     | Land use version 2[#]_                                         |
+| `sci.1.77.0_api.36.0.0`_ | `ctsm5.2.013`_ | `377b2d3`_ | Science     | Land use version 2 [#]_                                        |
 +--------------------------+----------------+------------+-------------+----------------------------------------------------------------+
 
-.. [#] Users wanting to run non-land use run modes should avoid this tag due to a bug that has been fixed in the next fates tag.
+.. [#] Users wanting to run non-land use run modes should avoid this tag due `issue #1221`_.  The next fates tag addresses this issue.
 
 .. _sci.1.79.2_api.36.1.0: https://github.com/NGEET/fates/releases/tag/sci.1.79.2_api.36.1.0
 .. _sci.1.79.1_api.36.1.0: https://github.com/NGEET/fates/releases/tag/sci.1.79.1_api.36.1.0
@@ -49,3 +49,5 @@ API 36
 
 .. _ef0abe7: https://github.com/E3SM-Project/E3SM/commit/ef0abe727bb4f3286a40d2350aaded5030197615
 .. _377b2d3: https://github.com/E3SM-Project/E3SM/commit/377b2d31d77977efc0f5edf79ba243377f668517
+
+.. _issue #1221: https://github.com/NGEET/fates/issues/1221
