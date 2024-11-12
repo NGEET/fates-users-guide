@@ -11,16 +11,16 @@ Tagging is a somewhat subjective and a conceptual exercise.  The tag format is a
 The first three version numbers after `sci` are related to the scientific code updates:
 - `x`: Major stable scientific release
 - `y`: Scientific feature update
-- `z`: Bug fix update
+- `z`: Bug fix update and refactors
 
-The major stable release number increments rarely and are based upon large long-term devlopment milestones.  The vast majority of updates to the FATES code are individual feature updates.  This includes, but is not limited to, new scientific features, submodule refactors, performance improvements, etc.  As such, the number of lines of code may vary widely for such updates and are not necessarily answer-changing.  Bug fixes are given their own version number.
+The major stable release number increments rarely and are based upon large long-term devlopment milestones.  The vast majority of updates to the FATES code are individual feature updates.  This includes, but is not limited to, new scientific features, updates to existing model features, new or updated parameter values, etc.  As such, the number of lines of code may vary widely for such updates and are not necessarily answer-changing.  Bug fixes and code refactors are given their own version number.  Bug fixes are narrowly focused on resolving specific issues with software and will likely be answer changing, whereas refactors are geared towards improving code _without_ changing answers.  While refactors can be larger in scope than bug fixes, they are lumped together in the same version number as the impact on answers is non-existent or narrowly focused, respectively. 
 
-The three version numbers after `api` are related to code changes on the host land model (e.g. [CTSM](https://github.com/ESCOMP/ctsm)) side that are necessary for the use of the FATES code:  
+The three version numbers after `api` are related to code changes on the host land model (e.g. [CTSM](https://github.com/ESCOMP/ctsm)) side that are necessary for the use of the FATES code:
 - `a`: major API update
 - `b`: minor API update
 - `c`: API bug fix
 
-The difference between major and minor version updates is based more closely related to the scope of the host land model code that is changed concurrently with the associated FATES feature update.  An update that adds only a few lines of code to pass new information to the FATES model or refactors the existing host land model code without changing functionality would be considered a minor update.  Minor updates are not necessarily backwards incompatible changes, whereas major api updates are always backwards incompatible changes.  API bug fixes are given their own version number.
+The difference between major and minor version updates is based on the impact to FATES user.  The intent of the API version number is to communicate to the user which version of the host land model is necessary to run a specific version of FATES.  All breaking changes to the API are considered major API updates since this requires the user to update the version of the host land model that they are working with.  Minor API updates and bug fixes are expected to be backwards compatible changes.  In this way, a user should be able to utilize host land model version that is associated with the same FATES major API version.
 
 Note that updates to comments, documentation or code not directly associated with FATES, but held in the repo are not associated with specific tags as they do not fall under any of the above versioning categories.  The current exception to this is with [tools](https://github.com/NGEET/fates/tree/master/tools) for which we append a `tools` suffix like so: `sci.x.y.z_api.a.b.c_tools.i.j.k`.  We only append this to a new tag if a tool update is included.  Note that the if the tool update does not accompany a scienctific or api update, the previous tag for those updates is used.  The first three version numbers after `tools` denote the following updates:
 - `i`: new tool or major stable release
