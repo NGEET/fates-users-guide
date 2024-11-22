@@ -12,7 +12,7 @@ API 37 captures the spitfire fuel equations refactor changes which renames and m
 | FATES Tag                | CTSM Tag       | E3SM Hash  | Update Type | Short description                                              |
 +==========================+================+============+=============+================================================================+
 | `sci.1.80.1_api.37.0.0`_ |                |            | Bug fix     | Grass-specific cross-sectional area calculation fix            |
-+--------------------------+----------------+            +-------------+----------------------------------------------------------------+
++--------------------------+                +            +-------------+----------------------------------------------------------------+
 | `sci.1.80.0_api.37.0.0`_ |                |            | Science     | Growth respiration moved to daily timestep                     |
 +--------------------------+                +            +-------------+----------------------------------------------------------------+
 | `sci.1.79.3_api.37.0.0`_ | `ctsm5.3.012`_ | `PR 6762`_ | Software    | Refactor SPITFIRE fuel equations                               |
@@ -50,8 +50,7 @@ API 36 captures updates and additions to the interface code for passing a new la
 Pre-API 36 table
 ----------------
 
-..
-   For a compatibility table prior to API 35, please see :doc:`/user/Table-of-FATES-API-and-HLM-STATUS`.
+For a compatibility table prior to API 35, please see `this older API compatibility table`_.
 
 ..
    For a compatibility table prior to API 35, please see :doc:`/user/HLM-FATES-PFT-map`.
@@ -84,6 +83,8 @@ Pre-API 36 table
 .. _377b2d3: https://github.com/E3SM-Project/E3SM/commit/377b2d31d77977efc0f5edf79ba243377f668517
 .. _f14a3cf: https://github.com/E3SM-Project/E3SM/commit/f14a3cf738fc56f287665a49231b461878770958
 
-.. _PR 6767: https://github.com/E3SM-Project/E3SM/pull/6762
+.. _PR 6762: https://github.com/E3SM-Project/E3SM/pull/6762
 
 .. _issue #1221: https://github.com/NGEET/fates/issues/1221
+
+.. _this older API compatibility table: :doc:`/user/Table-of-FATES-API-and-HLM-STATUS`
