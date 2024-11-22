@@ -1,11 +1,9 @@
-# FATES-HLM API Compatibility Table
+# Pre-API 36 FATES-HLM API Compatibility Table 
 
 The following table list the FATES API and the corresponding HLM tag associated with that API update.  Note that CTSM provides a specific tag for each of its merge commits to the master branch whereas E3SM does not.  As such, the hash for the relevant merge commit is provided for E3SM.  Entries that specifically link to a pull request (e.g. PR#XXXX) are provided to note updates which have not been integrated yet, but are pending.  The table may also include future planned API updates without links to provide users an advanced look at what updates are forthcoming.
 
-| FATES API   | CTSM Tag | E3SM Hash | Description |
+| FATES Tag   | CTSM Tag | E3SM Hash | Description |
 | ----------- | -------- | --------- | ----------- |
-| [API 36.1.0](https://github.com/NGEET/fates/releases/tag/sci.1.78.3_api.36.1.0) | [ctsm5.3.003](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.003) | [ef0abe7](https://github.com/E3SM-Project/E3SM/commit/ef0abe727bb4f3286a40d2350aaded5030197615) | Default parameter file update (arctic shrubs, grass allometry) |
-| [API 36.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.77.0_api.36.0.0) | [ctsm5.2.013](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.2.013) | [377b2d3](https://github.com/E3SM-Project/E3SM/commit/377b2d31d77977efc0f5edf79ba243377f668517) | Land use v2 |
 | [API 35.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.73.0_api.35.0.0) | [ctsm5.2.002](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.2.002) | [f14a3cf](https://github.com/E3SM-Project/E3SM/commit/f14a3cf738fc56f287665a49231b461878770958) | Parameter file default allometry update |
 | [API 34.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.72.2_api.34.0.0) | [ctsm5.1.dev173](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev173) | [f14a3cf](https://github.com/E3SM-Project/E3SM/commit/f14a3cf738fc56f287665a49231b461878770958) | History density control |
 | [API 33.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.71.0_api.33.0.0) | [ctsm5.1.dev164](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev164) | [c2c3b2a](https://github.com/E3SM-Project/E3SM/commit/c2c3b2a8b975ec3b5384d9b983e1e40e7e716ea5) | Two-stream radiation |
