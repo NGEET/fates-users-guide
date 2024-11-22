@@ -47,8 +47,8 @@ API 36 captures updates and additions to the interface code for passing a new la
 | `sci.1.77.0_api.36.0.0`_ | `ctsm5.2.013`_ | `377b2d3`_ | Science     | Land use version 2 [#]_                                        |
 +--------------------------+----------------+------------+-------------+----------------------------------------------------------------+
 
-Pre-API 36 table
-----------------
+Pre-API 36
+----------
 
 For compatibility for API 35 and earlier, please see :doc:`/user/Table-of-FATES-API-and-HLM-STATUS`.
 
