@@ -50,10 +50,7 @@ API 36 captures updates and additions to the interface code for passing a new la
 Pre-API 36
 ----------
 
-For compatibility for API 35 and earlier, please see :doc:`/user/Table-of-FATES-API-and-HLM-STATUS`.
-
-..
-   For a compatibility table prior to API 35, please see :doc:`/user/HLM-FATES-PFT-map`.
+For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES-API-and-HLM-STATUS`.
 
 
 .. [#] Users wanting to run non-land use run modes should avoid this tag due `issue #1221`_.  The next fates tag addresses this issue.
@@ -77,7 +74,6 @@ For compatibility for API 35 and earlier, please see :doc:`/user/Table-of-FATES-
 .. _ctsm5.3.012: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.012
 .. _ctsm5.3.003: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.003
 .. _ctsm5.2.013: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.2.013
-.. _ctsm5.2.002: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.2.002
 
 .. _ef0abe7: https://github.com/E3SM-Project/E3SM/commit/ef0abe727bb4f3286a40d2350aaded5030197615
 .. _377b2d3: https://github.com/E3SM-Project/E3SM/commit/377b2d31d77977efc0f5edf79ba243377f668517
