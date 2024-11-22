@@ -50,7 +50,7 @@ API 36 captures updates and additions to the interface code for passing a new la
 Pre-API 36 table
 ----------------
 
-For a compatibility table prior to API 35, please see :doc:`/user/Table-of-FATES-API-and-HLM-STATUS`.
+For compatibility for API 35 and earlier, please see :doc:`/user/Table-of-FATES-API-and-HLM-STATUS`.
 
 ..
    For a compatibility table prior to API 35, please see :doc:`/user/HLM-FATES-PFT-map`.
