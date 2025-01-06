@@ -11,6 +11,16 @@ API 37 captures the spitfire fuel equations refactor changes which renames and m
 +--------------------------+----------------+------------+-------------+----------------------------------------------------------------+
 | FATES Tag                | CTSM Tag       | E3SM Hash  | Update Type | Short description                                              |
 +==========================+================+============+=============+================================================================+
+| `sci.1.80.6_api.37.0.0`_ |                |            | Bug fix     | Corrects when burnt fuel is zero'd and litter mass update      |
++--------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.80.5_api.37.0.0`_ |                |            | Software    | Refactor to the SPITFIRE rate-of-spread subroutine             |
++--------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.80.4_api.37.0.0`_ |                |            | Bug fix     | Corrects lack of direct mortality with area-based logging      |
++--------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.80.3_api.37.0.0`_ |                |            | Software    | Comprehensive singularity correction update to two-stream      |
++--------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.80.2_api.37.0.0`_ |                |            | Bug fix     | Avoids divide-by-zero crash when 100% allocation is to seeds   |
++--------------------------+                +            +-------------+----------------------------------------------------------------+
 | `sci.1.80.1_api.37.0.0`_ |                |            | Bug fix     | Grass-specific cross-sectional area calculation fix            |
 +--------------------------+                +            +-------------+----------------------------------------------------------------+
 | `sci.1.80.0_api.37.0.0`_ |                |            | Science     | Growth respiration moved to daily timestep                     |
@@ -55,6 +65,11 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 
 .. [#] Users wanting to run non-land use run modes should avoid this tag due `issue #1221`_.  The next fates tag addresses this issue.
 
+.. _sci.1.80.6_api.37.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.80.6_api.37.0.0
+.. _sci.1.80.5_api.37.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.80.5_api.37.0.0
+.. _sci.1.80.4_api.37.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.80.4_api.37.0.0
+.. _sci.1.80.3_api.37.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.80.3_api.37.0.0
+.. _sci.1.80.2_api.37.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.80.2_api.37.0.0
 .. _sci.1.80.1_api.37.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.80.1_api.37.0.0
 .. _sci.1.80.0_api.37.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.80.0_api.37.0.0
 .. _sci.1.79.3_api.37.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.79.3_api.37.0.0
