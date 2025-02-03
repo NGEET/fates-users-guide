@@ -8,25 +8,35 @@ API 37
 
 API 37 captures the spitfire fuel equations refactor changes which renames and moves related variables into a new module.
 
-+--------------------------+----------------+------------+-------------+----------------------------------------------------------------+
-| FATES Tag                | CTSM Tag       | E3SM Hash  | Update Type | Short description                                              |
-+==========================+================+============+=============+================================================================+
-| `sci.1.80.6_api.37.0.0`_ |                |            | Bug fix     | Corrects when burnt fuel is zero'd and litter mass update      |
-+--------------------------+                +            +-------------+----------------------------------------------------------------+
-| `sci.1.80.5_api.37.0.0`_ |                |            | Software    | Refactor to the SPITFIRE rate-of-spread subroutine             |
-+--------------------------+                +            +-------------+----------------------------------------------------------------+
-| `sci.1.80.4_api.37.0.0`_ |                |            | Bug fix     | Corrects lack of direct mortality with area-based logging      |
-+--------------------------+                +            +-------------+----------------------------------------------------------------+
-| `sci.1.80.3_api.37.0.0`_ |                |            | Software    | Comprehensive singularity correction update to two-stream      |
-+--------------------------+                +            +-------------+----------------------------------------------------------------+
-| `sci.1.80.2_api.37.0.0`_ |                |            | Bug fix     | Avoids divide-by-zero crash when 100% allocation is to seeds   |
-+--------------------------+                +            +-------------+----------------------------------------------------------------+
-| `sci.1.80.1_api.37.0.0`_ |                |            | Bug fix     | Grass-specific cross-sectional area calculation fix            |
-+--------------------------+                +            +-------------+----------------------------------------------------------------+
-| `sci.1.80.0_api.37.0.0`_ |                |            | Science     | Growth respiration moved to daily timestep                     |
-+--------------------------+                +            +-------------+----------------------------------------------------------------+
-| `sci.1.79.3_api.37.0.0`_ | `ctsm5.3.012`_ | `PR 6762`_ | Software    | Refactor SPITFIRE fuel equations                               |
-+--------------------------+----------------+------------+-------------+----------------------------------------------------------------+
++---------------------------+----------------+------------+-------------+----------------------------------------------------------------+
+| FATES Tag                 | CTSM Tag       | E3SM Hash  | Update Type | Short description                                              |
++===========================+================+============+=============+================================================================+
+| `sci.1.80.11_api.37.0.0`_ |                |            | Bug fix     | Land use bug fixes and updates to the history output           |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.80.10_api.37.0.0`_ |                |            | Software    | Add runtime checks on the allometry mode settings              |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.80.9_api.37.0.0`_  |                |            | Bug fix     | Fix vegetation temperature weighting during phenology          |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.80.8_api.37.0.0`_  |                |            | Bug fix     | Corrects hydro sapflow output                                  |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.80.7_api.37.0.0`_  |                |            | Software    | Adds mechanism to avoid LAI exceeding allometry maximums       |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.80.6_api.37.0.0`_  |                |            | Bug fix     | Corrects when burnt fuel is zero'd and litter mass update      |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.80.5_api.37.0.0`_  |                |            | Software    | Refactor to the SPITFIRE rate-of-spread subroutine             |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.80.4_api.37.0.0`_  |                |            | Bug fix     | Corrects lack of direct mortality with area-based logging      |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.80.3_api.37.0.0`_  |                |            | Software    | Comprehensive singularity correction update to two-stream      |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.80.2_api.37.0.0`_  |                |            | Bug fix     | Avoids divide-by-zero crash when 100% allocation is to seeds   |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.80.1_api.37.0.0`_  |                |            | Bug fix     | Grass-specific cross-sectional area calculation fix            |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.80.0_api.37.0.0`_  |                |            | Science     | Growth respiration moved to daily timestep                     |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.79.3_api.37.0.0`_  | `ctsm5.3.012`_ | `13abf59`_ | Software    | Refactor SPITFIRE fuel equations                               |
++---------------------------+----------------+------------+-------------+----------------------------------------------------------------+
 
 API 36
 ------
@@ -65,6 +75,11 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 
 .. [#] Users wanting to run non-land use run modes should avoid this tag due `issue #1221`_.  The next fates tag addresses this issue.
 
+.. _sci.1.80.11_api.37.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.80.11_api.37.0.0
+.. _sci.1.80.10_api.37.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.80.10_api.37.0.0
+.. _sci.1.80.9_api.37.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.80.9_api.37.0.0
+.. _sci.1.80.8_api.37.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.80.8_api.37.0.0
+.. _sci.1.80.7_api.37.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.80.7_api.37.0.0
 .. _sci.1.80.6_api.37.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.80.6_api.37.0.0
 .. _sci.1.80.5_api.37.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.80.5_api.37.0.0
 .. _sci.1.80.4_api.37.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.80.4_api.37.0.0
@@ -94,6 +109,6 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 .. _377b2d3: https://github.com/E3SM-Project/E3SM/commit/377b2d31d77977efc0f5edf79ba243377f668517
 .. _f14a3cf: https://github.com/E3SM-Project/E3SM/commit/f14a3cf738fc56f287665a49231b461878770958
 
-.. _PR 6762: https://github.com/E3SM-Project/E3SM/pull/6762
+.. _13abf59: https://github.com/E3SM-Project/E3SM/commit/13abf5991f234f8c64237566e228441465180f7e
 
 .. _issue #1221: https://github.com/NGEET/fates/issues/1221
