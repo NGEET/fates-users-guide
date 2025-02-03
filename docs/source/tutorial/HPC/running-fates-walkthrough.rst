@@ -11,7 +11,7 @@ Materials
 1. This course is supported on the following HPCs
 
    * For CTSM: **cheyenne**
-   * For E3SM: **cori**
+   * For E3SM: **perlmutter**
 
 2. Modest computational allocation
 3. The “FATESTutorialPacket_Feb2019.tgz” packet

@@ -164,7 +164,7 @@ A sample of output data has been pre-generated for visualizing run 2.  Head back
 
     $ cd <path>/FatesTutorial_Feb2019/Data/run2_1x1brazil_structured
 
-On cori: 
+On perlmutter: 
 
 .. code-block:: shell
 
