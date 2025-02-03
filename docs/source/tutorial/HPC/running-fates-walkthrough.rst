@@ -12,7 +12,8 @@ Materials
 
    * For CTSM: **cheyenne**
    * For E3SM: **cori**. 
-     * **Important**: _cori_ has been retired, the currently supported HPC is **perlmutter**. Most of the settings for _cori_ should still be applicable to _perlmutter_.
+   * For CTSM: **cheyenne** [#]_
+   * For E3SM: **cori** [#]_
 
 2. Modest computational allocation
 3. The “FATESTutorialPacket_Feb2019.tgz” packet
@@ -52,4 +53,10 @@ The tutorial is split into four different sections:
    running-fates-walkthrough-case1
    running-fates-walkthrough-case2
    running-fates-walkthrough-case3
-   
+
+
+.. [#] Cheyenne has been retired and replaced by `Derecho`_.  Most of the settings should still be applicable.
+.. [#] Cori has been retired and replaced by `Perlmutter`_.  Most of the settings should still be applicable.
+
+.. _Perlmutter: https://docs.nersc.gov/systems/perlmutter/architecture/
+.. _Derecho: https://ncar-hpc-docs.readthedocs.io/en/latest/compute-systems/derecho/
