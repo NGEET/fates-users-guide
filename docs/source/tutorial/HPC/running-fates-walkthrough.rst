@@ -10,8 +10,6 @@ Materials
 ^^^^^^^^^
 1. This course is supported on the following HPCs
 
-   * For CTSM: **cheyenne**
-   * For E3SM: **cori**. 
    * For CTSM: **cheyenne** [#]_
    * For E3SM: **cori** [#]_
 
