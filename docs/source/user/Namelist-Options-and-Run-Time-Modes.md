@@ -24,7 +24,9 @@ For more information on how to set and use these modes, click on the links in th
 | use_fates_sp                  | true/false        | `.false.`               | Turns on/off {doc}`satellite phenology mode <SP-(satellite-phenology)-mode>` |
 | use_fates_tree_damage         | true/false        | `.false.`               | Turns on/of {doc}`tree crown damage <fates-doc:fates_tech_note>` |
 | use_fates_cohort_age_tracking | true/false        | `.false.`               | Enables tracking of cohort age |
-| fates_electron_transport_model | String | 'FvCB1980','JohnsonBerry2021'     | Selects the type of electron transport model |
+| fates_electron_transport_model | String | `'FvCB1980'`, `'JohnsonBerry2021'`     | Selects the type of electron transport model |
+| fates_radiation_model | String | `'norman'`, `'twostream'`     | Selects the radiation model |
+| fates_hydro_solver | String | `'1D_Taylor'`, `'2D_Picard'`, `'2D_Newton'`| Selects the hydraulics solver method |
 
 
 For the nocomp and fixed biogeography, there are logical interactions between them, so what happens is related to the values of both switches.  This logic looks like:
