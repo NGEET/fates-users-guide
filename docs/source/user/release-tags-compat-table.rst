@@ -3,10 +3,25 @@ FATES-HLM API compatibility tables
 
 The following table list the FATES API and the corresponding HLM tag associated with that API update.  Note that CTSM provides a specific tag for each of its merge commits to the master branch whereas E3SM does not.  As such, the hash for the relevant merge commit is provided for E3SM.  Entries that specifically link to a pull request (e.g. PR#XXXX) are provided to note updates which have not been integrated yet, but are pending.  The table may also include future planned API updates without links to provide users an advanced look at what updates are forthcoming.
 
-API 38
+API 39
 ------
 
+This API update corrects issues with restarting FATES two-stream radiation and changes how zenith angles are updated and passed to FATES.
+
++---------------------------+----------------+------------+-------------+----------------------------------------------------------------+
+| FATES Tag                 | CTSM Tag       | E3SM Hash  | Update Type | Short description                                              |
++===========================+================+============+=============+================================================================+
+| `sci.1.82.6_api.39.0.0`_  |                |            | Bug fix     | Excess respiration unit fix for mass balance issue             |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.82.5_api.39.0.0`_  |                |            | Science     | Add site x pft expansions of seed bank history output          |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.82.4_api.39.0.0`_  |                |            | Bug fix     | Correct missing fire-induced carbon mortality history output   |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.82.3_api.39.0.0`_  | `ctsm5.3.034`_ | `PR 6918`_ | Bug fix     | Fixes two-stream radiation exact restart issue                 |
++---------------------------+----------------+------------+-------------+----------------------------------------------------------------+
+
 API 38
+------
 
 This breaking API update is due to the migration of the global FATES switches from the parameter file to the HLM namelists.  This update
 will help improve testing and calibration automation by avoiding the need to generate a FATES parameter file if only the switch setting
@@ -15,6 +30,14 @@ changes.
 +---------------------------+----------------+------------+-------------+----------------------------------------------------------------+
 | FATES Tag                 | CTSM Tag       | E3SM Hash  | Update Type | Short description                                              |
 +===========================+================+============+=============+================================================================+
+| `sci.1.82.2_api.38.0.0`_  |                |            | Bug fix     | Harvesting bug fix for unoccupied canopy area                  |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.82.1_api.38.0.0`_  |                |            | Bug fix     | Storage calculation issue due to incorrect nutrient targets    |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.82.0_api.38.0.0`_  |                |            | Software    | Refactor to leaf biophysics and addition of unit tests         |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.81.2_api.38.0.0`_  |                |            | Software    | Refactor spitfire order of operations                          |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
 | `sci.1.81.1_api.38.0.0`_  | `ctsm5.3.027`_ | `PR 6918`_ | Software    | Migrate global FATES switches from parameter file to namelist  |
 +---------------------------+----------------+------------+-------------+----------------------------------------------------------------+
 
@@ -28,7 +51,7 @@ API 37 captures the spitfire fuel equations refactor changes which renames and m
 +===========================+================+============+=============+================================================================+
 | `sci.1.81.1_api.37.1.0`_  |                |            | Software    | Patch convservation method added for two-stream radiation      |
 +---------------------------+                +            +-------------+----------------------------------------------------------------+
-| `sci.1.81.0_api.37.1.0`_  | `ctsm5.3.025`_ | `PR 7027`_ | Science     | Grazing feature added and default parameter file update        |
+| `sci.1.81.0_api.37.1.0`_  | `ctsm5.3.025`_ | `PR 6918`_ | Science     | Grazing feature added and default parameter file update        |
 +---------------------------+----------------+------------+-------------+----------------------------------------------------------------+
 | `sci.1.80.14_api.37.0.0`_ |                |            | Software    | Patch numbering and no-competition clean up                    |
 +---------------------------+                +            +-------------+----------------------------------------------------------------+
@@ -100,6 +123,15 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 
 .. [#] Users wanting to run non-land use run modes should avoid this tag due `issue #1221`_.  The next fates tag addresses this issue.
 
+.. _sci.1.82.6_api.39.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.82.6_api.39.0.0
+.. _sci.1.82.5_api.39.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.82.5_api.39.0.0
+.. _sci.1.82.4_api.39.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.82.4_api.39.0.0
+.. _sci.1.82.3_api.39.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.82.3_api.39.0.0
+
+.. _sci.1.82.2_api.38.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.82.2_api.38.0.0
+.. _sci.1.82.1_api.38.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.82.1_api.38.0.0
+.. _sci.1.82.0_api.38.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.82.0_api.38.0.0
+.. _sci.1.81.2_api.38.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.81.2_api.38.0.0
 .. _sci.1.81.1_api.38.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.81.1_api.38.0.0
 .. _sci.1.81.1_api.37.1.0: https://github.com/NGEET/fates/releases/tag/sci.1.81.1_api.37.1.0
 .. _sci.1.81.0_api.37.1.0: https://github.com/NGEET/fates/releases/tag/sci.1.81.0_api.37.1.0
@@ -132,6 +164,7 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 .. _sci.1.77.1_api.36.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.77.1_api.36.0.0
 .. _sci.1.77.0_api.36.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.77.0_api.36.0.0
 
+.. _ctsm5.3.034: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.034
 .. _ctsm5.3.027: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.027
 .. _ctsm5.3.025: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.025
 .. _ctsm5.3.012: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.012
