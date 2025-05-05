@@ -11,13 +11,19 @@ This API update corrects issues with restarting FATES two-stream radiation and c
 +---------------------------+----------------+------------+-------------+----------------------------------------------------------------+
 | FATES Tag                 | CTSM Tag       | E3SM Hash  | Update Type | Short description                                              |
 +===========================+================+============+=============+================================================================+
+| `sci.1.83.0_api.39.0.0`_  |                |            | Science     | Two-stream sun-shade fraction update                           |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.82.8_api.39.0.0`_  |                |            | Software    | Refactor of vegetation bin indexing                            |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.82.7_api.39.0.0`_  |                |            | Bug fix     | Radation transmission bug fix                                  |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
 | `sci.1.82.6_api.39.0.0`_  |                |            | Bug fix     | Excess respiration unit fix for mass balance issue             |
 +---------------------------+                +            +-------------+----------------------------------------------------------------+
 | `sci.1.82.5_api.39.0.0`_  |                |            | Science     | Add site x pft expansions of seed bank history output          |
 +---------------------------+                +            +-------------+----------------------------------------------------------------+
 | `sci.1.82.4_api.39.0.0`_  |                |            | Bug fix     | Correct missing fire-induced carbon mortality history output   |
 +---------------------------+                +            +-------------+----------------------------------------------------------------+
-| `sci.1.82.3_api.39.0.0`_  | `ctsm5.3.034`_ | `PR 6918`_ | Bug fix     | Fixes two-stream radiation exact restart issue                 |
+| `sci.1.82.3_api.39.0.0`_  | `ctsm5.3.034`_ | `64046ec`_ | Bug fix     | Fixes two-stream radiation exact restart issue                 |
 +---------------------------+----------------+------------+-------------+----------------------------------------------------------------+
 
 API 38
@@ -38,7 +44,7 @@ changes.
 +---------------------------+                +            +-------------+----------------------------------------------------------------+
 | `sci.1.81.2_api.38.0.0`_  |                |            | Software    | Refactor spitfire order of operations                          |
 +---------------------------+                +            +-------------+----------------------------------------------------------------+
-| `sci.1.81.1_api.38.0.0`_  | `ctsm5.3.027`_ | `PR 6918`_ | Software    | Migrate global FATES switches from parameter file to namelist  |
+| `sci.1.81.1_api.38.0.0`_  | `ctsm5.3.027`_ | `64046ec`_ | Software    | Migrate global FATES switches from parameter file to namelist  |
 +---------------------------+----------------+------------+-------------+----------------------------------------------------------------+
 
 API 37
@@ -51,7 +57,7 @@ API 37 captures the spitfire fuel equations refactor changes which renames and m
 +===========================+================+============+=============+================================================================+
 | `sci.1.81.1_api.37.1.0`_  |                |            | Software    | Patch convservation method added for two-stream radiation      |
 +---------------------------+                +            +-------------+----------------------------------------------------------------+
-| `sci.1.81.0_api.37.1.0`_  | `ctsm5.3.025`_ | `PR 6918`_ | Science     | Grazing feature added and default parameter file update        |
+| `sci.1.81.0_api.37.1.0`_  | `ctsm5.3.025`_ | `64046ec`_ | Science     | Grazing feature added and default parameter file update        |
 +---------------------------+----------------+------------+-------------+----------------------------------------------------------------+
 | `sci.1.80.14_api.37.0.0`_ |                |            | Software    | Patch numbering and no-competition clean up                    |
 +---------------------------+                +            +-------------+----------------------------------------------------------------+
@@ -123,6 +129,9 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 
 .. [#] Users wanting to run non-land use run modes should avoid this tag due `issue #1221`_.  The next fates tag addresses this issue.
 
+.. _sci.1.83.0_api.39.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.83.0_api.39.0.0
+.. _sci.1.82.8_api.39.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.82.8_api.39.0.0
+.. _sci.1.82.7_api.39.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.82.7_api.39.0.0
 .. _sci.1.82.6_api.39.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.82.6_api.39.0.0
 .. _sci.1.82.5_api.39.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.82.5_api.39.0.0
 .. _sci.1.82.4_api.39.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.82.4_api.39.0.0
@@ -173,6 +182,7 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 
 .. _PR 6918: https://github.com/E3SM-Project/E3SM/pull/6918
 .. _PR 7027: https://github.com/E3SM-Project/E3SM/pull/7027
+.. _64046ec: https://github.com/E3SM-Project/E3SM/commit/64046ec75587d9fcd035f22553192665dd540f56
 .. _ef0abe7: https://github.com/E3SM-Project/E3SM/commit/ef0abe727bb4f3286a40d2350aaded5030197615
 .. _377b2d3: https://github.com/E3SM-Project/E3SM/commit/377b2d31d77977efc0f5edf79ba243377f668517
 .. _f14a3cf: https://github.com/E3SM-Project/E3SM/commit/f14a3cf738fc56f287665a49231b461878770958
