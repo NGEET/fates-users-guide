@@ -11,7 +11,6 @@ https://github.com/NGEET/fates/tree/master/parameter_files
 
 A short history of the changes to parameter files before they were added to version control is as follows:
 
-
 Time description format is `c<YYMMDD>.cdl`
 
 There are two ways to get the netcdf version of these files.
@@ -19,6 +18,24 @@ There are two ways to get the netcdf version of these files.
 * Find the file in the NCAR SVN server and download (requires authentication): https://svn-ccsm-inputdata.cgd.ucar.edu/trunk/inputdata/lnd/clm2/paramdata/
 
 ---
+
+## Model switches
+
+Some of the FATES model features a set via the parameter file.  The following table defines the features that are switchable:
+
+
+| Parameter file variable | Options | Default | Description |
+| fates_allom_amode |         |         |             |
+| fates_daylength_factor_switch |         |         |             |
+| fates_hydro_htftype_node |         |         |             |
+| fates_leaf_stomatal_model |         |         |             |
+| fates_leaf_stomatal_assim_model |         |         |             |
+| fates_maintresp_leaf_model |         |         |             |
+| fates_mort_cstarvation_model |         |         |             |
+| fates_rad_model |         |         |             |
+| fates_regeneration_model |         |         |             |
+
+### Seed dispersal
 
 ## Old versions of the fates parameter files
 (Stopped tracking post API 3)
