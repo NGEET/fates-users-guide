@@ -10,7 +10,7 @@ For more information on how to set and use these modes, click on the links in th
 | use_fates                     | true/false        | `.true.`                | Turns on/off fates! (for CTSM this is done by changing the XML variable CLM_BLDNML_OPTS to have "-bgc fates" rather than changing this in the namelist) Compsets with for example `_CLMXX%FATES_` turn this on [XX is for the specific version number) |
 | fates_paramfile               | String (filepath) | default file            | path to an alternative netcdf fates parameter file |
 | fates_spitfire_mode           | int 0-4           | `0`                     | {doc}`SPITFIRE Namelist Options <SPITFIRE-Namelist-Options>` |
-| fates_history_dimlevel | int 0-2 | 2 |  0 = no fates history variables are calculated or allocated, 1 = only time x space (3d) fates history variables allowed, 2 = multiplexed dimensioned fates history is also allowed |
+| fates_history_dimlevel | int 0-2 | `2` |  0 = no fates history variables are calculated or allocated, 1 = only time x space (3d) fates history variables allowed, 2 = multiplexed dimensioned fates history is also allowed |
 | use_fates_planthydro          | true/false        | `.false.`               | Turns on/off the plant hydrodynamics module |
 | use_fates_ed_st3              | true/false        | `.false.`               | Turns on/off Static Stand Structure mode |
 | use_fates_ed_prescribed_phys  | true/false        | `.false.`               | Turns on/off Prescribed Physiology mode |
@@ -21,16 +21,16 @@ For more information on how to set and use these modes, click on the links in th
 | use_fates_fixed_biogeog       | true/false        | `.false.`               | Turns on/off {doc}`fixed biogeography mode <Fixed-Biogeography-Mode>` |
 | use_fates_nocomp              | true/false        | `.false.`               | Turns on/off no-competition mode |
 | use_fates_sp                  | true/false        | `.false.`               | Turns on/off {doc}`satellite phenology mode <SP-(satellite-phenology)-mode>` |
-| fates_harvest_mode            | String            | `no_harvest`            | Set FATES harvesting mode. See land use documentation. |
-| fates_seeddisp_cadence        | integer           | `1`                     | Switch defining the cadence at which seeds are dispersed across gridcells  |
-| fates_radiation_model         | String            | `norman`                | Set the FATES radiation model |
-| fates_hydro_solver            | String            | `1D_Taylor`             | Set the FATES hydro solver method |
-| fates_regeneration_model      | String            | `default`               | Set the FATES seed regeneration model |
-| fates_cstarvation_model       | String            | `linear`                | Set the FATES carbon starvation model | 
-| fates_leafresp_model          | String            | `ryan1991`              | Set the FATES leaf maintenance respiration model |
-| fates_stomatal_assimilation   | String            | `net`                   | Set net or gross asslimiation for the FATES stomatal model |
-| fates_stomatal_model          | Strng             | `ballberry1987`         | Set the FATES stomatal conductance model |
-| fates_photosynth_acclimation  | String            | `nonacclimating`        | Set the FATES photosynthesis temperature acclimation model |
+| fates_harvest_mode            | String            | `no_harvest`            | Set FATES harvesting mode. {doc}`Land use Namelist Options <Land-use-Namelist-Options>` |
+| fates_seeddisp_cadence        | int 0-3 | `1` | Switch defining the cadence at which seeds are dispersed across gridcells, 0 = no seed dispersal, 1 = daily, 2 = monthly, 3 = yearly. |
+| fates_radiation_model         | String            | `norman`                | `'norman'` or  `'twostream'` Sets the FATES radiation model |
+| fates_hydro_solver            | String            | `1D_Taylor`             | `'1D_Taylor'`, `'2D_Picard'`,  `'2D_Newton'` Sets the FATES hydro solver method  |
+| fates_regeneration_model      | String            | `default`               | `'default'`, `'trs'`, `'trs_no_seed_dyn'` Sets the FATES seed regeneration model |
+| fates_cstarvation_model       | String            | `linear`                | `'linear'`, `'exponential'` Sets the FATES carbon starvation model | 
+| fates_leafresp_model          | String            | `ryan1991`              | `'ryan1991'`, `'atkin2017'` Sets the FATES leaf maintenance respiration model |
+| fates_stomatal_assimilation   | String            | `net`                   | `'net'`, `'gross'` Set net or gross asslimiation for the FATES stomatal model |
+| fates_stomatal_model          | Strng             | `ballberry1987`         | `'ballberry1987'`, `'medlyn2011'` Set the FATES stomatal conductance model |
+| fates_photosynth_acclimation  | String            | `nonacclimating`        | `'nonacclimating'`, `'kumarathunge2019'` Set the FATES photosynthesis temperature acclimation model |
 | use_fates_daylength_factor    | true/false        | `.true.`                | Switch to enable FATES to use the day length factor from the host land model |
 | use_fates_tree_damage         | true/false        | `.false.`               | Toggle to turn on the tree damage module in FATES |
 | use_fates_luh                 | true/false        | `.false.`               | Turns on/off land use. |
