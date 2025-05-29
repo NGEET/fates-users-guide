@@ -23,22 +23,22 @@ For more information on how to set and use these modes, click on the links in th
 | use_fates_sp                  | true/false        | `.false.`               | Turns on/off {doc}`satellite phenology mode <SP-(satellite-phenology)-mode>` |
 | use_fates_tree_damage         | true/false        | `.false.`               | Turns on/of {doc}`tree crown damage <fates-doc:fates_tech_note>` |
 | fates_electron_transport_model | String | `'FvCB1980'`, `'JohnsonBerry2021'`     | Selects the type of electron transport model |
-| fates_harvest_mode            | String            | `no_harvest`            | Set FATES harvesting mode. {doc}`Land use Namelist Options <Land-use-Namelist-Options>` |
+| fates_harvest_mode            | String            | `'no_harvest'`            | Set FATES harvesting mode. {doc}`Land use Namelist Options <Land-use-Namelist-Options>` |
 | fates_seeddisp_cadence        | int 0-3 | `1` | Switch defining the cadence at which seeds are dispersed across gridcells, 0 = no seed dispersal, 1 = daily, 2 = monthly, 3 = yearly. |
-| fates_radiation_model         | String            | `norman`                | `'norman'`,  `'twostream'` Sets the FATES radiation model |
-| fates_hydro_solver            | String            | `1D_Taylor`             | `'1D_Taylor'`, `'2D_Picard'`,  `'2D_Newton'` Sets the FATES hydro solver method  |
-| fates_regeneration_model      | String            | `default`               | `'default'`, `'trs'`, `'trs_no_seed_dyn'` Sets the FATES seed regeneration model |
-| fates_cstarvation_model       | String            | `linear`                | `'linear'`, `'exponential'` Sets the FATES carbon starvation model | 
-| fates_leafresp_model          | String            | `ryan1991`              | `'ryan1991'`, `'atkin2017'` Sets the FATES leaf maintenance respiration model |
-| fates_stomatal_assimilation   | String            | `net`                   | `'net'`, `'gross'` Set net or gross asslimiation for the FATES stomatal model |
-| fates_stomatal_model          | Strng             | `ballberry1987`         | `'ballberry1987'`, `'medlyn2011'` Set the FATES stomatal conductance model |
-| fates_photosynth_acclimation  | String            | `nonacclimating`        | `'nonacclimating'`, `'kumarathunge2019'` Set the FATES photosynthesis temperature acclimation model |
+| fates_radiation_model         | String            | `'norman'`                | `'norman'`,  `'twostream'` Sets the FATES radiation model |
+| fates_hydro_solver            | String            | `'1D_Taylor'`             | `'1D_Taylor'`, `'2D_Picard'`,  `'2D_Newton'` Sets the FATES hydro solver method  |
+| fates_regeneration_model      | String            | `'default'`               | `'default'`, `'trs'`, `'trs_no_seed_dyn'` Sets the FATES seed regeneration model |
+| fates_cstarvation_model       | String            | `'linear'`                | `'linear'`, `'exponential'` Sets the FATES carbon starvation model | 
+| fates_leafresp_model          | String            | `'ryan1991'`              | `'ryan1991'`, `'atkin2017'` Sets the FATES leaf maintenance respiration model |
+| fates_stomatal_assimilation   | String            | `'net'`                   | `'net'`, `'gross'` Set net or gross asslimiation for the FATES stomatal model |
+| fates_stomatal_model          | Strng             | `'ballberry1987'`         | `'ballberry1987'`, `'medlyn2011'` Set the FATES stomatal conductance model |
+| fates_photosynth_acclimation  | String            | `'nonacclimating'`        | `'nonacclimating'`, `'kumarathunge2019'` Set the FATES photosynthesis temperature acclimation model |
 | use_fates_daylength_factor    | true/false        | `.true.`                | Switch to enable FATES to use the day length factor from the host land model |
 | use_fates_luh                 | true/false        | `.false.`               | Turns on/off land use. |
 | use_fates_lupft               | true/false        | `.false.`               | If true, enables the use of fates land use x pft mapping data file. |
 | use_fates_potentialveg        | true/false        | `.false.`               | If true, assert that all lands are primary and that there is no harvest. |
 | fluh_timeseries               | String (filepath) | blank                   | Full pathname of  unified land use harmonization data file. |
-| flandusepftdat                | String (filepath) | bland                   | Full pathname of FATES landuse x pft data map. |    
+| flandusepftdat                | String (filepath) | blank                   | Full pathname of FATES landuse x pft data map. |    
 
 
 
