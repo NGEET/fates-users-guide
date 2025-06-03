@@ -8,6 +8,7 @@ Overview
    notable
    Canopy-Layering-Convention
    Current-Unsupported-or-Broken-Features
+   namelist-overview
    Notes-on-the-Parameter-File
    Useful-Stuff
 
