@@ -1,4 +1,4 @@
-# Namelist Options
+# Namelist Option Summary Table
 
 Note: These options are governed by the host-model that drives FATES.  Efforts are made to keep these options consistent in the different driving models (e.g. E3SM/CSTM/etc).
 
