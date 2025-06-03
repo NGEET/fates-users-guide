@@ -1,4 +1,4 @@
-# Notes on the Parameter File
+# Parameter File
 
 NGEET/fates tracks the default fates parameter files in their CDL form via git!
 
