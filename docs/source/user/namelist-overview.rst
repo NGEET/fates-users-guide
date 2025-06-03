@@ -9,7 +9,7 @@ This subsection presents information relating to the initialization and run mode
 
 For a summary table of all current FATES options organized by model component please see the following page:
 
-:doc:`namelist-options`
+- :doc:`namelist-options`
 
 Details regarding certain namelist options for the various FATES model components are linked below:
 
