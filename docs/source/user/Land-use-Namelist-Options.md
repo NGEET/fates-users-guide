@@ -1,4 +1,4 @@
-# Land Use and harvest
+# Land Use and Harvest
 
 The land use settings in FATES can be controlled via a namelist setting: 
 
