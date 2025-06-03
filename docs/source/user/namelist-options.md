@@ -6,7 +6,7 @@ For more information on how to set and use these modes, click on the links in th
 
 ## Basic Usage Options
 
-The following table discusses the basic usage options and settings to enable FATES in the Host Land Model.  Note that compsets with `FATES` in the name, for example `_ELMXX%FATES_`, will set `use_fates` to true to automatically turn on FATES.  Also note that each HLM provides a default fates parameter file that is stored on the public input data servers.  See the page on {doc}`{Parameter-File}` for more information on modifying the default parameter file that is provided within the FATES source code.
+The following table discusses the basic usage options and settings to enable FATES in the Host Land Model.  Note that compsets with `FATES` in the name, for example `_ELMXX%FATES_`, will set `use_fates` to true to automatically turn on FATES.  Also note that each HLM provides a default fates parameter file that is stored on the public input data servers.  See the page discussing the :doc:`Parameter-File` for more information on modifying the default parameter file that is provided within the FATES source code.
 
 | Option                   | Type    | Default      | Options            | Description |
 |:-------------------------|:-------:|:------------:|:-------------------|:------------|
