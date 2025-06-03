@@ -1,4 +1,4 @@
-# PARTEH Mode
+# PARTEH
 
 The Plant Allocation and Reactive Transport Extensible Hypotheses (PARTEH) module, like the name implies, handles all things related to growth, allocation and transport.  Here is a link to the
 [PARTEH Technical Documentation](https://fates-docs.readthedocs.io/en/latest/fates_tech_note.html#allocation-and-reactive-transport-parteh).

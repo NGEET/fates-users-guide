@@ -1,4 +1,4 @@
-# SPITFIRE mode
+# SPITFIRE
 
 The fire model in FATES (SPITFIRE), can be controlled via a namelist setting:
 
