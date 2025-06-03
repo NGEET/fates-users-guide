@@ -14,8 +14,8 @@ The User's Guide is structured into four major sections:
 
    Namelist-Options-and-Run-Time-Modes
    Model-Initialization-Modes
+   SPITFIRE-Namelist-Options
    Fixed-Biogeography-Mode
    Land-use-Namelist-Options
    PARTEH-Modes
    SP-(satellite-phenology)-mode
-   SPITFIRE-Namelist-Options
