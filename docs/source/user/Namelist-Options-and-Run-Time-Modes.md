@@ -65,22 +65,22 @@ The namelist options for the various model components of FATES are presented in 
 
 ### Inventory
 
-| Option                          | Type              | Default   | Options            | Description                                                                               |
-|:--------------------------------|:-----------------:|:---------:|:-------------------|:------------------------------------------------------------------------------------------|
-| `fates_inventory_ctrl_filename` | String (filepath) | empty     | -                  | When inventory initialization true, points to control file                                |
-| `use_fates_inventory_init`      | Boolean           | `.false.` | `.true.` `.false.` | {doc}`Turns on/off initialization from plant inventory data <Model-Initialization-Modes>` |
+| Option                          | Type    | Default   | Options            | Description                                                                               |
+|:--------------------------------|:-------:|:---------:|:-------------------|:------------------------------------------------------------------------------------------|
+| `fates_inventory_ctrl_filename` | String  | empty     | -                  | When inventory initialization true, points to control file                                |
+| `use_fates_inventory_init`      | Boolean | `.false.` | `.true.` `.false.` | {doc}`Turns on/off initialization from plant inventory data <Model-Initialization-Modes>` |
 
 ### Land Use and Harvest
 
 
-| Option                   | Type              | Default   | Options            | Description                                                              |
-|:-------------------------|:-----------------:|:---------:|:-------------------|:-------------------------------------------------------------------------|
-| `use_fates_luh`          | Boolean           | `.false.` | `.true.` `.false.` | Turns on/off land use.                                                   |
-| `use_fates_lupft`        | Boolean           | `.false.` | `.true.` `.false.` | If true, enables the use of fates land use x pft mapping data file.      |
-| `use_fates_potentialveg` | Boolean           | `.false.` | `.true.` `.false.` | If true, assert that all lands are primary and that there is no harvest. |
-| `fluh_timeseries`        | String (filepath) | empty     | -                  | Full pathname of unified land use harmonization data file.               |
-| `flandusepftdat`         | String (filepath) | empty     | -                  | Full pathname of FATES landuse x pft data map.                           |
-| `fates_harvest_mode`     | String            | `'no_harvest'` | `'no_harvest'` `'event_code'` `'landuse_timeseries'` `'luhdata_area'` `'luhdata_mass'`| Set FATES harvesting mode. {doc}`Land use Namelist Options <Land-use-Namelist-Options>` |
+| Option                   | Type    | Default   | Options            | Description                                                              |
+|:-------------------------|:-------:|:---------:|:-------------------|:-------------------------------------------------------------------------|
+| `use_fates_luh`          | Boolean | `.false.` | `.true.` `.false.` | Turns on/off land use.                                                   |
+| `use_fates_lupft`        | Boolean | `.false.` | `.true.` `.false.` | If true, enables the use of fates land use x pft mapping data file.      |
+| `use_fates_potentialveg` | Boolean | `.false.` | `.true.` `.false.` | If true, assert that all lands are primary and that there is no harvest. |
+| `fluh_timeseries`        | String  | empty     | -                  | Full pathname of unified land use harmonization data file.               |
+| `flandusepftdat`         | String  | empty     | -                  | Full pathname of FATES landuse x pft data map.                           |
+| `fates_harvest_mode`     | String  | `'no_harvest'` | `'no_harvest'` `'event_code'` `'landuse_timeseries'` `'luhdata_area'` `'luhdata_mass'`| Set FATES harvesting mode. {doc}`Land use Namelist Options <Land-use-Namelist-Options>` |
 
 ### Nutrients
 
