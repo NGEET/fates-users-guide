@@ -9,6 +9,7 @@ Overview
    Canopy-Layering-Convention
    Current-Unsupported-or-Broken-Features
    namelist-overview
+   Model-Initialization-Modes
    Notes-on-the-Parameter-File
    Useful-Stuff
 
