@@ -18,6 +18,6 @@ Details regarding certain namelist options for the various FATES model component
 
    SPITFIRE-Namelist-Options
    Fixed-Biogeography-Mode
-   Land-use-Namelist-Options
+   landuse-harvest-modes
    PARTEH-Modes
    SP-(satellite-phenology)-mode
