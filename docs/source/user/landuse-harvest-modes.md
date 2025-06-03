@@ -1,4 +1,4 @@
-# FATES Harvest Modes
+# Land Use and Harvest
 
 FATES provides a namelist option, `fates_harvest_modes`, to allow the user to engage a variety of different harvest modes, which are set by passing one of five string options:
 
