@@ -14,7 +14,7 @@ The following table discusses the basic usage options and settings to enable FAT
 | `fates_history_dimlevel` | int 0-2 | `2` |  0 = no fates history variables are calculated or allocated, 1 = only time x space (3d) fates history variables allowed, 2 = multiplexed dimensioned fates history is also allowed |
 | `fates_paramfile`        | String (filepath) | default file            | path to an alternative netcdf fates parameter file |
 
-## Reduced Complexity Mode
+## Reduced Complexity Modes
 
 The full FATES model has a high degree of complexity.  In order to isolate different processes to allow for cleaner experimental design and facilitate calibration and testing of different model components, FATES includes a number of reduced-complexity configurations. A summary of these configurations is shown in table FATES reduced complexity modes table below:
 
