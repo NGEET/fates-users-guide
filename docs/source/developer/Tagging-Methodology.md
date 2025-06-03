@@ -24,7 +24,7 @@ sci minor: If content has been added that changes scientific hypotheses, or chan
 
 sci bugfix: As the name implies, if a bug has been fixed, or there have been cosmetic-only changes, or accessory changes
 
-api major: If we change the communication with FATES and its host, in such a way that FATES is no-longer backwards compatible with the HLM. When this happens, we must make synchronized API changes to the host land model. For the compatability match history, see {doc}`/user/Table-of-FATES-API-and-HLM-STATUS`.
+api major: If we change the communication with FATES and its host, in such a way that FATES is no-longer backwards compatible with the HLM. When this happens, we must make synchronized API changes to the host land model. For the compatibility match history, see {doc}`/user/Table-of-FATES-API-and-HLM-STATUS`.
 
 api minor: If changes are made to the FATES API that are still  backwards compatible. An example of this would be an update to structure of the FATES parameter file.  The user would not need to update which version of the HLM they use, but they would need to use a new parameter file structure.
 

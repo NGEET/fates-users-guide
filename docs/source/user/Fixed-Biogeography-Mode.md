@@ -1,4 +1,4 @@
-# Fixed Biogeography Mode
+# Fixed Biogeography
 
 ## Background
 

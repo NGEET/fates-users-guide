@@ -1,11 +1,12 @@
-# FATES-HLM API Compatability Table
+# Pre-API 36 FATES-HLM API Compatibility Table 
 
 The following table list the FATES API and the corresponding HLM tag associated with that API update.  Note that CTSM provides a specific tag for each of its merge commits to the master branch whereas E3SM does not.  As such, the hash for the relevant merge commit is provided for E3SM.  Entries that specifically link to a pull request (e.g. PR#XXXX) are provided to note updates which have not been integrated yet, but are pending.  The table may also include future planned API updates without links to provide users an advanced look at what updates are forthcoming.
 
-| FATES API   | CTSM Tag | E3SM Hash | Description |
+| FATES Tag   | CTSM Tag | E3SM Hash | Description |
 | ----------- | -------- | --------- | ----------- |
-| [API 34.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.72.2_api.34.0.0) | [ctsm5.1.dev173](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev173) | TBD | History density control |
-| [API 33.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.71.0_api.33.0.0) | [ctsm5.1.dev164](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev164) | [PR#6279](https://github.com/E3SM-Project/E3SM/pull/6279) | Two-stream radiation |
+| [API 35.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.73.0_api.35.0.0) | [ctsm5.2.002](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.2.002) | [f14a3cf](https://github.com/E3SM-Project/E3SM/commit/f14a3cf738fc56f287665a49231b461878770958) | Parameter file default allometry update |
+| [API 34.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.72.2_api.34.0.0) | [ctsm5.1.dev173](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev173) | [f14a3cf](https://github.com/E3SM-Project/E3SM/commit/f14a3cf738fc56f287665a49231b461878770958) | History density control |
+| [API 33.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.71.0_api.33.0.0) | [ctsm5.1.dev164](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev164) | [c2c3b2a](https://github.com/E3SM-Project/E3SM/commit/c2c3b2a8b975ec3b5384d9b983e1e40e7e716ea5) | Two-stream radiation |
 | [API 32.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.70.0_api.32.0.0) | [ctsm5.1.dev160](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev160) | [069c226](https://github.com/E3SM-Project/E3SM/commit/069c226a61c34a8f9857d88e36416630a7de14c7) | FATES landuse V1 |
 | [API 31.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.68.2_api.31.0.0) | [ctsm5.1.dev153](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev153) | [67abd00](https://github.com/E3SM-Project/E3SM/commit/67abd002e90036f0c0d7baeb10b8a55a2965e7a7) | FatesReadParameters API call refactor |
 | [API 30.0.0](https://github.com/NGEET/fates/releases/tag/sci.1.68.2_api.30.0.0) | [ctsm5.1.dev151](https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.1.dev151) | [318d612](https://github.com/E3SM-Project/E3SM/commit/318d6124be32f38fd7b10d2bf93b17680e814265) | Long duration exact restart fix |
