@@ -2,15 +2,19 @@
 
 FATES provides a namelist option, `fates_harvest_modes`, to allow the user to engage a variety of different harvest modes, which are set by passing one of five string options:
 
-- `'no_harvest'`: No harvesting (default mode)
-- `'event_code'`: Time based harvest only
-- `'landuse_timeseries'`: Mass or area-based harvesting driven by HLM landuse timeseries data
-- `'luhdata_area'`: Area-based harvesting driven by the LUH2 timeseries data
-- `'luhdata_mass'`: Mass-based harvesting driven by the LUH2 timeseries data
+- `'no_harvest'`
+- `'event_code'`
+- `'landuse_timeseries'`
+- `'luhdata_area'`
+- `'luhdata_mass'`
 
 ## General description
 
 ## Harvest mode descriptions
+
+### `'no_harvest'`
+
+This turns off the land use and harvest modes.  This is the default setting.
 
 ### `'event_code'`
 
