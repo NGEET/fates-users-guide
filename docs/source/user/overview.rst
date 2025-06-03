@@ -8,9 +8,9 @@ Overview
    notable
    Canopy-Layering-Convention
    Current-Unsupported-or-Broken-Features
-   namelist-overview
    Model-Initialization-Modes
-   Notes-on-the-Parameter-File
+   namelist-overview
+   Parameter-File
    Useful-Stuff
 
 Chosing a FATES version
