@@ -1,5 +1,7 @@
 # Land Use and Harvest
 
+## General description
+
 FATES provides a namelist option, `fates_harvest_modes`, to allow the user to engage a variety of different harvest modes, which are set by passing one of five string options:
 
 - `'no_harvest'`
@@ -7,8 +9,6 @@ FATES provides a namelist option, `fates_harvest_modes`, to allow the user to en
 - `'landuse_timeseries'`
 - `'luhdata_area'`
 - `'luhdata_mass'`
-
-## General description
 
 ## Harvest mode descriptions
 
