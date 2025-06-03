@@ -13,8 +13,9 @@ The User's Guide is structured into four major sections:
    :maxdepth: 1
 
    Namelist-Options-and-Run-Time-Modes
-   SPITFIRE-Namelist-Options
+   Model-Initialization-Modes
    Fixed-Biogeography-Mode
    Land-use-Namelist-Options
    PARTEH-Modes
    SP-(satellite-phenology)-mode
+   SPITFIRE-Namelist-Options
