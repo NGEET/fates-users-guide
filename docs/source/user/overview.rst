@@ -1,27 +1,14 @@
 Overview
 ========
 
-Discussion about the material
-Understanding oriented section
-
-
 .. toctree::
    :maxdepth: 1
    
    faq
    notable
    Canopy-Layering-Convention
-   Communal-slides-related-to-FATES
    Current-Unsupported-or-Broken-Features
-   Fixed-Biogeography-Mode
-   Model-Initialization-Modes
-   Namelist-Options-and-Run-Time-Modes
    Notes-on-the-Parameter-File
-   PARTEH-Modes
-   Reference-List
-   Relevant-References
-   SP-(satellite-phenology)-mode
-   SPITFIRE-Namelist-Options
    Useful-Stuff
 
 Chosing a FATES version
