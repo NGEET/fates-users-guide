@@ -1,6 +1,6 @@
 # Namelist Option Summary Tables
 
-Note: These options are governed by the host-model that drives FATES.  Efforts are made to keep these options consistent in the different driving models (e.g. E3SM/CSTM/etc).
+The namelist options are governed by the Host Land Model (HLM) that drives FATES.  Efforts are made to keep these options consistent in the different driving models (e.g. E3SM/CSTM/etc).
 
 For more information on how to set and use these modes, click on the links in the table where available.
 
@@ -14,65 +14,10 @@ The following table discusses the basic usage options and settings to enable FAT
 | `fates_history_dimlevel` | int 0-2 | `2` |  0 = no fates history variables are calculated or allocated, 1 = only time x space (3d) fates history variables allowed, 2 = multiplexed dimensioned fates history is also allowed |
 | `fates_paramfile`        | String (filepath) | default file            | path to an alternative netcdf fates parameter file |
 
-## Damage and Mortality
+## Reduced Complexity Mode
 
-| Option                           | Type       | Default w/FATES compset           | Description |
-| ---------------------------------|:----------:| :--------------------------------:|------------:|
-| `use_fates_cohort_age_tracking`  | true/false | `.false.`                         | Turns on/off Cohort age tracking mode |
-| `use_fates_tree_damage`          | true/false | `.false.`                         | Turns on/of {doc}`tree crown damage <fates-doc:fates_tech_note>` |
-| `fates_cstarvation_model`        | String     | `'linear'`                        | `'linear'`, `'exponential'` Sets the FATES carbon starvation model | 
+The full FATES model has a high degree of complexity.  In order to isolate different processes to allow for cleaner experimental design and facilitate calibration and testing of different model components, FATES includes a number of reduced-complexity configurations. A summary of these configurations is shown in table FATES reduced complexity modes table below:
 
-
-## Fire
-
-| Option                         | Type              | Default w/FATES compset | Description |
-| -------------------------------|:-----------------:| :----------------------:|------------:|
-| `fates_spitfire_mode`          | int 0-4           | `0`                     | {doc}`SPITFIRE Namelist Options <SPITFIRE-Namelist-Options>` |
-
-
-## Hydraulics
-
-| Option                         | Type              | Default w/FATES compset | Description |
-| -------------------------------|:-----------------:| :----------------------:|------------:|
-| `use_fates_planthydro`         | true/false        | `.false.`               | Turns on/off the plant hydrodynamics module |
-| `fates_hydro_solver`           | String            | `'1D_Taylor'`           | `'1D_Taylor'`, `'2D_Picard'`,  `'2D_Newton'` Sets the FATES hydro solver method  |
-
-## Inventory
-
-| Option                          | Type              | Default w/FATES compset           | Description |
-| --------------------------------|:-----------------:| :--------------------------------:|------------:|
-| `fates_inventory_ctrl_filename` | String (filepath) | blank                             | When inventory initialization true, points to control file |
-| `use_fates_inventory_init`      | true/false        | `.false.`                         | {doc}`Turns on/off initialization from plant inventory data <Model-Initialization-Modes>` |
-
-## Land Use and Harvest
-
-| Option                        | Type              | Default w/FATES compset | Description |
-| ------------------------------|:-----------------:| :----------------------:|------------:|
-| `fates_harvest_mode`          | String            | `'no_harvest'`          | Set FATES harvesting mode. {doc}`Land use Namelist Options <Land-use-Namelist-Options>` |
-| `use_fates_luh`               | true/false        | `.false.`               | Turns on/off land use. |
-| `use_fates_lupft`             | true/false        | `.false.`               | If true, enables the use of fates land use x pft mapping data file. |
-| `use_fates_potentialveg`      | true/false        | `.false.`               | If true, assert that all lands are primary and that there is no harvest. |
-| `fluh_timeseries`             | String (filepath) | blank                   | Full pathname of  unified land use harmonization data file. |
-| `flandusepftdat`              | String (filepath) | blank                   | Full pathname of FATES landuse x pft data map. |    
-
-## Nutrients
-
-| Option                         | Type       | Default w/FATES compset           | Description |
-| -------------------------------|:----------:| :--------------------------------:|------------:|
-| `fates_parteh_mode`            | integer    | `1`                               | {doc}`Specifies which plant allocation model to use <PARTEH-Modes>` |
-
-## Photosynthesis
-
-| Option                           | Type       | Default w/FATES compset           | Description |
-| ---------------------------------|:----------:| :--------------------------------:|------------:|
-| `use_fates_daylength_factor`     | true/false | `.true.`                          | Switch to enable FATES to use the day length factor from the host land model |
-| `fates_electron_transport_model` | String     | `'FvCB1980'`, `'JohnsonBerry2021'`| Selects the type of electron transport model |
-| `fates_photosynth_acclimation`   | String     | `'nonacclimating'`                | `'nonacclimating'`, `'kumarathunge2019'` Set the FATES photosynthesis temperature acclimation model |
-| `fates_stomatal_assimilation`    | String     | `'net'`                           | `'net'`, `'gross'` Set net or gross asslimiation for the FATES stomatal model |
-| `fates_stomatal_model`           | Strng      | `'ballberry1987'`                 | `'ballberry1987'`, `'medlyn2011'` Set the FATES stomatal conductance model |
-| `fates_radiation_model`          | String     | `'norman'`                        | `'norman'`,  `'twostream'` Sets the FATES radiation model |
-
-## Reduced Complexity 
 
 | Option                         | Type              | Default w/FATES compset | Description |
 | -------------------------------|:-----------------:| :----------------------:|------------:|
@@ -91,13 +36,75 @@ For the nocomp and fixed biogeography, there are logical interactions between th
 
 For namelist entries that control the soil properties, or biogeochemical cycling, please refer to the host land-model documentation.  Also, compare the desired namelist entries with the defaults generated by a FATES compset.  Please create issues with questions regarding incompatibilities until more comprehensive documentation becomes available.
 
-## Respiration
+## Model Components
+
+The namelist options for the various model components of FATES are presented in the subsections below.
+
+### Damage and Mortality
+
+| Option                           | Type       | Default w/FATES compset           | Description |
+| ---------------------------------|:----------:| :--------------------------------:|------------:|
+| `use_fates_cohort_age_tracking`  | true/false | `.false.`                         | Turns on/off Cohort age tracking mode |
+| `use_fates_tree_damage`          | true/false | `.false.`                         | Turns on/of {doc}`tree crown damage <fates-doc:fates_tech_note>` |
+| `fates_cstarvation_model`        | String     | `'linear'`                        | `'linear'`, `'exponential'` Sets the FATES carbon starvation model | 
+
+
+### Fire
+
+| Option                         | Type              | Default w/FATES compset | Description |
+| -------------------------------|:-----------------:| :----------------------:|------------:|
+| `fates_spitfire_mode`          | int 0-4           | `0`                     | {doc}`SPITFIRE Namelist Options <SPITFIRE-Namelist-Options>` |
+
+
+### Hydraulics
+
+| Option                         | Type              | Default w/FATES compset | Description |
+| -------------------------------|:-----------------:| :----------------------:|------------:|
+| `use_fates_planthydro`         | true/false        | `.false.`               | Turns on/off the plant hydrodynamics module |
+| `fates_hydro_solver`           | String            | `'1D_Taylor'`           | `'1D_Taylor'`, `'2D_Picard'`,  `'2D_Newton'` Sets the FATES hydro solver method  |
+
+### Inventory
+
+| Option                          | Type              | Default w/FATES compset           | Description |
+| --------------------------------|:-----------------:| :--------------------------------:|------------:|
+| `fates_inventory_ctrl_filename` | String (filepath) | blank                             | When inventory initialization true, points to control file |
+| `use_fates_inventory_init`      | true/false        | `.false.`                         | {doc}`Turns on/off initialization from plant inventory data <Model-Initialization-Modes>` |
+
+### Land Use and Harvest
+
+| Option                        | Type              | Default w/FATES compset | Description |
+| ------------------------------|:-----------------:| :----------------------:|------------:|
+| `fates_harvest_mode`          | String            | `'no_harvest'`          | Set FATES harvesting mode. {doc}`Land use Namelist Options <Land-use-Namelist-Options>` |
+| `use_fates_luh`               | true/false        | `.false.`               | Turns on/off land use. |
+| `use_fates_lupft`             | true/false        | `.false.`               | If true, enables the use of fates land use x pft mapping data file. |
+| `use_fates_potentialveg`      | true/false        | `.false.`               | If true, assert that all lands are primary and that there is no harvest. |
+| `fluh_timeseries`             | String (filepath) | blank                   | Full pathname of  unified land use harmonization data file. |
+| `flandusepftdat`              | String (filepath) | blank                   | Full pathname of FATES landuse x pft data map. |    
+
+### Nutrients
+
+| Option                         | Type       | Default w/FATES compset           | Description |
+| -------------------------------|:----------:| :--------------------------------:|------------:|
+| `fates_parteh_mode`            | integer    | `1`                               | {doc}`Specifies which plant allocation model to use <PARTEH-Modes>` |
+
+### Photosynthesis
+
+| Option                           | Type       | Default w/FATES compset           | Description |
+| ---------------------------------|:----------:| :--------------------------------:|------------:|
+| `use_fates_daylength_factor`     | true/false | `.true.`                          | Switch to enable FATES to use the day length factor from the host land model |
+| `fates_electron_transport_model` | String     | `'FvCB1980'`, `'JohnsonBerry2021'`| Selects the type of electron transport model |
+| `fates_photosynth_acclimation`   | String     | `'nonacclimating'`                | `'nonacclimating'`, `'kumarathunge2019'` Set the FATES photosynthesis temperature acclimation model |
+| `fates_stomatal_assimilation`    | String     | `'net'`                           | `'net'`, `'gross'` Set net or gross asslimiation for the FATES stomatal model |
+| `fates_stomatal_model`           | Strng      | `'ballberry1987'`                 | `'ballberry1987'`, `'medlyn2011'` Set the FATES stomatal conductance model |
+| `fates_radiation_model`          | String     | `'norman'`                        | `'norman'`,  `'twostream'` Sets the FATES radiation model |
+
+### Respiration
 
 | Option                          | Type       | Default w/FATES compset           | Description |
 | --------------------------------|:----------:| :--------------------------------:|------------:|
 | `fates_leafresp_model`          | String     | `'ryan1991'`                      | `'ryan1991'`, `'atkin2017'` Sets the FATES leaf maintenance respiration model |
 
-## Seeds
+### Seeds
 
 | Option                        | Type              | Default w/FATES compset | Description |
 | ------------------------------|:-----------------:| :----------------------:|------------:|
