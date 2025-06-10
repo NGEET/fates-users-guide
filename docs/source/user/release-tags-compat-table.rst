@@ -8,9 +8,9 @@ API 40
 
 This API updates the default parameter file with simplification to the leaf phenology parameter options.
 
-+--------------------------+----------------+-----------+-------------+-------------------------------------------------------------+
-| FATES Tag                | CTSM Tag       | E3SM Hash | Update Type | Short description                                           |
-+==========================+================+===========+=============+=============================================================+
++--------------------------+----------------+------------+-------------+-------------------------------------------------------------+
+| FATES Tag                | CTSM Tag       | E3SM Hash  | Update Type | Short description                                           |
++==========================+================+============+=============+=============================================================+
 | `sci.1.85.0_api.40.0.0`_ |                |            | Science     | Add Johnson and Berry 2021 electron transport model options |
 +--------------------------+----------------+            +-------------+-------------------------------------------------------------+
 | `sci.1.84.1_api.40.0.0`_ |                |            | Bug fix     | Update trimming logic enforcment                            |
@@ -30,7 +30,8 @@ This API update corrects issues with restarting FATES two-stream radiation and c
 | `sci.1.83.1_api.39.0.0`_  |                |            | Software    | Refactor and standardize per-ageclass history output           |
 +---------------------------+                +            +-------------+----------------------------------------------------------------+
 | `sci.1.83.0_api.39.0.0`_  |                |            | Science     | Two-stream sun-shade fraction update                           |
-+---------------------------+                +            +------ed API updates without links to provide users an advanced look at what updates are forthcomiare    | Refactor of vegetation bin indexing                            |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
+| `sci.1.82.8_api.39.0.0`_  |                |            | Software    | Refactor of vegetation bin indexing                            |
 +---------------------------+                +            +-------------+----------------------------------------------------------------+
 | `sci.1.82.7_api.39.0.0`_  |                |            | Bug fix     | Radation transmission bug fix                                  |
 +---------------------------+                +            +-------------+----------------------------------------------------------------+
