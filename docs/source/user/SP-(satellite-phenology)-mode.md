@@ -1,4 +1,4 @@
-# Satellite Phenology Mode
+# Satellite Phenology
 
 ## Background 
 The Satellite Phenology (SP) mode is designed to run with Leaf Area Index (LAI) as an input to the model, as well as canopy height (HTOP) and stem area index (SAI).  In doing so, all processes that in other modes contribute to the calculation of leaf area and plant size are **turned off.**.  

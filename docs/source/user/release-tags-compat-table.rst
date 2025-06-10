@@ -27,6 +27,8 @@ This API update corrects issues with restarting FATES two-stream radiation and c
 +---------------------------+----------------+------------+-------------+----------------------------------------------------------------+
 | FATES Tag                 | CTSM Tag       | E3SM Hash  | Update Type | Short description                                              |
 +===========================+================+============+=============+================================================================+
+| `sci.1.83.1_api.39.0.0`_  |                |            | Software    | Refactor and standardize per-ageclass history output           |
++---------------------------+                +            +-------------+----------------------------------------------------------------+
 | `sci.1.83.0_api.39.0.0`_  |                |            | Science     | Two-stream sun-shade fraction update                           |
 +---------------------------+                +            +-------------+----------------------------------------------------------------+
 | `sci.1.82.8_api.39.0.0`_  |                |            | Software    | Refactor of vegetation bin indexing                            |
@@ -149,6 +151,7 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 .. _sci.1.84.1_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.84.1_api.40.0.0
 .. _sci.1.84.0_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.84.0_api.40.0.0
 
+.. _sci.1.83.1_api.39.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.83.1_api.39.0.0
 .. _sci.1.83.0_api.39.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.83.0_api.39.0.0
 .. _sci.1.82.8_api.39.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.82.8_api.39.0.0
 .. _sci.1.82.7_api.39.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.82.7_api.39.0.0
