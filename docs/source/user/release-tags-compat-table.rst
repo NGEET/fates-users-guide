@@ -6,7 +6,7 @@ The following table list the FATES API and the corresponding HLM tag associated 
 API 40
 ------
 
-This API update includes 
+This API updates the default parameter file with simplification to the leaf phenology parameter options.
 
 +--------------------------+----------------+-----------+-------------+-------------------------------------------------------------+
 | FATES Tag                | CTSM Tag       | E3SM Hash | Update Type | Short description                                           |
