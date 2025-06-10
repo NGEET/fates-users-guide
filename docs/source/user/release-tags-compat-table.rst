@@ -3,6 +3,22 @@ FATES-HLM API compatibility tables
 
 The following table list the FATES API and the corresponding HLM tag associated with that API update.  Note that CTSM provides a specific tag for each of its merge commits to the master branch whereas E3SM does not.  As such, the hash for the relevant merge commit is provided for E3SM.  Entries that specifically link to a pull request (e.g. PR#XXXX) are provided to note updates which have not been integrated yet, but are pending.  The table may also include future planned API updates without links to provide users an advanced look at what updates are forthcoming.
 
+API 40
+------
+
+This API update includes 
+
++--------------------------+----------------+-----------+-------------+-------------------------------------------------------------+
+| FATES Tag                | CTSM Tag       | E3SM Hash | Update Type | Short description                                           |
++==========================+================+===========+=============+=============================================================+
+| `sci.1.85.0_api.40.0.0`_ |                |           | Science     | Add Johnson and Berry 2021 electron transport model options |
++--------------------------+----------------+-----------+-------------+-------------------------------------------------------------+
+| `sci.1.84.1_api.40.0.0`_ |                |           | Bug fix     | Update trimming logic enforcment                            |
++--------------------------+----------------+-----------+-------------+-------------------------------------------------------------+
+| `sci.1.84.0_api.40.0.0`_ | `ctsm5.3.045`_ |           | Software    | Simplification of leaf phenology and parameter file updates |
++--------------------------+----------------+-----------+-------------+-------------------------------------------------------------+
+
+
 API 39
 ------
 
@@ -129,6 +145,10 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 
 .. [#] Users wanting to run non-land use run modes should avoid this tag due `issue #1221`_.  The next fates tag addresses this issue.
 
+.. _sci.1.85.0_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.85.0_api.40.0.0
+.. _sci.1.84.1_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.84.1_api.40.0.0
+.. _sci.1.84.0_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.84.0_api.40.0.0
+
 .. _sci.1.83.0_api.39.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.83.0_api.39.0.0
 .. _sci.1.82.8_api.39.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.82.8_api.39.0.0
 .. _sci.1.82.7_api.39.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.82.7_api.39.0.0
@@ -173,6 +193,7 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 .. _sci.1.77.1_api.36.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.77.1_api.36.0.0
 .. _sci.1.77.0_api.36.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.77.0_api.36.0.0
 
+.. _ctsm5.3.045: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.045
 .. _ctsm5.3.034: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.034
 .. _ctsm5.3.027: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.027
 .. _ctsm5.3.025: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.025
@@ -182,6 +203,8 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 
 .. _PR 6918: https://github.com/E3SM-Project/E3SM/pull/6918
 .. _PR 7027: https://github.com/E3SM-Project/E3SM/pull/7027
+
+.. _1c1a3b9: https://github.com/E3SM-Project/E3SM/commit/1c1a3b9fb78f7bd0177d3c6bdae332d5fa2c93d2
 .. _64046ec: https://github.com/E3SM-Project/E3SM/commit/64046ec75587d9fcd035f22553192665dd540f56
 .. _ef0abe7: https://github.com/E3SM-Project/E3SM/commit/ef0abe727bb4f3286a40d2350aaded5030197615
 .. _377b2d3: https://github.com/E3SM-Project/E3SM/commit/377b2d31d77977efc0f5edf79ba243377f668517
