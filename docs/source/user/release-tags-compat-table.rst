@@ -11,6 +11,12 @@ This API updates the default parameter file with simplification to the leaf phen
 +--------------------------+----------------+------------+-------------+-------------------------------------------------------------+
 | FATES Tag                | CTSM Tag       | E3SM Hash  | Update Type | Short description                                           |
 +==========================+================+============+=============+=============================================================+
+| `sci.1.85.3_api.40.0.0`_ |                |            | Science     | Seed localization for no competition reduced complexity     |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.85.2_api.40.0.0`_ |                |            | Testing     | Fixes to unit testing per recent science updates            |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.85.1_api.40.0.0`_ |                |            | Software    | SPITFIRE refactor of mortality                              |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
 | `sci.1.85.0_api.40.0.0`_ |                |            | Science     | Add Johnson and Berry 2021 electron transport model options |
 +--------------------------+                +            +-------------+-------------------------------------------------------------+
 | `sci.1.84.1_api.40.0.0`_ |                |            | Bug fix     | Update trimming logic enforcment                            |
@@ -147,6 +153,9 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 
 .. [#] Users wanting to run non-land use run modes should avoid this tag due `issue #1221`_.  The next fates tag addresses this issue.
 
+.. _sci.1.85.3_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.85.3_api.40.0.0
+.. _sci.1.85.2_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.85.2_api.40.0.0
+.. _sci.1.85.1_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.85.1_api.40.0.0
 .. _sci.1.85.0_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.85.0_api.40.0.0
 .. _sci.1.84.1_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.84.1_api.40.0.0
 .. _sci.1.84.0_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.84.0_api.40.0.0
