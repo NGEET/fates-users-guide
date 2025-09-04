@@ -3,6 +3,19 @@ FATES-HLM API compatibility tables
 
 The following table list the FATES API and the corresponding HLM tag associated with that API update.  Note that CTSM provides a specific tag for each of its merge commits to the master branch whereas E3SM does not.  As such, the hash for the relevant merge commit is provided for E3SM.  Entries that specifically link to a pull request (e.g. PR#XXXX) are provided to note updates which have not been integrated yet, but are pending.  The table may also include future planned API updates without links to provide users an advanced look at what updates are forthcoming.
 
+API 41
+------
+
+This API updates the default parameter file with new parameters associated with a new managed fire capability that is associated with this tag as well.  This also includes a fix to c3 cool grass for land use croplands.
+
++--------------------------+----------------+------------+-------------+-------------------------------------------------------------+
+| FATES Tag                | CTSM Tag       | E3SM Hash  | Update Type | Short description                                           |
++==========================+================+============+=============+=============================================================+
+| `sci.1.87.1_api.41.0.0`_ |                |            | Software    | Max canopy layer increased and promotion/demotion refactor  |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.87.0_api.41.0.0`_ | `ctsm5.3.070`_ | TBD        | Science     | Add managed fire capability                                 |
++--------------------------+----------------+------------+-------------+-------------------------------------------------------------+
+
 API 40
 ------
 
@@ -11,6 +24,16 @@ This API updates the default parameter file with simplification to the leaf phen
 +--------------------------+----------------+------------+-------------+-------------------------------------------------------------+
 | FATES Tag                | CTSM Tag       | E3SM Hash  | Update Type | Short description                                           |
 +==========================+================+============+=============+=============================================================+
+| `sci.1.86.3_api.40.0.0`_ |                |            | Software    | Removes defunct wood product output                         |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.86.2_api.40.0.0`_ |                |            | Bug fix     | Corrects issues with carbon biomass diagnostic output       |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.86.1_api.40.0.0`_ |                |            | Software    | Code cleanup removing unnecessary bc arguments              |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.86.0_api.40.0.0`_ |                |            | Science     | Add bc_out variables for HLM stock and flux calculations    |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.85.4_api.40.0.0`_ |                |            | Bug fix     | Fixes build issue accidentally introduced with last tag     |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
 | `sci.1.85.3_api.40.0.0`_ |                |            | Science     | Seed localization for no competition reduced complexity     |
 +--------------------------+                +            +-------------+-------------------------------------------------------------+
 | `sci.1.85.2_api.40.0.0`_ |                |            | Testing     | Fixes to unit testing per recent science updates            |
@@ -153,6 +176,14 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 
 .. [#] Users wanting to run non-land use run modes should avoid this tag due `issue #1221`_.  The next fates tag addresses this issue.
 
+.. _sci.1.87.1_api.41.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.87.1_api.41.0.0
+.. _sci.1.87.0_api.41.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.87.0_api.41.0.0
+
+.. _sci.1.86.3_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.86.3_api.40.0.0
+.. _sci.1.86.2_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.86.2_api.40.0.0
+.. _sci.1.86.1_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.86.1_api.40.0.0
+.. _sci.1.86.0_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.86.0_api.40.0.0
+.. _sci.1.85.4_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.85.4_api.40.0.0
 .. _sci.1.85.3_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.85.3_api.40.0.0
 .. _sci.1.85.2_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.85.2_api.40.0.0
 .. _sci.1.85.1_api.40.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.85.1_api.40.0.0
@@ -205,6 +236,7 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 .. _sci.1.77.1_api.36.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.77.1_api.36.0.0
 .. _sci.1.77.0_api.36.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.77.0_api.36.0.0
 
+.. _ctsm5.3.070: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.070
 .. _ctsm5.3.045: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.045
 .. _ctsm5.3.034: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.034
 .. _ctsm5.3.027: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.027
