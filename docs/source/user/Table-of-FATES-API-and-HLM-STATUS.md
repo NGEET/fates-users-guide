@@ -1,6 +1,6 @@
 # Pre-API 36 FATES-HLM API Compatibility Table 
 
-The following table list the FATES API and the corresponding HLM tag associated with that API update.  Note that CTSM provides a specific tag for each of its merge commits to the master branch whereas E3SM does not.  As such, the hash for the relevant merge commit is provided for E3SM.  Entries that specifically link to a pull request (e.g. PR#XXXX) are provided to note updates which have not been integrated yet, but are pending.  The table may also include future planned API updates without links to provide users an advanced look at what updates are forthcoming.
+The following table list the FATES API and the corresponding HLM tag associated with that API update.  For API36 and later please see the {doc}`release-tags-compat-table` Note that CTSM provides a specific tag for each of its merge commits to the master branch whereas E3SM does not.  As such, the hash for the relevant merge commit is provided for E3SM.  Entries that specifically link to a pull request (e.g. PR#XXXX) are provided to note updates which have not been integrated yet, but are pending.  The table may also include future planned API updates without links to provide users an advanced look at what updates are forthcoming.
 
 | FATES Tag   | CTSM Tag | E3SM Hash | Description |
 | ----------- | -------- | --------- | ----------- |
