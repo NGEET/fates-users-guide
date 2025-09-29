@@ -70,7 +70,7 @@ TYPE LATITUDE LONGITUDE PSS_PATH CSS_PATH
 |patch      |String |Patch identifier (arbitrary, any unique string that can be used to match cohorts) |
 |trk        |0 – non-forest, 1 – secondary, 2 - primary |Vegetation type/history |
 |age        |years  |Patch age since disturbance |
-|area |proportion |Fractional area represented by patch.  For format 1 is area in m2 |
+|area |proportion |Fractional area represented by patch, patch areas should sum to 1.|
 
 
 ''Cohort'' file format (*.css)
