@@ -11,9 +11,13 @@ This API updates the default parameter file with new parameters associated with 
 +--------------------------+----------------+------------+-------------+-------------------------------------------------------------+
 | FATES Tag                | CTSM Tag       | E3SM Hash  | Update Type | Short description                                           |
 +==========================+================+============+=============+=============================================================+
+| `sci.1.87.3_api.41.0.0`_ |                | TBD        | Science     | Rework site-level GPP and AR update being passed to the HLM |
++--------------------------+                +------------+-------------+-------------------------------------------------------------+
+| `sci.1.87.2_api.41.0.0`_ | `ctsm5.3.077`_ |            | Software    | History level classification fixes to history diagnostics   |
++--------------------------+----------------+            +-------------+-------------------------------------------------------------+
 | `sci.1.87.1_api.41.0.0`_ |                |            | Software    | Max canopy layer increased and promotion/demotion refactor  |
 +--------------------------+                +            +-------------+-------------------------------------------------------------+
-| `sci.1.87.0_api.41.0.0`_ | `ctsm5.3.070`_ | TBD        | Science     | Add managed fire capability                                 |
+| `sci.1.87.0_api.41.0.0`_ | `ctsm5.3.070`_ | `79875a9`_ | Science     | Add managed fire capability                                 |
 +--------------------------+----------------+------------+-------------+-------------------------------------------------------------+
 
 API 40
@@ -176,6 +180,8 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 
 .. [#] Users wanting to run non-land use run modes should avoid this tag due `issue #1221`_.  The next fates tag addresses this issue.
 
+.. _sci.1.87.3_api.41.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.87.3_api.41.0.0
+.. _sci.1.87.2_api.41.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.87.2_api.41.0.0
 .. _sci.1.87.1_api.41.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.87.1_api.41.0.0
 .. _sci.1.87.0_api.41.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.87.0_api.41.0.0
 
@@ -236,6 +242,7 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 .. _sci.1.77.1_api.36.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.77.1_api.36.0.0
 .. _sci.1.77.0_api.36.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.77.0_api.36.0.0
 
+.. _ctsm5.3.077: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.077
 .. _ctsm5.3.070: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.070
 .. _ctsm5.3.045: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.045
 .. _ctsm5.3.034: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.034
@@ -248,6 +255,7 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 .. _PR 6918: https://github.com/E3SM-Project/E3SM/pull/6918
 .. _PR 7027: https://github.com/E3SM-Project/E3SM/pull/7027
 
+.. _79875a9: https://github.com/E3SM-Project/E3SM/commit/79875a9c2ceb26dbffedb1d7bb6a59b0ecb5da8b
 .. _1c1a3b9: https://github.com/E3SM-Project/E3SM/commit/1c1a3b9fb78f7bd0177d3c6bdae332d5fa2c93d2
 .. _64046ec: https://github.com/E3SM-Project/E3SM/commit/64046ec75587d9fcd035f22553192665dd540f56
 .. _ef0abe7: https://github.com/E3SM-Project/E3SM/commit/ef0abe727bb4f3286a40d2350aaded5030197615
