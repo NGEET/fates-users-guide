@@ -15,7 +15,7 @@ This API updates the default parameter file with new parameters associated with 
 +--------------------------+                +            +-------------+-------------------------------------------------------------+
 | `sci.1.87.4_api.41.0.0`_ |                |            | Software    | Radiation error and profile diagnostic refactor             |
 +--------------------------+                +            +-------------+-------------------------------------------------------------+
-| `sci.1.87.3_api.41.0.0`_ |                |            | Science     | Rework site-level GPP and AR update being passed to the HLM |
+| `sci.1.87.3_api.41.0.0`_ |                | TBD        | Science     | Rework site-level GPP and AR update being passed to the HLM |
 +--------------------------+                +------------+-------------+-------------------------------------------------------------+
 | `sci.1.87.2_api.41.0.0`_ | `ctsm5.3.077`_ |            | Software    | History level classification fixes to history diagnostics   |
 +--------------------------+----------------+            +-------------+-------------------------------------------------------------+
