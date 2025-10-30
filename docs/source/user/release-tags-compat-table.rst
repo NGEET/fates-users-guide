@@ -11,7 +11,11 @@ This API updates the default parameter file with new parameters associated with 
 +--------------------------+----------------+------------+-------------+-------------------------------------------------------------+
 | FATES Tag                | CTSM Tag       | E3SM Hash  | Update Type | Short description                                           |
 +==========================+================+============+=============+=============================================================+
-| `sci.1.87.3_api.41.0.0`_ |                | TBD        | Science     | Rework site-level GPP and AR update being passed to the HLM |
+| `sci.1.87.5_api.41.0.0`_ |                |            | Bug fix     | Fixes to event-based logging mortality                      |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.87.4_api.41.0.0`_ |                |            | Software    | Radiation error and profile diagnostic refactor             |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.87.3_api.41.0.0`_ |                |            | Science     | Rework site-level GPP and AR update being passed to the HLM |
 +--------------------------+                +------------+-------------+-------------------------------------------------------------+
 | `sci.1.87.2_api.41.0.0`_ | `ctsm5.3.077`_ |            | Software    | History level classification fixes to history diagnostics   |
 +--------------------------+----------------+            +-------------+-------------------------------------------------------------+
@@ -180,6 +184,8 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 
 .. [#] Users wanting to run non-land use run modes should avoid this tag due `issue #1221`_.  The next fates tag addresses this issue.
 
+.. _sci.1.87.5_api.41.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.87.5_api.41.0.0
+.. _sci.1.87.4_api.41.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.87.4_api.41.0.0
 .. _sci.1.87.3_api.41.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.87.3_api.41.0.0
 .. _sci.1.87.2_api.41.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.87.2_api.41.0.0
 .. _sci.1.87.1_api.41.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.87.1_api.41.0.0
