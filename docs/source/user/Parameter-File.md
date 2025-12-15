@@ -67,6 +67,7 @@ Example of linting (simply list parameters):
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Example of changing Vcmax for the the broadleaf evergreen tropical tree from the default.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 1, let's take a look at the parameter in question:
 
 > ./modify_fates_paramfile.py --queryparam --param fates_leaf_vcmax25top --fin ../parameter_files/fates_params_default.json
