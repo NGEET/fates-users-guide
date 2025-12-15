@@ -59,9 +59,43 @@ In the future the "create_case" process may perform a test of the input file to 
 
 Here is a brief description of the tools that are provided in the FATES repository:
 
-1. [modify_fates_paramfile.py](https://github.com/NGEET/fates/tools/modify_fates_paramfile.py): Command-line style modification of specific parameters, file querying and linting
+1. [modify_fates_paramfile.py](https://github.com/NGEET/fates/tools/modify_fates_paramfile.py): Command-line style modification of specific parameters, file querying and linting. Examples:
 
-2. [batch_patch_params.py](https://github.com/NGEET/fates/tools/batch_patch_params.py): Used with another JSON file that contains any number of changes to apply to a base file.
+Example of linting (simply list parameters):
+
+> ./modify_fates_paramfile.py --listparams --fin ../parameter_files/fates_params_default.json
+
+Example of changing Vcmax for the the broadleaf evergreen tropical tree from the default.  Step 1, let's take a look at the parameter in question:
+
+> ./modify_fates_paramfile.py --queryparam --param fates_leaf_vcmax25top --fin ../parameter_files/fates_params_default.json
+
+```
+Reporting: Parameter: fates_leaf_vcmax25top:
+           dimension names: ['fates_leafage_class', 'fates_pft']
+           dimension sizes: [1, 14]
+           Current Values:
+           [50.0, 62.0, 39.0, 61.0, 58.0, 58.0, 62.0, 54.0, 54.0, 38.0, 54.0, 86.0, 78.0, 78.0]
+           Index Pattern:
+           [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+```
+
+Step 2. Lets modify the parameters for the first pft, and the 5th pft to 100 and 45. Lets save this into a new file, called fates_params_modified.json
+
+> ./modify_fates_paramfile.py --param fates_leaf_vcmax25top --indices 1,5 --values 100.,45.  --fin ../parameter_files/fates_params_default.json --fout ../parameter_files/fates_params_modified.json
+
+```
+
+Changing fates_leaf_vcmax25top[0,0] from 50.0 to 100.0
+Changing fates_leaf_vcmax25top[0,4] from 58.0 to 45.0
+
+
+Writing to: ../parameter_files/fates_params_modified.json
+Writing complete
+
+```
+
+2. [batch_patch_params.py](https://github.com/NGEET/fates/tools/batch_patch_params.py): Used with another JSON file that contains any number of changes to apply to a base file.  There is an example of a patch file that filters the PFTs to only use the broadleaf tropical evergreen, and reproduces the parameters that were the basif of Knox et al. 2024. See here: [patch_default_bciopt224.json](https://github.com/NGEET/fates/parameter_files/patch_default_bciopt224.json)
 
 3. [cdl_to_xml.py](https://github.com/NGEET/fates/tools/cdl_to_xml.py): Converts a CDL (deprecated) to the new JSON format.
 
