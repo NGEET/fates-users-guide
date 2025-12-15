@@ -59,12 +59,12 @@ In the future the "create_case" process may perform a test of the input file to 
 
 Here is a brief description of the tools that are provided in the FATES repository:
 
-1. [modify_fates_paramfile.py (https://github.com/NGEET/fates/tools/modify_fates_paramfile.py)]: Command-line style modification of specific parameters, file querying and linting
+1. [modify_fates_paramfile.py](https://github.com/NGEET/fates/tools/modify_fates_paramfile.py): Command-line style modification of specific parameters, file querying and linting
 
-2. [batch_patch_params.py (https://github.com/NGEET/fates/tools/batch_patch_params.py)]: Used with another JSON file that contains any number of changes to apply to a base file.
+2. [batch_patch_params.py](https://github.com/NGEET/fates/tools/batch_patch_params.py): Used with another JSON file that contains any number of changes to apply to a base file.
 
-3. [cdl_to_xml.py (https://github.com/NGEET/fates/tools/cdl_to_xml.py)]: Converts a CDL (deprecated) to the new JSON format.
+3. [cdl_to_xml.py](https://github.com/NGEET/fates/tools/cdl_to_xml.py): Converts a CDL (deprecated) to the new JSON format.
 
-4. [pft_index_swapper.py (https://github.com/NGEET/fates/tools/pft_index_swapper.py)]: Command-line style utility that filters out PFTs.
+4. [pft_index_swapper.py](https://github.com/NGEET/fates/tools/pft_index_swapper.py): Command-line style utility that filters out PFTs.
 
-5. [sort_parameters.py (https://github.com/NGEET/fates/tools/sort_parameters.py)]: Tool used by developers to order parameters and reduce verbosity of "diffs" in version control.
+5. [sort_parameters.py](https://github.com/NGEET/fates/tools/sort_parameters.py): Tool used by developers to order parameters and reduce verbosity of "diffs" in version control.
