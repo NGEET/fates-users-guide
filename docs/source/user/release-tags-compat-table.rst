@@ -13,7 +13,7 @@ This API update changes the way in which the HLM provides nutrient supplement st
 +==========================+================+============+=============+=============================================================+
 | `sci.1.88.1_api.42.0.0`_ |                |            | Bug fix     | Fixes to event-based logging mortality                      |
 +--------------------------+                +            +-------------+-------------------------------------------------------------+
-| `sci.1.88.0_api.42.0.0`_ | `ctsm5.3.083`_ | TBD        | Science     | Add managed fire capability                                 |
+| `sci.1.88.0_api.42.0.0`_ | `ctsm5.3.083`_ | `6e53f24`_ | Science     | Add nutrient supplemenation status to dynamics              |
 +--------------------------+----------------+------------+-------------+-------------------------------------------------------------+
 
 
@@ -29,7 +29,7 @@ This API updates the default parameter file with new parameters associated with 
 +--------------------------+                +            +-------------+-------------------------------------------------------------+
 | `sci.1.87.4_api.41.0.0`_ |                |            | Software    | Radiation error and profile diagnostic refactor             |
 +--------------------------+                +            +-------------+-------------------------------------------------------------+
-| `sci.1.87.3_api.41.0.0`_ |                | TBD        | Science     | Rework site-level GPP and AR update being passed to the HLM |
+| `sci.1.87.3_api.41.0.0`_ |                | `de4952f`_ | Science     | Rework site-level GPP and AR update being passed to the HLM |
 +--------------------------+                +------------+-------------+-------------------------------------------------------------+
 | `sci.1.87.2_api.41.0.0`_ | `ctsm5.3.077`_ |            | Software    | History level classification fixes to history diagnostics   |
 +--------------------------+----------------+            +-------------+-------------------------------------------------------------+
@@ -279,13 +279,14 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 .. _PR 6918: https://github.com/E3SM-Project/E3SM/pull/6918
 .. _PR 7027: https://github.com/E3SM-Project/E3SM/pull/7027
 
+.. _6e53f24: https://github.com/E3SM-Project/E3SM/commit/6e53f249e87ea2042c8cfaacc410b872bde97871
+.. _de4952f: https://github.com/E3SM-Project/E3SM/commit/de4952f40b672740d4da5ebe473091421f661756
 .. _79875a9: https://github.com/E3SM-Project/E3SM/commit/79875a9c2ceb26dbffedb1d7bb6a59b0ecb5da8b
 .. _1c1a3b9: https://github.com/E3SM-Project/E3SM/commit/1c1a3b9fb78f7bd0177d3c6bdae332d5fa2c93d2
 .. _64046ec: https://github.com/E3SM-Project/E3SM/commit/64046ec75587d9fcd035f22553192665dd540f56
 .. _ef0abe7: https://github.com/E3SM-Project/E3SM/commit/ef0abe727bb4f3286a40d2350aaded5030197615
 .. _377b2d3: https://github.com/E3SM-Project/E3SM/commit/377b2d31d77977efc0f5edf79ba243377f668517
 .. _f14a3cf: https://github.com/E3SM-Project/E3SM/commit/f14a3cf738fc56f287665a49231b461878770958
-
 .. _13abf59: https://github.com/E3SM-Project/E3SM/commit/13abf5991f234f8c64237566e228441465180f7e
 
 .. _issue #1221: https://github.com/NGEET/fates/issues/1221
