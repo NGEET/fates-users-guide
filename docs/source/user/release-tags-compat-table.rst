@@ -11,6 +11,16 @@ This API update changes the way in which the HLM provides nutrient supplement st
 +--------------------------+----------------+------------+-------------+-------------------------------------------------------------+
 | FATES Tag                | CTSM Tag       | E3SM Hash  | Update Type | Short description                                           |
 +==========================+================+============+=============+=============================================================+
+| `sci.1.88.6_api.42.0.0`_ |                |            | Bug fix     | Adding cohort promotion/demotion protections                |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.88.5_api.42.0.0`_ |                |            | Bug fix     | Fixes negative tree LAI issue                               |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.88.4_api.42.0.0`_ |                |            | Bug fix     | Updates to site-level mass tracking                         |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.88.3_api.42.0.0`_ |                |            | Science     | Corrections to wind speed unit comments                     |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.88.2_api.42.0.0`_ |                |            | Bug fix     | Fixes calculation between inventory and grid sites          |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
 | `sci.1.88.1_api.42.0.0`_ |                |            | Bug fix     | Fixes to event-based logging mortality                      |
 +--------------------------+                +            +-------------+-------------------------------------------------------------+
 | `sci.1.88.0_api.42.0.0`_ | `ctsm5.3.083`_ | `6e53f24`_ | Science     | Add nutrient supplemenation status to dynamics              |
@@ -198,6 +208,11 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 
 .. [#] Users wanting to run non-land use run modes should avoid this tag due `issue #1221`_.  The next fates tag addresses this issue.
 
+.. _sci.1.88.6_api.42.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.88.6_api.42.0.0
+.. _sci.1.88.5_api.42.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.88.5_api.42.0.0
+.. _sci.1.88.4_api.42.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.88.4_api.42.0.0
+.. _sci.1.88.3_api.42.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.88.3_api.42.0.0
+.. _sci.1.88.2_api.42.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.88.2_api.42.0.0
 .. _sci.1.88.1_api.42.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.88.1_api.42.0.0
 .. _sci.1.88.0_api.42.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.88.0_api.42.0.0
 
