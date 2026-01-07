@@ -3,6 +3,19 @@ FATES-HLM API compatibility tables
 
 The following table list the FATES API and the corresponding HLM tag associated with that API update.  Note that CTSM provides a specific tag for each of its merge commits to the master branch whereas E3SM does not.  As such, the hash for the relevant merge commit is provided for E3SM.  Entries that specifically link to a pull request (e.g. PR#XXXX) are provided to note updates which have not been integrated yet, but are pending.  The table may also include future planned API updates without links to provide users an advanced look at what updates are forthcoming.
 
+API 43
+------
+
+This API update changes the default format for the FATES parameter file.  It now uses JSON formatting instead of CDL/NetCDF.
+
++--------------------------+----------------+------------+-------------+-------------------------------------------------------------+
+| FATES Tag                | CTSM Tag       | E3SM Hash  | Update Type | Short description                                           |
++==========================+================+============+=============+=============================================================+
+| `sci.1.89.1_api.43.0.0`_ |                |            | Bug fix     | Corrects unit conversion error for bc_out%ema_npp           |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.89.0_api.43.0.0`_ | `ctsm5.4.005`_ | TBD        | Software    | Updates parameter file and tooling to JSON format           |
++--------------------------+----------------+------------+-------------+-------------------------------------------------------------+
+
 API 42
 ------
 
@@ -208,6 +221,9 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 
 .. [#] Users wanting to run non-land use run modes should avoid this tag due `issue #1221`_.  The next fates tag addresses this issue.
 
+.. _sci.1.89.1_api.43.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.89.1_api.43.0.0
+.. _sci.1.89.0_api.43.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.89.0_api.43.0.0
+
 .. _sci.1.88.6_api.42.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.88.6_api.42.0.0
 .. _sci.1.88.5_api.42.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.88.5_api.42.0.0
 .. _sci.1.88.4_api.42.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.88.4_api.42.0.0
@@ -280,6 +296,7 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 .. _sci.1.77.1_api.36.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.77.1_api.36.0.0
 .. _sci.1.77.0_api.36.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.77.0_api.36.0.0
 
+.. _ctsm5.4.005: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.4.005
 .. _ctsm5.3.083: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.083
 .. _ctsm5.3.077: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.077
 .. _ctsm5.3.070: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.070
