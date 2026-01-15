@@ -25,7 +25,7 @@ All FATES history output variables are categorized as either a complex variable 
 
 | CTSM Option              | Type    | Default      | Options            | Description |
 |:-------------------------|:-------:|:------------:|:-------------------|:------------|
-| `fates_history_dimlevel ` | Integer list | `2,2`  | `0` `1` `2`     | high-frequency: 0 = no fates history variables are calculated or allocated, 1 = only time x space (3d) fates history variables allowed, 2 = multiplexed dimensioned fates history is also allowed |
+| `fates_history_dimlevel ` | Integer list | `2,2`  | `0` `1` `2`     | high-frequency, daily-frequency: 0 = no fates history variables are calculated or allocated, 1 = only time x space (3d) fates history variables allowed, 2 = multiplexed dimensioned fates history is also allowed |
 
 
 ## Reduced Complexity Modes
