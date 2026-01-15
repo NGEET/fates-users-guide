@@ -11,8 +11,22 @@ The following table discusses the basic usage options and settings to enable FAT
 | Option                   | Type    | Default      | Options            | Description |
 |:-------------------------|:-------:|:------------:|:-------------------|:------------|
 | `use_fates`              | Boolean | `.true.`     | `.true.` `.false.` | Turns on/off fates! |
-| `fates_history_dimlevel` | Integer | `2`          | `0` `1` `2`        | 0 = no fates history variables are calculated or allocated, 1 = only time x space (3d) fates history variables allowed, 2 = multiplexed dimensioned fates history is also allowed |
 | `fates_paramfile`        | String  | default file | -                  | path to an alternative netcdf fates parameter file |
+
+## Control of History Complexity
+
+All FATES history output variables are categorized as either a complex variable (having more than time x space dimensions), or a simple variable (just time and space). They are also broken up by being calculated at the dynamics timescale (daily) or at the high-frequency timescale (half-hourly).  Users may wish to either competely deactivate all variables at one of these timescales. Or, perhaps they want just the simple variables. Or, perhaps they want everything, even if it slows the simulation down a little bit. This is controlled by "fates_history_dimlevel", and its slightly different in E3SM compared to CTSM.  In both cases, the high-frequency timescale variables are the first index:
+
+| E3SM Option              | Type    | Default      | Options            | Description |
+|:-------------------------|:-------:|:------------:|:-------------------|:------------|
+| `fates_history_dimlevel(1)` | Integer | `2`       | `0` `1` `2`     | high-frequency: 0 = no fates history variables are calculated or allocated, 1 = only time x space (3d) fates history variables allowed, 2 = multiplexed dimensioned fates history is also allowed |
+| `fates_history_dimlevel(2)` | Integer | `2`       | `0` `1` `2`     | daily frequency: ...
+
+
+| CTSM Option              | Type    | Default      | Options            | Description |
+|:-------------------------|:-------:|:------------:|:-------------------|:------------|
+| `fates_history_dimlevel ` | Integer list | `2,2`  | `0` `1` `2`     | high-frequency, daily-frequency: 0 = no fates history variables are calculated or allocated, 1 = only time x space (3d) fates history variables allowed, 2 = multiplexed dimensioned fates history is also allowed |
+
 
 ## Reduced Complexity Modes
 
