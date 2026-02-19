@@ -5,6 +5,16 @@ HLM-FATES Interface Design Document
 Introduction
 ------------
 .. Discuss the design origins, intent and goals.  What is the problem statement?  If there are any specification documents, link them in Appendix.
+The interface between the host land models (HLMs) and FATES is designed with the following goals in mind:
+
+1. Reduced the amount of necessary shared code
+2. Provide for a common vocabulary between the HLM and FATES for associated variables
+3. Provide a standard design pattern for associating HLM and FATES variables
+4. Improve development management of different interface needs based on HLM
+
+Note that this document is being written in the context of a refactor associated with pull request `NGEET/fates#1477`_.  The impetus for this work is to allow FATES to operate with multiple soil columns in the host land model, which is driven by scientific goals per NGEE-Arctic Phase 4 (specifically Cross-cut Task 4).  Prior to this design implimentation, the interface made some assumptions about how FATES and HLM variables are associated with each other that would make accomplishing the multi-column operation difficult.
+
+.. _`NGEET/fates#1477`: https://github.com/NGEET/fates/pull/1477
 
 Design Considerations
 ---------------------
