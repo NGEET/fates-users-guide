@@ -32,6 +32,7 @@ Solutions
 ---------
 .. Section should include alternative implementations/solutions.  Is it feasible? How much effort does it need for each approach? Pros/cons of each approach.  Document alternatives, why you made the decision and how it will affect the team and project.
 
+
 Design and Architecture
 -----------------------
 ..  Provide a general overview of the software layout
@@ -39,21 +40,15 @@ Design and Architecture
 System diagram or flowchart
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. Interaction diagram of various inputs, outputs, sub systems and dependencies.
+Order of operations:
 
+1. Initialize the interface registry arrays (InitializeInterfaceRegistry)
+2. Register data variables associated with keys (RegisterInterfaceVariables)
+3. Initialize the FATES sites (InitializeFatesSites)
+4. Initialize the boundary conditions (InitialBoundaryConditions)
+5. Update registered interface variables (UpdateInterfaceVariables)
+6. Update “specialized” variable sets as necessary (e.g. UpdateLitterFluxes)
 
-Algorithm or Pseudo code for main components
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. Describe your logic in this section.  See https://pypi.org/project/sphinxcontrib-pseudocode/ for links to documentation.
-
-.. pcode::
-
-  \begin{algorithm}
-  \caption{psedo code}
-  \begin{algorithmic}
-  \PROCEDURE{MyProcedure}{}
-  \ENDPROCEDURE
-  \end{algorithmic}
-  \end{algorithm}
 
 Rollout Plan
 ------------
