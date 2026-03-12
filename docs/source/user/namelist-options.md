@@ -87,14 +87,15 @@ The namelist options for the various model components of FATES are presented in 
 ### Land Use and Harvest
 
 
-| Option                   | Type    | Default   | Options            | Description                                                              |
-|:-------------------------|:-------:|:---------:|:-------------------|:-------------------------------------------------------------------------|
-| `use_fates_luh`          | Boolean | `.false.` | `.true.` `.false.` | Turns on/off land use.                                                   |
-| `use_fates_lupft`        | Boolean | `.false.` | `.true.` `.false.` | If true, enables the use of fates land use x pft mapping data file.      |
-| `use_fates_potentialveg` | Boolean | `.false.` | `.true.` `.false.` | If true, assert that all lands are primary and that there is no harvest. |
-| `fluh_timeseries`        | String  | empty     | -                  | Full pathname of unified land use harmonization data file.               |
-| `flandusepftdat`         | String  | empty     | -                  | Full pathname of FATES landuse x pft data map.                           |
-| `fates_harvest_mode`     | String  | `'no_harvest'` | `'no_harvest'` `'event_code'` `'landuse_timeseries'` `'luhdata_area'` `'luhdata_mass'`| See {doc}`Land use namelist options <landuse-harvest-modes>` |
+| Option                     | Type    | Default   | Options            | Description                                                              |
+|:---------------------------|:-------:|:---------:|:-------------------|:-------------------------------------------------------------------------|
+| `use_fates_luh`            | Boolean | `.false.` | `.true.` `.false.` | Turns on/off land use.                                                   |
+| `use_fates_lupft`          | Boolean | `.false.` | `.true.` `.false.` | If true, enables the use of fates land use x pft mapping data file.      |
+| `use_fates_potentialveg`   | Boolean | `.false.` | `.true.` `.false.` | If true, assert that all lands are primary and that there is no harvest. |
+| `fluh_timeseries`          | String  | empty     | -                  | Full pathname of unified land use harmonization data file.               |
+| `flandusepftdat`           | String  | empty     | -                  | Full pathname of FATES landuse x pft data map.                           |
+| `fates_harvest_mode`       | String  | `'no_harvest'` | `'no_harvest'` `'event_code'` `'landuse_timeseries'` `'luhdata_area'` `'luhdata_mass'`| See {doc}`Land use namelist options <landuse-harvest-modes>` |
+| `fates_lu_transition_logic`| Integer | `4`       | `1`,`2`,`3`,`4`,`5`,`6`,`7`,`8`,`9` | Selects the landuse clearing matrix.  See {doc}`Land use namelist options <landuse-harvest-modes>` |
 
 ### Nutrients
 
