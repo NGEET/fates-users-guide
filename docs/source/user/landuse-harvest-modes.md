@@ -12,6 +12,17 @@ FATES provides a namelist option, `fates_harvest_modes`, to allow the user to en
 
 FATES also provides Land use transition logic options via `fates_lu_transition_logic`.  The logic follows the rulesets as defined in Table 1 of Ma et al. 2020 (https://gmd.copernicus.org/articles/13/3203/2020/).  The table is replacted here for convienence:
 
+|Translation rule | Rule 1 | Rule 2 | Rule 3 | Rule 4 | Rule 5 | Rule 6 | Rule 7 | Rule 8 | Rule 9 |
+|:----------------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
+|Cropland         |   X    |   X    |   X    |   X    |   X    |   X    |   O    |   O    |   O    |
+|Managed Pasture  |   X    |   F    |   X    |   X    |   O    |   O    |   X    |   X    |   O    |
+|Rangeland        |   F    |   F    |   X    |   O    |   X    |   O    |   X    |   O    |   X    |
+
+Rules for vegetation clearance during cropland, pasture and rangeland expansion. “X” indicates complete removal of vegetation if the primary and secondary land state is altered. “O” indicates no vegetation removal when land-use change occurs. “F” indicates that vegetation is only removed if the preceding land cover is forested primary or forested secondary land.
+
+FATES does not make the distinction between forested and non-forested lands from a land use/land cover perspective and therefore cannot exactly reproduce the table above. Instead in rulesets 1 and 2, F means primary or secondary land is cleared.
+
+In addition, FATES has the parameter fates_landuse_clearing_mortality which determines the fraction of each PFT that is killed during transition to rangeland, if the given ruleset allows vegetation clearing during creation of rangeland. 
 
 
 ## Harvest mode descriptions
