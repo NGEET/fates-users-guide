@@ -10,7 +10,7 @@ FATES provides a namelist option, `fates_harvest_modes`, to allow the user to en
 - `'luhdata_area'`
 - `'luhdata_mass'`
 
-FATES also provides Land use transition logic options via `fates_lu_transition_logic`.  The logic follows the rulesets as defined in Table 1 of Ma et al. 2020 (https://gmd.copernicus.org/articles/13/3203/2020/).  The table is replacted here for convienence:
+FATES also provides Land use transition logic options via `fates_lu_transition_logic`.  The logic follows the rulesets as defined in Table 1 of [Ma et al. 2020](https://gmd.copernicus.org/articles/13/3203/2020/).  The table is replacted here for convienence:
 
 |Translation rule | Rule 1 | Rule 2 | Rule 3 | Rule 4 | Rule 5 | Rule 6 | Rule 7 | Rule 8 | Rule 9 |
 |:----------------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
@@ -48,4 +48,3 @@ This option uses the area-based harvest data.  Note that this mode automatically
 ### `'luhdata_mass'`
 
 This modes uses the same dataset and automtically sets dependent namelist options as noted in the `'luhdata_area'` option noted above.  This option uses the mass-based harvest data.  
-
