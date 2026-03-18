@@ -22,7 +22,7 @@ Rules for vegetation clearance during cropland, pasture and rangeland expansion.
 
 FATES does not make the distinction between forested and non-forested lands from a land use/land cover perspective and therefore cannot exactly reproduce the table above. Instead in rulesets 1 and 2, F means primary or secondary land is cleared.
 
-In addition, FATES has the parameter fates_landuse_clearing_mortality which determines the fraction of each PFT that is killed during transition to rangeland, if the given ruleset allows vegetation clearing during creation of rangeland. 
+In addition, FATES has the parameter `fates_landuse_clearing_mortality` which determines the fraction of each PFT that is killed during transition to rangeland, if the given ruleset allows vegetation clearing during creation of rangeland. 
 
 
 ## Harvest mode descriptions
