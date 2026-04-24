@@ -3,6 +3,17 @@ FATES-HLM API compatibility tables
 
 The following table list the FATES API and the corresponding HLM tag associated with that API update.  Note that CTSM provides a specific tag for each of its merge commits to the master branch whereas E3SM does not.  As such, the hash for the relevant merge commit is provided for E3SM.  Entries that specifically link to a pull request (e.g. PR#XXXX) are provided to note updates which have not been integrated yet, but are pending.  The table may also include future planned API updates without links to provide users an advanced look at what updates are forthcoming.
 
+API 45
+------
+
+This API update introduces a new namelist option that defines whether or not to kill vegetation during land use transitions
+
++--------------------------+----------------+------------+-------------+-------------------------------------------------------------+
+| FATES Tag                | CTSM Tag       | E3SM Hash  | Update Type | Short description                                           |
++==========================+================+============+=============+=============================================================+
+| `sci.1.92.4_api.45.0.0`_ | `ctsm5.4.036`_ | TBD        | Science     | Complete FATES-CLM nitrogen coupling                        |
++--------------------------+----------------+------------+-------------+-------------------------------------------------------------+
+
 API 44
 ------
 
@@ -254,6 +265,8 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 
 .. [#] Users wanting to run non-land use run modes should avoid this tag due `issue #1221`_.  The next fates tag addresses this issue.
 
+.. _sci.1.92.4_api.45.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.92.4_api.45.0.0
+
 .. _sci.1.92.3_api.44.1.0: https://github.com/NGEET/fates/releases/tag/sci.1.92.3_api.44.1.0
 .. _sci.1.92.2_api.44.1.0: https://github.com/NGEET/fates/releases/tag/sci.1.92.2_api.44.1.0
 .. _sci.1.92.1_api.44.1.0: https://github.com/NGEET/fates/releases/tag/sci.1.92.1_api.44.1.0
@@ -342,6 +355,7 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 .. _sci.1.77.1_api.36.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.77.1_api.36.0.0
 .. _sci.1.77.0_api.36.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.77.0_api.36.0.0
 
+.. _ctsm5.4.036: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.4.036
 .. _ctsm5.4.033: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.4.033
 .. _ctsm5.4.030: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.4.030
 .. _ctsm5.4.026: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.4.026
