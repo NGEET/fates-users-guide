@@ -11,9 +11,25 @@ This API update changes the default format for the FATES parameter file.  It now
 +--------------------------+----------------+------------+-------------+-------------------------------------------------------------+
 | FATES Tag                | CTSM Tag       | E3SM Hash  | Update Type | Short description                                           |
 +==========================+================+============+=============+=============================================================+
+| `sci.1.91.4_api.43.1.0`_ |                |            | Bug fix     | Fix to infinite loop in damage code                         |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.91.3_api.43.1.0`_ |                |            | Bug fix     | Fixes initialization of cohort mean vcmax25                 |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.91.2_api.43.1.0`_ |                |            | Software    | Increase maximum patches and nocomp PFTs for range/pasture  |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.91.1_api.43.1.0`_ | `ctsm5.4.026`_ | `0569901`_ | Science     | Add new land use history variables                          |
++--------------------------+----------------+------------+-------------+-------------------------------------------------------------+
+| `sci.1.91.0_api.43.1.0`_ |                |            | Bug fix     | Update hydraulic failure mortality for frozen soils         |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.90.2_api.43.1.0`_ |                |            | Science     | Add new history output for TRENDY runs                      |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
+| `sci.1.90.1_api.43.1.0`_ |                | `1c210d6`_ | Software    | Refactors testing directory                                 |
++--------------------------+                +------------+-------------+-------------------------------------------------------------+
+| `sci.1.90.0_api.43.1.0`_ |                |            | Software    | NorESM no-comp calibration compatibility changes            |
++--------------------------+                +            +-------------+-------------------------------------------------------------+
 | `sci.1.89.1_api.43.0.0`_ |                |            | Bug fix     | Corrects unit conversion error for bc_out%ema_npp           |
 +--------------------------+                +            +-------------+-------------------------------------------------------------+
-| `sci.1.89.0_api.43.0.0`_ | `ctsm5.4.005`_ | TBD        | Software    | Updates parameter file and tooling to JSON format           |
+| `sci.1.89.0_api.43.0.0`_ | `ctsm5.4.005`_ | Skipped    | Software    | Updates parameter file and tooling to JSON format           |
 +--------------------------+----------------+------------+-------------+-------------------------------------------------------------+
 
 API 42
@@ -221,6 +237,14 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 
 .. [#] Users wanting to run non-land use run modes should avoid this tag due `issue #1221`_.  The next fates tag addresses this issue.
 
+.. _sci.1.91.4_api.43.1.0: https://github.com/NGEET/fates/releases/tag/sci.1.91.4_api.43.1.0
+.. _sci.1.91.3_api.43.1.0: https://github.com/NGEET/fates/releases/tag/sci.1.91.3_api.43.1.0
+.. _sci.1.91.2_api.43.1.0: https://github.com/NGEET/fates/releases/tag/sci.1.91.2_api.43.1.0
+.. _sci.1.91.1_api.43.1.0: https://github.com/NGEET/fates/releases/tag/sci.1.91.1_api.43.1.0
+.. _sci.1.91.0_api.43.1.0: https://github.com/NGEET/fates/releases/tag/sci.1.91.0_api.43.1.0
+.. _sci.1.90.2_api.43.1.0: https://github.com/NGEET/fates/releases/tag/sci.1.90.2_api.43.1.0
+.. _sci.1.90.1_api.43.1.0: https://github.com/NGEET/fates/releases/tag/sci.1.90.1_api.43.1.0
+.. _sci.1.90.0_api.43.1.0: https://github.com/NGEET/fates/releases/tag/sci.1.90.0_api.43.1.0
 .. _sci.1.89.1_api.43.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.89.1_api.43.0.0
 .. _sci.1.89.0_api.43.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.89.0_api.43.0.0
 
@@ -296,6 +320,7 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 .. _sci.1.77.1_api.36.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.77.1_api.36.0.0
 .. _sci.1.77.0_api.36.0.0: https://github.com/NGEET/fates/releases/tag/sci.1.77.0_api.36.0.0
 
+.. _ctsm5.4.026: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.4.026
 .. _ctsm5.4.005: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.4.005
 .. _ctsm5.3.083: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.083
 .. _ctsm5.3.077: https://github.com/ESCOMP/CTSM/releases/tag/ctsm5.3.077
@@ -311,6 +336,8 @@ For compatibility with API 35 and earlier, please see :doc:`/user/Table-of-FATES
 .. _PR 6918: https://github.com/E3SM-Project/E3SM/pull/6918
 .. _PR 7027: https://github.com/E3SM-Project/E3SM/pull/7027
 
+.. _1c210d6: https://github.com/E3SM-Project/E3SM/commit/1c210d6992682e709cb55005993a545e34f774ec
+.. _0569901: https://github.com/E3SM-Project/E3SM/commit/056990139adfc05283dd6d51b0d6f0e5b9bc0f65
 .. _6e53f24: https://github.com/E3SM-Project/E3SM/commit/6e53f249e87ea2042c8cfaacc410b872bde97871
 .. _de4952f: https://github.com/E3SM-Project/E3SM/commit/de4952f40b672740d4da5ebe473091421f661756
 .. _79875a9: https://github.com/E3SM-Project/E3SM/commit/79875a9c2ceb26dbffedb1d7bb6a59b0ecb5da8b
