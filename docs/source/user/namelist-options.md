@@ -101,7 +101,7 @@ The namelist options for the various model components of FATES are presented in 
 
 | Option              | Type    | Default | Options | Description                                                         |
 |:--------------------|:-------:|:-------:|:--------|:--------------------------------------------------------------------|
-| `fates_parteh_mode` | Integer | `1`     | `1` `2` | {doc}`Specifies which plant allocation model to use <PARTEH-Modes>` |
+| `fates_parteh_mode` | String | `'carbon_only'`     | `'carbon_only'` `'cnp'` | {doc}`Specifies which plant allocation model to use <PARTEH-Modes>` |
 
 ### Photosynthesis
 
@@ -126,6 +126,14 @@ The namelist options for the various model components of FATES are presented in 
 |:---------------------------|:-------:|:-----------------------:|:----------------------------------------|:---------------------------------------|
 | `fates_regeneration_model` | String  | `'default'`             | `'default'` `'trs'` `'trs_no_seed_dyn'` | Sets the FATES seed regeneration model |
 | `fates_seeddisp_cadence`   | Integer | `1`                     | `0` `1` `2` `3`                         | Switch defining the cadence at which seeds are dispersed across gridcells, 0 = no seed dispersal, 1 = daily, 2 = monthly, 3 = yearly. |
+
+
+### Cold-Start Initialization Types
+
+| Option                     | Type    | Default   | Options               | Description                            |
+|:---------------------------|:-------:|:---------:|:----------------------|:---------------------------------------|
+| `use_fates_dbh_init`       | Boolean | `.false.` | `.true.` or `.false.` | Switches cold start initialization to use DBH instead of number density. If true, parameter "fates_recruit_init_dbh" is used. If false, parameter "fates_recruit_init_density" is used. True (id DBH mode) can only be used when running 'use_fates_nocomp = .true.' |
+
 
 ***
 
